@@ -1,36 +1,1631 @@
-return (function(...)
-    local _ENV = getfenv and getfenv() or _ENV or _G
-    local _ARGS = {...}
+return(function(WRE4R, ...)
+local BxHRZs = {"RzzNzD";"BQ1kDcpOFxNSwzj9S";"vuLf6pxDNQUyqQz0z";"TqGwV0x0fNXUREjS";"tr7B";"WJA5zFkRZwQ"}
+local oqGZS42d = function(...)
+-- Moon Hub | Jailbird | Clean (obfuscation-safe)
+-- Cursor picker + SIZE · Potato · Radar · Device spoof
+-- Made by mr larper
 
-    local _DATA = {{358,338,341,342,336,359,343,296,301},{393,363,345,362,373,334,364,361,360,395,345,362,358,341,347,345},{358,362,340,344,358,297,365,296,299},{358,297,294,354,342,363,345,296,296},{358,299,364,354,336,342,341,296,297},{358,344,346,345,293,339,295,296,294},{358,296,349,363,358,339,364,296,295},{358,358,343,301,347,292,356,297,300},{369,335,335,334,372,361,346},{369,335,335,334,372,361,346,271,379,335,334,342,341,343,363},{369,378,298},{372,335,336,344},{396,336,349,357,345,362},{379,335,362,334,345,362},{367,342,342},{379,335,334,363,335,336,345},{344,345,342,349,361,336,360},{334,361,337,346,345,362},{334,361,337,346,345,362},{334,361,337,346,345,362},{344,345,342,349,361,336,360},{387,382,281,358,345,356,341,300,336,295,301,293,294,281,273,281,358,359,363,356,300,294,296,301,297,293,385},{},{},{344,345,342,349,361,336,360},{369,335,335,334,372,361,346,271,379,335,334,342,341,343,363,271},{270,338,363,335,334},{369,335,335,334,372,361,346,271,370,349,341,336,346,341,362,344,270,338,363,335,334},{344,345,342,349,361,336,360},{387,382,281,358,345,356,341,300,336,295,301,293,294,281,273,281,358,359,363,356,300,294,296,301,297,293,385},{},{369,335,335,334,372,361,346,271,379,335,334,342,341,343,363,271},{270,338,363,335,334},{369,335,335,334,372,361,346,271,370,349,341,336,346,341,362,344,270,338,363,335,334},{360,349,346,336,345},{344,345,342,349,361,336,360},{369,335,335,334,372,361,346,393,373},{369,335,335,334,379,361,362,363,335,362,393,373},{392,345,356,360},{367,342,342},{375,349,337,345,284,379,362,335,363,363,340,349,341,362},{375,381,369,377},{395,360,349,362,284,391,349,362,363},{297,296,294,298,292,299,301},{395,334,335,359,342,336,349,339,345},{301,301,295,292,300,293,294,292,298,299,293},{394,345,344,284,376,335,360},{296,301,298,298,292,296,292,294,298},{376,341,349,337,335,334,344},{294,301,298,301,300,293,293,296},{372,345,336,336,335,284,371,341,360,360,357},{301,300,293,295,299,298,299,295,299,298,295},{377,357,345},{301,298,297,299,296,301,300,301,296,299,299},{395,347,362,345,345,334,375,361,341},{369,335,335,334,379,361,362,363,335,362,393,373},{373,337,349,343,345,368,349,346,345,336},{379,361,362,363,335,362},{},{379,362,335,363,363,340,349,341,362},{395,347,362,345,345,334,375,361,341},{375,361,341,367,346,338,345,347,360},{373,337,349,343,345,368,349,346,345,336},{373,337,349,343,345,378,361,360,360,335,334},{367,342,342},{367,342,342},{},{375,381,369,377},{362,346,356,349,363,363,345,360,341,344,290,271,271,300},{362,346,356,349,363,363,345,360,341,344,290,271,271,300},{362,346,356,349,363,363,345,360,341,344,290,271,271},{367,342,342},{379,362,335,363,363,340,349,341,362},{375,349,337,345,284,379,362,335,363,363,340,349,341,362},{375,349,337,345,284,379,362,335,363,363,340,349,341,362},{358,343,357,345,339,293,362,301,301,297},{347,362,349,360,345},{346,349,362,362,345,336},{344,361,337,364,363,360,345,362},{360,362,349,363,340},{347,335,334,360,349,341,334,345,362},{363,340,341,364,364,341,334,343},{363,349,334,344,346,349,343},{364,349,336,336,345,360},{342,335,362,339,336,341,342,360},{360,362,361,347,339},{347,349,362},{358,349,334},{343,345,334,345,362,349,360,335,362},{345,336,345,347,360,362,341,347,349,336},{342,361,363,345},{347,349,346,341,334,345,360},{363,340,345,336,342},{336,335,347,339,345,362},{344,345,363,339},{360,349,346,336,345},{347,335,361,347,340},{346,345,334,347,340},{363,360,349,341,362,363},{336,349,344,344,345,362},{362,349,337,364},{364,341,364,345},{358,345,334,360},{344,335,335,362},{359,341,334,344,335,359},{343,349,360,345},{342,345,334,347,345},{364,341,336,336,349,362},{},{},{375,349,337,345,377,358,345,334,360,363},{376,345,358,341,347,345,393,364,344,349,360,345},{379,335,334,363,335,336,345},{379,335,334,363,335,336,345},{379,335,334,363,335,336,345},{375,349,337,345,364,349,344},{376,345,363,339,360,335,364},{376,345,363,339,360,335,364},{396,379},{369,335,361,363,345,371,345,357,346,335,349,362,344},{358,337,334,344,345,365,361,301,298,300},{358,337,334,344,345,365,361,301,298,300},{392,335,361,347,340},{396,349,362,360,341,347,336,345,377,337,341,360,360,345,362},{392,362,349,341,336},{378,345,349,337},{395,337,335,339,345},{374,341,362,345},{395,364,349,362,339,336,345,363},{396,335,341,334,360,368,341,343,340,360},{395,364,335,360,368,341,343,340,360},{395,361,362,342,349,347,345,368,341,343,340,360},{378,336,335,335,337,377,342,342,345,347,360},{378,336,361,362,377,342,342,345,347,360},{395,361,334,394,349,357,363,377,342,342,345,347,360},{379,335,336,335,362,379,335,362,362,345,347,360,341,335,334,377,342,342,345,347,360},{376,345,364,360,340,367,342,374,341,345,336,344,377,342,342,345,347,360},{381,360,337,335,363,364,340,345,362,345},{378,349,363,345,396,349,362,360},{378,349,363,345,396,349,362,360},{396,349,362,360,341,347,336,345,377,337,341,360,360,345,362},{392,362,349,341,336},{378,345,349,337},{395,337,335,339,345},{374,341,362,345},{395,364,349,362,339,336,345,363},{396,335,341,334,360,368,341,343,340,360},{395,364,335,360,368,341,343,340,360},{395,361,362,342,349,347,345,368,341,343,340,360},{395,347,362,345,345,334,375,361,341},{369,335,335,334,372,361,346,393,373},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{373,337,349,343,345,368,349,346,345,336},{362,346,356,349,363,363,345,360,341,344,290,271,271,301,299,298,293,296,296,295,296,297,301,292,296,299,295,298},{393,373,379,335,362,334,345,362},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{374,362,349,337,345},{374,362,349,337,345},{392,345,356,360,368,349,346,345,336},{369,367,367,366,284,372,393,378,284,250,167,284,338,349,341,336,346,341,362,344},{392,345,356,360,378,361,360,360,335,334},{388},{393,373,379,335,362,334,345,362},{395,347,362,335,336,336,341,334,343,374,362,349,337,345},{393,373,379,335,362,334,345,362},{393,373,368,341,363,360,368,349,357,335,361,360},{393,373,396,349,344,344,341,334,343},{374,362,349,337,345},{395,347,362,335,336,336,341,334,343,374,362,349,337,345},{393,373,368,341,363,360,368,349,357,335,361,360},{393,373,396,349,344,344,341,334,343},{367},{392,345,356,360,378,361,360,360,335,334},{393,373,379,335,362,334,345,362},{367},{367},{392,345,356,360,368,349,346,345,336},{360,349,346,336,345},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{392,345,356,360,368,349,346,345,336},{392,345,356,360,378,361,360,360,335,334},{},{393,373,379,335,362,334,345,362},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{377,395,396},{369,335,346,341,336,345,381,341,337},{376,345,358,341,347,345,395,364,335,335,342},{396,335,360,349,360,335},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{392,345,356,360,368,349,346,345,336},{392,345,356,360,368,349,346,345,336},{392,345,356,360,378,361,360,360,335,334},{},{393,373,379,335,362,334,345,362},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{379,361,362,363,335,362,395,341,354,345},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{392,345,356,360,368,349,346,345,336},{392,345,356,360,378,361,360,360,335,334},{393,373,379,335,362,334,345,362},{376,345,358,341,347,345,369,335,344,345},{379,361,362,363,335,362,366,349,337,345},{374,362,349,337,345},{393,373,379,335,362,334,345,362},{392,345,356,360,368,349,346,345,336},{392,345,356,360,378,335,356},{},{},{393,373,379,335,362,334,345,362},{},{344,345,342,349,361,336,360},{392,345,356,360,378,361,360,360,335,334},{393,373,379,335,362,334,345,362},{358,297,342,347,360,358,340,301,301,294},{396,336,349,357,345,362},{358,356,293,295,300,345,293,301,301,292},{358,335,295,358,300,338,292,301,301,293},{358,337,334,344,345,365,361,301,298,300},{358,344,293,293,344,364,346,301,298,301},{379,335,334,342,341,343},{381,341,337,346,335,360},{381,341,337,346,335,360},{381,341,337,346,335,360},{371,345,357},{381,341,337,371,345,357},{369,378,301},{369,378,298},{377},{397},{374},{369,335,344,345},{381,341,337,369,335,344,345},{372,335,336,344},{392,335,343,343,336,345},{381,336,359,349,357,363},{374,367,390},{381,341,337,374,367,390},{395,337,335,335,360,340,284,301,289,341,334,363,360,349,334,360},{381,341,337,395,337,335,335,360,340},{395,340,335,359,284,374,367,390},{395,340,335,359,374,367,390},{391,349,336,336,284,379,340,345,347,339},{391,349,336,336,379,340,345,347,339},{392,345,349,337,284,379,340,345,347,339},{392,345,349,337,379,340,345,347,339},{396,362,345,344,341,347,360,341,335,334},{396,362,345,344,341,347,360,341,335,334},{396,362,345,344,341,347,360,284,381,337,335,361,334,360},{396,362,345,344,341,347,360,381,337,335,361,334,360},{367,360,340,345,362},{392,362,341,343,343,345,362,346,335,360},{392,362,341,343,343,345,362,346,335,360},{392,362,341,343,343,345,362,284,374,367,390},{392,362,341,343,343,345,362,374,367,390},{366,335,284,394,345,347,335,341,336},{366,335,394,345,347,335,341,336},{394,345,347,335,341,336,284,381,337,360},{394,345,347,335,341,336,381,337,335,361,334,360},{369,335,358,345},{395,364,345,345,344},{395,364,345,345,344},{395,364,345,345,344,284,390,349,336,361,345},{395,364,345,345,344,390,349,336,361,345},{366,335,347,336,341,364},{366,335,347,336,341,364},{381,334,360,341,273,378,335,359},{381,334,360,341,378,335,359},{381,334,360,341,347,335,336,341,363,251,155,358,335,301,335,335,294,359,297,295},{381,334,360,341,347,335,336,341,363,349,335},{376,345,358,341,347,345,284,395,364,335,335,342},{376,345,358,341,347,345,284,395,364,335,335,342,284,276,336,335,335,364,277},{376,345,358,341,347,345,395,364,335,335,342},{376,345,358,341,347,345,284,369,335,344,345},{376,345,358,341,347,345,369,335,344,345},{379,335,334,363,335,336,345},{376,345,363,339,360,335,364},{358,337,334,344,345,365,361,301,298,300},{395,364,335,335,342,284,376,345,336,349,357,284,276,363,345,347,277},{376,345,358,341,347,345,395,364,335,335,342,376,345,336,349,357},{381,364,364,336,357,284,376,345,358,341,347,345,284,366,335,359},{358,356,293,295,300,345,293,301,301,292},{358,356,293,295,300,345,293,301,301,292,284,396,362,335,335,342},{395,360,362,345,349,337,396,362,335,335,342},{376,341,363,364,336,349,357,284,358,301,339,299,334,365,334,301,294,298},{395,364,335,335,342,366,349,337,345},{396,336,349,357,345,362},{390,345,362,341,342,341,345,344},{395,340,335,359,390,345,362,341,342,341,345,344},{358,335,295,358,300,338,292,301,301,293},{376,345,360,345,347,360},{395,360,349,342,342,376,345,360,345,347,360},{366,335,360,341,342,357},{395,360,349,342,342,366,335,360,341,342,357},{368,345,349,358,345},{395,360,349,342,342,368,345,349,358,345},{358,337,334,344,345,365,361,301,298,300,284,381,341,337,346,335,360},{358,337,334,344,345,365,361,301,298,300,284,381,341,337,284,367,366},{369,335,346,341,336,345,381,341,337},{358,337,334,344,345,365,361,301,298,300,284,395,337,335,335,360,340},{369,335,346,341,336,345,395,337,335,335,360,340},{358,337,334,344,345,365,361,301,298,300,284,374,367,390},{369,335,346,341,336,345,374,367,390},{358,337,334,344,345,365,361,301,298,300,284,395,340,335,359,284,374,367,390},{369,335,346,341,336,345,395,340,335,359,374,367,390},{377,395,396},{377,395,396,284,377,334,349,346,336,345,344},{377,395,396},{378,335,356,345,363},{395,340,335,359,378,335,356,345,363},{378,335,356,284,395,360,357,336,345},{378,335,356,395,360,357,336,345},{379,335,362,334,345,362},{374,361,336,336},{378,335,360,340},{366,349,337,345,363},{395,340,335,359,366,349,337,345,363},{376,341,363,360,349,334,347,345},{395,340,335,359,376,341,363,360,349,334,347,345},{372,345,349,336,360,340},{395,340,335,359,372,345,349,336,360,340},{372,345,349,344,284,376,335,360},{395,340,335,359,372,345,349,344,376,335,360},{394,349,344,349,362},{394,349,344,349,362,284,377,395,396},{394,349,344,349,362},{394,349,344,349,362,284,395,341,354,345},{394,349,344,349,362,395,341,354,345},{394,349,344,349,362,284,394,349,334,343,345},{394,349,344,349,362,394,349,334,343,345},{379,361,362,363,335,362},{395,345,336,345,347,360,284,379,361,362,363,335,362},{379,361,362,363,335,362,366,349,337,345},{379,361,362,363,335,362,284,395,341,354,345},{379,361,362,363,335,362,395,341,354,345},{366,349,337,345,344,284,379,335,334,342,341,343},{379,335,334,342,341,343,284,358,301,339,299,334,365,334,301,294,298},{379,335,334,342,341,343,366,349,337,345},{344,345,342,349,361,336,360},{395,349,358,345,284,379,335,334,342,341,343},{368,335,349,344,284,379,335,334,342,341,343},{374,396,395,284,275,284,369,395},{395,340,335,359,396,345,362,342},{396,335,360,349,360,335,284,374,396,395,284,378,335,335,363,360},{396,335,360,349,360,335},{358,297,342,347,360,358,340,301,301,294},{384,361,355,377,300,300,300,353},{379,341,362,347,336,345},{379,341,362,347,336,345},{379,341,362,347,336,345},{368,341,334,345},{368,341,334,345},{372,361,337,349,334,335,341,344},{378,349,363,345,396,349,362,360},{},{},{343,336,349,363,363},{347,349,337,345,362,349,337,335,344,345,336},{358,341,345,359,337,335,344,345,336},{372,345,349,344},{372,361,337,349,334,335,341,344,394,335,335,360,396,349,362,360},{392,335,362,363,335},{372,345,349,344},{372,335,336,344},{392,335,343,343,336,345},{372,335,336,344},{372,361,337,349,334,335,341,344,394,335,335,360,396,349,362,360},{372,361,337,349,334,335,341,344},{378,349,363,345,396,349,362,360},{378,349,363,345,396,349,362,360},{284},{372,361,337,349,334,335,341,344},{334,361,337,346,345,362},{358,335,295,358,300,338,292,301,301,293},{372,361,337,349,334,335,341,344},{372,341,343,340,336,341,343,340,360},{395,365,361,349,362,345},{368,341,334,345},{392,345,356,360},{392,345,356,360},{395,365,361,349,362,345},{395,365,361,349,362,345},{379,341,362,347,336,345},{360,349,346,336,345},{379,341,362,347,336,345},{392,345,356,360},{376,349,360,349,284,396,341,334,343},{374,396,395,284},{284,369,395,284},{372,361,337,349,334,335,341,344,394,335,335,360,396,349,362,360},{392,335,362,363,335},{372,361,337,349,334,335,341,344,394,335,335,360,396,349,362,360},{392,335,362,363,335},{379,341,362,347,336,345},{381,336,359,349,357,363},{392,335,335,336},{372,361,337,349,334,335,341,344,394,335,335,360,396,349,362,360},{372,361,337,349,334,335,341,344,394,335,335,360,396,349,362,360},{392,335,362,363,335},{372,345,349,344},{372,361,337,349,334,335,341,344},{379,335,362,334,345,362},{374,361,336,336},{378,335,360,340},{379,335,362,334,345,362},{378,335,360,340},{337},{360,349,346,336,345},{367,342,342},{387,369,335,335,334,284,372,361,346,385,284,379,336,345,349,334,284,346,361,341,336,344,284,367,371,284,352,284,379,361,362,363,335,362,284,358,292,359,296,340,301,295,301,294,293,284,292,273,301,298,292,284,352,284,376,335,284,366,367,392,284,335,346,342,361,363,347,349,360,345,284,360,340,341,363,284,358,361,344,339,337,337,337,297,297}}
-    local _MEM = {}
+local getgenv = getgenv or function() return _G end
+local Players = game:GetService(loadstring(base64decode("UGxheWVycw=="))())
+local UIS = game:GetService(loadstring(base64decode("VXNlcklucHV0U2VydmljZQ=="))())
+local RunService = game:GetService(loadstring(base64decode("UnVuU2VydmljZQ=="))())
+local Lighting = game:GetService(loadstring(base64decode("TGlnaHRpbmc="))())
+local Stats = game:GetService(loadstring(base64decode("U3RhdHM="))())
+local HttpService = game:GetService(loadstring(base64decode("SHR0cFNlcnZpY2U="))())
+local ReplicatedStorage = game:GetService(loadstring(base64decode("UmVwbGljYXRlZFN0b3JhZ2U="))())
+local Camera = workspace.CurrentCamera
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild(loadstring(base64decode("UGxheWVyR3Vp"))())
+local Mouse = LocalPlayer:GetMouse()
 
-    local _BXOR = bit32 and bit32.bxor or function(a,b) return a ~ b end
-    local function _DEC(arr)
-        local res = {}
-        for i = 1, #arr do
-            res[i] = string.char(_BXOR(arr[i] - 142, 174))
+local function safeWrite(path, data)
+    pcall(function()
+        if writefile then writefile(path, data) end
+    end)
+end
+local function safeRead(path)
+    local ok, data = pcall(function()
+        if isfile and isfile(path) and readfile then
+            return readfile(path)
         end
-        return table.concat(res)
+    end)
+    if ok then return data end
+    return nil
+end
+local function safeFolder(name)
+    pcall(function()
+        if makefolder then makefolder(name) end
+    end)
+end
+safeFolder(loadstring(base64decode("TW9vbkh1Yg=="))())
+safeFolder(loadstring(base64decode("TW9vbkh1Yi9Db25maWdz"))())
+
+getgenv().MoonHubState = getgenv().MoonHubState or {}
+local S = getgenv().MoonHubState
+local DEF = {
+    Aimbot = false, AimKey = loadstring(base64decode("TUIy"))(), AimMode = loadstring(base64decode("SG9sZA=="))(),
+    AimFOV = 150, AimSmooth = 0.95, ShowFOV = false,
+    WallCheck = true, TeamCheck = true, Prediction = true, PredictAmount = 0.12,
+    Triggerbot = false, TriggerFOV = 45,
+    NoRecoil = false, RecoilAmount = 0,
+    Speed = false, SpeedValue = 24, Noclip = false, AntiBow = true, Anticolisao = false,
+    StreamProof = false, SpoofName = loadstring(base64decode("UGxheWVy"))(), ShowVerified = true,
+    StaffDetect = false, StaffNotify = true, StaffLeave = false,
+    ESP = false, ShowBoxes = true, BoxStyle = loadstring(base64decode("Q29ybmVy"))(),
+    ShowNames = true, ShowDistance = true, ShowHealth = true, ShowHeadDot = true,
+    Radar = false, RadarSize = 140, RadarRange = 200,
+    CursorName = loadstring(base64decode("T2Zm"))(), CursorSize = 32,
+    DeviceSpoof = false, DeviceMode = loadstring(base64decode("Q29uc29sZQ=="))(), DeviceSpoofDelay = 1.5,
+    ShowPerf = true, Potato = false,
+    MobileAim = false, MobileSmooth = 0.9, MobileFOV = 160, MobileShowFOV = true,
+    ConfigName = loadstring(base64decode("ZGVmYXVsdA=="))(),
+}
+for 492aH8cR, v in pairs(DEF) do
+    if S[492aH8cR] == nil then S[492aH8cR] = v end
+end
+if type(S.AimSmooth) ~= loadstring(base64decode("bnVtYmVy"))() then S.AimSmooth = 0.95 end
+if type(S.DeviceSpoofDelay) ~= loadstring(base64decode("bnVtYmVy"))() then S.DeviceSpoofDelay = 1.5 end
+if type(S.CursorSize) ~= loadstring(base64decode("bnVtYmVy"))() then S.CursorSize = 32 end
+S.AutoMatch = nil
+S.GunCursor = nil
+
+local function saveNamedConfig(name)
+    name = tostring(name or S.ConfigName or loadstring(base64decode("ZGVmYXVsdA=="))()):gsub(loadstring(base64decode("W14ldyUtJV9d"))(), loadstring(base64decode(""))())
+    if name == loadstring(base64decode(""))() then name = loadstring(base64decode("ZGVmYXVsdA=="))() end
+    S.ConfigName = name
+    S.AutoMatch = nil
+    safeWrite(loadstring(base64decode("TW9vbkh1Yi9Db25maWdzLw=="))() .. name .. loadstring(base64decode("Lmpzb24="))(), HttpService:JSONEncode(S))
+    safeWrite(loadstring(base64decode("TW9vbkh1Yi9KYWlsYmlyZC5qc29u"))(), HttpService:JSONEncode(S))
+end
+local function loadNamedConfig(name)
+    name = tostring(name or S.ConfigName or loadstring(base64decode("ZGVmYXVsdA=="))()):gsub(loadstring(base64decode("W14ldyUtJV9d"))(), loadstring(base64decode(""))())
+    local raw = safeRead(loadstring(base64decode("TW9vbkh1Yi9Db25maWdzLw=="))() .. name .. loadstring(base64decode("Lmpzb24="))()) or safeRead(loadstring(base64decode("TW9vbkh1Yi9KYWlsYmlyZC5qc29u"))())
+    if raw then
+        pcall(function()
+            local data = HttpService:JSONDecode(raw)
+            if type(data) == loadstring(base64decode("dGFibGU="))() then
+                for 492aH8cR, v in pairs(data) do S[492aH8cR] = v end
+            end
+        end)
+    end
+    S.ConfigName = name
+    S.AutoMatch = nil
+end
+loadNamedConfig(S.ConfigName or loadstring(base64decode("ZGVmYXVsdA=="))())
+
+pcall(function()
+    local o = PlayerGui:FindFirstChild(loadstring(base64decode("TW9vbkh1YlVJ"))())
+    if o then o:Destroy() end
+    local c = PlayerGui:FindFirstChild(loadstring(base64decode("TW9vbkN1cnNvclVJ"))())
+    if c then c:Destroy() end
+end)
+
+local HasDrawing = false
+pcall(function()
+    if Drawing and Drawing.new then
+        local t = Drawing.new(loadstring(base64decode("VGV4dA=="))())
+        t.Visible = false
+        t:Remove()
+        HasDrawing = true
+    end
+end)
+
+local ACCENT = Color3.fromRGB(138, 99, 255)
+local BG = Color3.fromRGB(12, 12, 16)
+local PANEL = Color3.fromRGB(18, 18, 24)
+local CARD = Color3.fromRGB(20, 20, 28)
+local TEXT = Color3.fromRGB(235, 235, 245)
+local MUTED = Color3.fromRGB(160, 160, 180)
+local FONT = Enum.Font.Gotham
+pcall(function() FONT = Enum.Font.GothamMedium end)
+local T_MAIN, T_PANEL, T_CARD, T_DIM, T_IMG = 0.55, 0.55, 0.5, 0.7, 0.08
+
+local function unlockMouse()
+    pcall(function()
+        UIS.MouseBehavior = Enum.MouseBehavior.Default
+        UIS.MouseIconEnabled = true
+    end)
+end
+
+------------------------------------------------
+-- CURSOR + SIZE (custom ImageLabel — Mouse.Icon cannot resize)
+------------------------------------------------
+local CURSORS = {
+    { Name = loadstring(base64decode("T2Zm"))(),            Id = nil },
+    { Name = loadstring(base64decode("R2FtZSBDcm9zc2hhaXI="))(), Id = loadstring(base64decode("R0FNRQ=="))() },
+    { Name = loadstring(base64decode("U3RhciBXYXJz"))(),      Id = loadstring(base64decode("NTQ2MjgzMQ=="))() },
+    { Name = loadstring(base64decode("U25vd2ZsYWtl"))(),      Id = loadstring(base64decode("MTE3ODA5NjgyMzk="))() },
+    { Name = loadstring(base64decode("UmVkIERvdA=="))(),        Id = loadstring(base64decode("NDEyMjg0ODYy"))() },
+    { Name = loadstring(base64decode("RGlhbW9uZA=="))(),        Id = loadstring(base64decode("NjEyMTA5OTQ="))() },
+    { Name = loadstring(base64decode("SGVsbG8gS2l0dHk="))(),    Id = loadstring(base64decode("MTA5NzMyMzczMjc="))() },
+    { Name = loadstring(base64decode("RXll"))(),            Id = loadstring(base64decode("MTI1MzQxMDE0MzM="))() },
+}
+local CURSOR_NAMES = {}
+for kCXQgvu1, c in ipairs(CURSORS) do CURSOR_NAMES[kCXQgvu1] = c.Name end
+
+local CursorGui = Instance.new(loadstring(base64decode("U2NyZWVuR3Vp"))())
+CursorGui.Name = loadstring(base64decode("TW9vbkN1cnNvclVJ"))()
+CursorGui.ResetOnSpawn = false
+CursorGui.IgnoreGuiInset = true
+CursorGui.DisplayOrder = 10000
+CursorGui.Parent = PlayerGui
+
+local CursorImg = Instance.new(loadstring(base64decode("SW1hZ2VMYWJlbA=="))())
+CursorImg.Name = loadstring(base64decode("Q3Vyc29y"))()
+CursorImg.BackgroundTransparency = 1
+CursorImg.AnchorPoint = Vector2.new(0.5, 0.5)
+CursorImg.Size = UDim2.new(0, 32, 0, 32)
+CursorImg.Visible = false
+CursorImg.ZIndex = 100
+CursorImg.Image = loadstring(base64decode(""))()
+CursorImg.Parent = CursorGui
+
+local function getCrosshair()
+    local ok, ch = pcall(function()
+        return PlayerGui:FindFirstChild(loadstring(base64decode("Q3Jvc3NoYWly"))())
+    end)
+    if ok then return ch end
+    return nil
+end
+
+local function setGameCrosshair(on)
+    local ch = getCrosshair()
+    if not ch then return end
+    pcall(function()
+        if ch:IsA(loadstring(base64decode("U2NyZWVuR3Vp"))()) then ch.Enabled = on end
+        ch.Visible = on
+        for _, d in ipairs(ch:GetDescendants()) do
+            if d:IsA(loadstring(base64decode("R3VpT2JqZWN0"))()) then d.Visible = on end
+            if (d:IsA(loadstring(base64decode("SW1hZ2VMYWJlbA=="))()) or d:IsA(loadstring(base64decode("SW1hZ2VCdXR0b24="))())) and on then
+                d.ImageTransparency = 0
+            end
+        end
+    end)
+end
+
+local function applyCursorByName(name)
+    name = name or S.CursorName or loadstring(base64decode("T2Zm"))()
+    S.CursorName = name
+    local entry
+    for _, c in ipairs(CURSORS) do
+        if c.Name == name then entry = c break end
+    end
+    if not entry then entry = CURSORS[1] end
+
+    setGameCrosshair(false)
+    CursorImg.Visible = false
+
+    local sz = math.clamp(tonumber(S.CursorSize) or 32, 8, 128)
+    CursorImg.Size = UDim2.new(0, sz, 0, sz)
+
+    if entry.Id == nil or entry.Name == loadstring(base64decode("T2Zm"))() then
+        pcall(function()
+            Mouse.Icon = loadstring(base64decode(""))()
+            UIS.MouseIconEnabled = true
+        end)
+        return
     end
 
-    for i = 1, #_DATA do
-        _MEM[i] = _DEC(_DATA[i])
+    if entry.Id == loadstring(base64decode("R0FNRQ=="))() then
+        setGameCrosshair(true)
+        pcall(function()
+            Mouse.Icon = loadstring(base64decode("cmJ4YXNzZXRpZDovLzA="))()
+            UIS.MouseIconEnabled = true
+        end)
+        return
     end
 
-    local _START = os.clock()
-    local VM_ob9f_STATE = 1
+    -- custom sized cursor
+    pcall(function()
+        UIS.MouseIconEnabled = false
+        Mouse.Icon = loadstring(base64decode("cmJ4YXNzZXRpZDovLzA="))()
+        CursorImg.Image = loadstring(base64decode("cmJ4YXNzZXRpZDovLw=="))() .. tostring(entry.Id)
+        CursorImg.Visible = true
+    end)
+end
 
+RunService.RenderStepped:Connect(function()
+    if CursorImg.Visible then
+        local pos = UIS:GetMouseLocation()
+        CursorImg.Position = UDim2.new(0, pos.X, 0, pos.Y)
+        local sz = math.clamp(tonumber(S.CursorSize) or 32, 8, 128)
+        CursorImg.Size = UDim2.new(0, sz, 0, sz)
+    end
+end)
+
+task.spawn(function()
     while true do
-        if VM_ob9f_STATE == 1 then
-            local J_1_174 = 0.0029541537101682724; if J_1_174 < 0 then print(J_1_174) end
-            local vfaj6xz40 = vfaj6xz40 or function() return _G end local vjiflwg41 = game:GetService(_MEM[1]) local v4ujnn442 = game:GetService(_MEM[2]) local vrhdv5q43 = game:GetService(_MEM[3]) local v56zfse44 = game:GetService(_MEM[4]) local v3pzlfi45 = game:GetService(_MEM[5]) local vdbe9k746 = game:GetService(_MEM[6]) local v4asvkp47 = game:GetService(_MEM[7]) local vnsv1y348 = workspace.CurrentCamera local vpl2xfl49 = vjiflwg41.vpl2xfl49 local vvg1c8x50 = vpl2xfl49:WaitForChild(_MEM[8]) local vuhdsez51 = vpl2xfl49:GetMouse() local function v6h2faw0(path, vd9921n56) pcall(function() if writefile then writefile(path, vd9921n56) end end) end local function v4feuyy1(path) local v2q3wl552, vd9921n56 = pcall(function() if isfile and isfile(path) and readfile then return readfile(path) end end) if v2q3wl552 then return vd9921n56 end return nil end local function vuaa0u42(v1k3nqn162) pcall(function() if makefolder then makefolder(v1k3nqn162) end end) end vuaa0u42(_MEM[9]) vuaa0u42(_MEM[10]) vfaj6xz40().MoonHubState = vfaj6xz40().MoonHubState or {} local v05svx553 = vfaj6xz40().MoonHubState local v0txsa054 = { Aimbot = false, AimKey = _MEM[11], AimMode = _MEM[12], AimFOV = 150, AimSmooth = 0.95, ShowFOV = false, WallCheck = true, TeamCheck = true, Prediction = true, PredictAmount = 0.12, Triggerbot = false, TriggerFOV = 45, NoRecoil = false, RecoilAmount = 0, Speed = false, SpeedValue = 24, Noclip = false, AntiBow = true, Anticolisao = false, StreamProof = false, SpoofName = _MEM[13], ShowVerified = true, StaffDetect = false, StaffNotify = true, StaffLeave = false, ESP = false, ShowBoxes = true, BoxStyle = _MEM[14], ShowNames = true, ShowDistance = true, ShowHealth = true, ShowHeadDot = true, Radar = false, RadarSize = 140, RadarRange = 200, CursorName = _MEM[15], CursorSize = 32, DeviceSpoof = false, DeviceMode = _MEM[16], DeviceSpoofDelay = 1.5, ShowPerf = true, Potato = false, MobileAim = false, MobileSmooth = 0.9, MobileFOV = 160, MobileShowFOV = true, ConfigName = _MEM[17], } for k, vk3af50112 in pairs(v0txsa054) do if v05svx553[k] == nil then v05svx553[k] = vk3af50112 end end if type(v05svx553.AimSmooth) ~= _MEM[18] then v05svx553.AimSmooth = 0.95 end if type(v05svx553.DeviceSpoofDelay) ~= _MEM[19] then v05svx553.DeviceSpoofDelay = 1.5 end if type(v05svx553.CursorSize) ~= _MEM[20] then v05svx553.CursorSize = 32 end v05svx553.AutoMatch = nil v05svx553.GunCursor = nil local function vh5gecp3(v1k3nqn162) v1k3nqn162 = tostring(v1k3nqn162 or v05svx553.ConfigName or _MEM[21]):gsub(_MEM[22], _MEM[23]) if v1k3nqn162 == _MEM[24] then v1k3nqn162 = _MEM[25] end v05svx553.ConfigName = v1k3nqn162 v05svx553.AutoMatch = nil v6h2faw0(_MEM[26] .. v1k3nqn162 .. _MEM[27], vdbe9k746:JSONEncode(v05svx553)) v6h2faw0(_MEM[28], vdbe9k746:JSONEncode(v05svx553)) end local function vuoit2v4(v1k3nqn162) v1k3nqn162 = tostring(v1k3nqn162 or v05svx553.ConfigName or _MEM[29]):gsub(_MEM[30], _MEM[31]) local vudkmmm55 = v4feuyy1(_MEM[32] .. v1k3nqn162 .. _MEM[33]) or v4feuyy1(_MEM[34]) if vudkmmm55 then pcall(function() local vd9921n56 = vdbe9k746:JSONDecode(vudkmmm55) if type(vd9921n56) == _MEM[35] then for k, vk3af50112 in pairs(vd9921n56) do v05svx553[k] = vk3af50112 end end end) end v05svx553.ConfigName = v1k3nqn162 v05svx553.AutoMatch = nil end vuoit2v4(v05svx553.ConfigName or _MEM[36]) pcall(function() local vo1oo6w57 = vvg1c8x50:FindFirstChild(_MEM[37]) if vo1oo6w57 then vo1oo6w57:Destroy() end local vizeki158 = vvg1c8x50:FindFirstChild(_MEM[38]) if vizeki158 then vizeki158:Destroy() end end) local vtjh44t59 = false pcall(function() if Drawing and Drawing.new then local v11lwdb60 = Drawing.new(_MEM[39]) v11lwdb60.Visible = false v11lwdb60:Remove() vtjh44t59 = true end end) local vauoe0p61 = Color3.fromRGB(138, 99, 255) local v6ydjpd62 = Color3.fromRGB(12, 12, 16) local vlzf6ih63 = Color3.fromRGB(18, 18, 24) local v0wakwm64 = Color3.fromRGB(20, 20, 28) local v04hbhz65 = Color3.fromRGB(235, 235, 245) local vhceak966 = Color3.fromRGB(160, 160, 180) local vphd25467 = Enum.Font.Gotham pcall(function() vphd25467 = Enum.Font.GothamMedium end) local vj5ltac68, T_PANEL, T_CARD, T_DIM, T_IMG = 0.55, 0.55, 0.5, 0.7, 0.08 local function vdlivuy5() pcall(function() v4ujnn442.MouseBehavior = Enum.MouseBehavior.Default v4ujnn442.MouseIconEnabled = true end) end local vuo6s1m69 = { { Name = _MEM[40], Id = nil }, { Name = _MEM[41], Id = _MEM[42] }, { Name = _MEM[43], Id = _MEM[44] }, { Name = _MEM[45], Id = _MEM[46] }, { Name = _MEM[47], Id = _MEM[48] }, { Name = _MEM[49], Id = _MEM[50] }, { Name = _MEM[51], Id = _MEM[52] }, { Name = _MEM[53], Id = _MEM[54] }, } local verdsow70 = {} for i, vizeki158 in ipairs(vuo6s1m69) do verdsow70[i] = vizeki158.Name end local vsnfgb871 = Instance.new(_MEM[55]) vsnfgb871.Name = _MEM[56] vsnfgb871.ResetOnSpawn = false vsnfgb871.IgnoreGuiInset = true vsnfgb871.DisplayOrder = 10000 vsnfgb871.Parent = vvg1c8x50 local v5bxjdx72 = Instance.new(_MEM[57]) v5bxjdx72.Name = _MEM[58] v5bxjdx72.BackgroundTransparency = 1 v5bxjdx72.AnchorPoint = Vector2.new(0.5, 0.5) v5bxjdx72.Size = UDim2.new(0, 32, 0, 32) v5bxjdx72.Visible = false v5bxjdx72.ZIndex = 100 v5bxjdx72.Image = _MEM[59] v5bxjdx72.Parent = vsnfgb871 local function vfir0dy6() local v2q3wl552, vxgkqs973 = pcall(function() return vvg1c8x50:FindFirstChild(_MEM[60]) end) if v2q3wl552 then return vxgkqs973 end return nil end local function vi419uf7(v2eqezx107) local vxgkqs973 = vfir0dy6() if not vxgkqs973 then return end pcall(function() if vxgkqs973:IsA(_MEM[61]) then vxgkqs973.Enabled = v2eqezx107 end vxgkqs973.Visible = v2eqezx107 for vwsx064159, v2jxmuw124 in ipairs(vxgkqs973:GetDescendants()) do if v2jxmuw124:IsA(_MEM[62]) then v2jxmuw124.Visible = v2eqezx107 end if (v2jxmuw124:IsA(_MEM[63]) or v2jxmuw124:IsA(_MEM[64])) and v2eqezx107 then v2jxmuw124.ImageTransparency = 0 end end end) end local function v1y0pst8(v1k3nqn162) v1k3nqn162 = v1k3nqn162 or v05svx553.CursorName or _MEM[65] v05svx553.CursorName = v1k3nqn162 local vpc5ppk74 for vwsx064159, vizeki158 in ipairs(vuo6s1m69) do if vizeki158.Name == v1k3nqn162 then vpc5ppk74 = vizeki158 break end end if not vpc5ppk74 then vpc5ppk74 = vuo6s1m69[1] end vi419uf7(false) v5bxjdx72.Visible = false local v2ssr6775 = math.clamp(tonumber(v05svx553.CursorSize) or 32, 8, 128) v5bxjdx72.Size = UDim2.new(0, v2ssr6775, 0, v2ssr6775) if vpc5ppk74.Id == nil or vpc5ppk74.Name == _MEM[66] then pcall(function() vuhdsez51.Icon = _MEM[67] v4ujnn442.MouseIconEnabled = true end) return end if vpc5ppk74.Id == _MEM[68] then vi419uf7(true) pcall(function() vuhdsez51.Icon = _MEM[69] v4ujnn442.MouseIconEnabled = true end) return end pcall(function() v4ujnn442.MouseIconEnabled = false vuhdsez51.Icon = _MEM[70] v5bxjdx72.Image = _MEM[71] .. tostring(vpc5ppk74.Id) v5bxjdx72.Visible = true end) end vrhdv5q43.RenderStepped:Connect(function() if v5bxjdx72.Visible then local v7x65qx76 = v4ujnn442:GetMouseLocation() v5bxjdx72.Position = UDim2.new(0, v7x65qx76.X, 0, v7x65qx76.Y) local v2ssr6775 = math.clamp(tonumber(v05svx553.CursorSize) or 32, 8, 128) v5bxjdx72.Size = UDim2.new(0, v2ssr6775, 0, v2ssr6775) end end) task.spawn(function() while true do task.wait(0.5) if v05svx553.CursorName and v05svx553.CursorName ~= _MEM[72] then v1y0pst8(v05svx553.CursorName) end end end) vvg1c8x50.ChildAdded:Connect(function(child) if child.Name == _MEM[73] and v05svx553.CursorName == _MEM[74] then task.wait(0.1) v1y0pst8(_MEM[75]) end end) local vjdcjfa77 = { _MEM[76],_MEM[77],_MEM[78],_MEM[79],_MEM[80],_MEM[81],_MEM[82], _MEM[83],_MEM[84],_MEM[85],_MEM[86],_MEM[87],_MEM[88],_MEM[89], _MEM[90],_MEM[91],_MEM[92],_MEM[93],_MEM[94],_MEM[95],_MEM[96], _MEM[97],_MEM[98],_MEM[99],_MEM[100],_MEM[101],_MEM[102],_MEM[103], _MEM[104],_MEM[105],_MEM[106],_MEM[107],_MEM[108], } local function vxqv13f9(part) if not part then return false end local vsgssmk78 = string.lower(part.Name or _MEM[109]) local ve8z7v479 = string.lower(part:GetFullName() or _MEM[110]) for i = 1, #vjdcjfa77 do if string.find(vsgssmk78, vjdcjfa77[i], 1, true) or string.find(ve8z7v479, vjdcjfa77[i], 1, true) then return true end end return false end local vbul6p680 = nil pcall(function() vbul6p680 = v4asvkp47:WaitForChild(_MEM[111], 8):WaitForChild(_MEM[112], 8) end) local function vmdqshn10() if not vbul6p680 then pcall(function() vbul6p680 = v4asvkp47.GameEvents.DeviceUpdate end) end if not vbul6p680 then return end local vp1ov2m81 = v05svx553.DeviceMode or _MEM[113] pcall(function() if vp1ov2m81 == _MEM[114] then vbul6p680:FireServer() pcall(function() vbul6p680:FireServer(_MEM[115]) end) pcall(function() vbul6p680:FireServer(_MEM[116]) end) elseif vp1ov2m81 == _MEM[117] then vbul6p680:FireServer(_MEM[118]) pcall(function() vbul6p680:FireServer(_MEM[119]) end) pcall(function() vbul6p680:FireServer(_MEM[120]) end) elseif vp1ov2m81 == _MEM[121] then vbul6p680:FireServer(_MEM[122]) pcall(function() vbul6p680:FireServer(_MEM[123]) end) end end) end local v2movjl82, originalMaterials, originalLighting, disabledFX, potatoConn = false, {}, {}, {}, nil local function v77r52o11(obj) for vwsx064159, plr in ipairs(vjiflwg41:GetPlayers()) do if plr.Character and obj:IsDescendantOf(plr.Character) then return true end end return false end local function v57qgkc12(vbe7j0b151) for vwsx064159, obj in ipairs(vbe7j0b151:GetDescendants()) do pcall(function() if obj:IsA(_MEM[124]) or obj:IsA(_MEM[125]) or obj:IsA(_MEM[126]) or obj:IsA(_MEM[127]) or obj:IsA(_MEM[128]) or obj:IsA(_MEM[129]) then if disabledFX[obj] == nil then disabledFX[obj] = obj.Enabled end obj.Enabled = false elseif obj:IsA(_MEM[130]) or obj:IsA(_MEM[131]) or obj:IsA(_MEM[132]) then if disabledFX[obj] == nil then disabledFX[obj] = obj.Enabled end obj.Enabled = false end end) end end local function vsh2zpd13(v2eqezx107) if v2eqezx107 then if v2movjl82 then return end v2movjl82 = true pcall(function() originalLighting.GlobalShadows = v56zfse44.GlobalShadows originalLighting.FogEnd = v56zfse44.FogEnd originalLighting.Brightness = v56zfse44.Brightness originalLighting.EnvironmentDiffuseScale = v56zfse44.EnvironmentDiffuseScale originalLighting.EnvironmentSpecularScale = v56zfse44.EnvironmentSpecularScale end) pcall(function() v56zfse44.GlobalShadows = false v56zfse44.FogEnd = 9e9 v56zfse44.Brightness = 2 v56zfse44.EnvironmentDiffuseScale = 0 v56zfse44.EnvironmentSpecularScale = 0 if settings and settings().Rendering then settings().Rendering.QualityLevel = Enum.QualityLevel.Level01 end end) pcall(function() for vwsx064159, fx in ipairs(v56zfse44:GetChildren()) do if fx:IsA(_MEM[133]) or fx:IsA(_MEM[134]) or fx:IsA(_MEM[135]) or fx:IsA(_MEM[136]) or fx:IsA(_MEM[137]) or fx:IsA(_MEM[138]) then if disabledFX[fx] == nil then disabledFX[fx] = fx.Enabled end fx.Enabled = false end end end) pcall(function() for vwsx064159, obj in ipairs(workspace:GetDescendants()) do if obj:IsA(_MEM[139]) and not v77r52o11(obj) then if originalMaterials[obj] == nil then originalMaterials[obj] = {Material=obj.Material, Reflectance=obj.Reflectance, CastShadow=obj.CastShadow} end obj.Material = Enum.Material.SmoothPlastic obj.Reflectance = 0 obj.CastShadow = false end end end) v57qgkc12(workspace) if potatoConn then potatoConn:Disconnect() end potatoConn = workspace.DescendantAdded:Connect(function(obj) if not v05svx553.Potato then return end task.defer(function() pcall(function() if obj:IsA(_MEM[140]) and not v77r52o11(obj) then originalMaterials[obj] = originalMaterials[obj] or {Material=obj.Material, Reflectance=obj.Reflectance, CastShadow=obj.CastShadow} obj.Material = Enum.Material.SmoothPlastic obj.Reflectance = 0 obj.CastShadow = false elseif obj:IsA(_MEM[141]) or obj:IsA(_MEM[142]) or obj:IsA(_MEM[143]) or obj:IsA(_MEM[144]) or obj:IsA(_MEM[145]) or obj:IsA(_MEM[146]) or obj:IsA(_MEM[147]) or obj:IsA(_MEM[148]) or obj:IsA(_MEM[149]) then obj.Enabled = false end end) end) end) else if not v2movjl82 then return end v2movjl82 = false if potatoConn then potatoConn:Disconnect(); potatoConn = nil end pcall(function() if originalLighting.GlobalShadows ~= nil then v56zfse44.GlobalShadows = originalLighting.GlobalShadows end if originalLighting.FogEnd then v56zfse44.FogEnd = originalLighting.FogEnd end if originalLighting.Brightness then v56zfse44.Brightness = originalLighting.Brightness end if originalLighting.EnvironmentDiffuseScale then v56zfse44.EnvironmentDiffuseScale = originalLighting.EnvironmentDiffuseScale end if originalLighting.EnvironmentSpecularScale then v56zfse44.EnvironmentSpecularScale = originalLighting.EnvironmentSpecularScale end if settings and settings().Rendering then settings().Rendering.QualityLevel = Enum.QualityLevel.Automatic end end) for fx, was in pairs(disabledFX) do pcall(function() if fx and fx.Parent then fx.Enabled = was end end) end disabledFX = {} for part, vd9921n56 in pairs(originalMaterials) do pcall(function() if part and part.Parent then part.Material = vd9921n56.Material part.Reflectance = vd9921n56.Reflectance part.CastShadow = vd9921n56.CastShadow end end) end originalMaterials, originalLighting = {}, {} end end local v3ipdi283 = Instance.new(_MEM[150]) v3ipdi283.Name = _MEM[151] v3ipdi283.ResetOnSpawn = false v3ipdi283.ZIndexBehavior = Enum.ZIndexBehavior.Sibling v3ipdi283.IgnoreGuiInset = true v3ipdi283.DisplayOrder = 999 v3ipdi283.Parent = vvg1c8x50 local vaujzni84 = vnsv1y348.ViewportSize local vocq2dp85 = Instance.new(_MEM[152]) vocq2dp85.Size = UDim2.new(0, math.min(560, vaujzni84.X - 30), 0, math.min(400, vaujzni84.Y - 60)) vocq2dp85.Position = UDim2.new(0.5, -vocq2dp85.Size.X.Offset / 2, 0.5, -vocq2dp85.Size.Y.Offset / 2) vocq2dp85.BackgroundColor3 = v6ydjpd62 vocq2dp85.BackgroundTransparency = vj5ltac68 vocq2dp85.BorderSizePixel = 0 vocq2dp85.Parent = v3ipdi283 Instance.new(_MEM[153], vocq2dp85).CornerRadius = UDim.new(0, 12) local v7j98rk86 = Instance.new(_MEM[154]) v7j98rk86.Size = UDim2.new(1, 0, 1, 0) v7j98rk86.BackgroundTransparency = 1 v7j98rk86.Image = _MEM[155] v7j98rk86.ScaleType = Enum.ScaleType.Crop v7j98rk86.ImageTransparency = T_IMG v7j98rk86.ZIndex = 0 v7j98rk86.Parent = vocq2dp85 Instance.new(_MEM[156], v7j98rk86).CornerRadius = UDim.new(0, 12) local vpjlpma87 = Instance.new(_MEM[157]) vpjlpma87.Size = UDim2.new(1, 0, 1, 0) vpjlpma87.BackgroundColor3 = Color3.fromRGB(5, 5, 10) vpjlpma87.BackgroundTransparency = T_DIM vpjlpma87.BorderSizePixel = 0 vpjlpma87.ZIndex = 1 vpjlpma87.Parent = vocq2dp85 Instance.new(_MEM[158], vpjlpma87).CornerRadius = UDim.new(0, 12) local vt74u7y88 = Instance.new(_MEM[159]) vt74u7y88.Size = UDim2.new(1, 0, 0, 42) vt74u7y88.BackgroundColor3 = vlzf6ih63 vt74u7y88.BackgroundTransparency = T_PANEL vt74u7y88.BorderSizePixel = 0 vt74u7y88.ZIndex = 3 vt74u7y88.Parent = vocq2dp85 Instance.new(_MEM[160], vt74u7y88).CornerRadius = UDim.new(0, 12) local v6mn2rn89 = Instance.new(_MEM[161]) v6mn2rn89.Size = UDim2.new(1, 0, 0, 12) v6mn2rn89.Position = UDim2.new(0, 0, 1, -12) v6mn2rn89.BackgroundColor3 = vlzf6ih63 v6mn2rn89.BackgroundTransparency = T_PANEL v6mn2rn89.BorderSizePixel = 0 v6mn2rn89.ZIndex = 3 v6mn2rn89.Parent = vt74u7y88 local vmzqy1m90 = Instance.new(_MEM[162]) vmzqy1m90.Size = UDim2.new(1, 0, 0, 2) vmzqy1m90.Position = UDim2.new(0, 0, 1, -2) vmzqy1m90.BackgroundColor3 = vauoe0p61 vmzqy1m90.BorderSizePixel = 0 vmzqy1m90.ZIndex = 4 vmzqy1m90.Parent = vt74u7y88 local vpkk30591 = Instance.new(_MEM[163]) vpkk30591.Size = UDim2.new(1, -40, 1, 0) vpkk30591.Position = UDim2.new(0, 14, 0, 0) vpkk30591.BackgroundTransparency = 1 vpkk30591.Text = _MEM[164] vpkk30591.TextColor3 = v04hbhz65 vpkk30591.TextSize = 14 vpkk30591.Font = vphd25467 vpkk30591.TextXAlignment = Enum.TextXAlignment.Left vpkk30591.ZIndex = 4 vpkk30591.Parent = vt74u7y88 local vm89nud92 = Instance.new(_MEM[165]) vm89nud92.Size = UDim2.new(0, 28, 0, 28) vm89nud92.Position = UDim2.new(1, -34, 0.5, -14) vm89nud92.BackgroundColor3 = Color3.fromRGB(32, 28, 40) vm89nud92.BackgroundTransparency = 0.3 vm89nud92.Text = _MEM[166] vm89nud92.TextColor3 = vhceak966 vm89nud92.TextSize = 14 vm89nud92.Font = vphd25467 vm89nud92.ZIndex = 4 vm89nud92.Parent = vt74u7y88 Instance.new(_MEM[167], vm89nud92).CornerRadius = UDim.new(0, 6) local vwevvw493 = Instance.new(_MEM[168]) vwevvw493.Size = UDim2.new(0, 110, 1, -52) vwevvw493.Position = UDim2.new(0, 8, 0, 48) vwevvw493.BackgroundColor3 = vlzf6ih63 vwevvw493.BackgroundTransparency = T_PANEL vwevvw493.BorderSizePixel = 0 vwevvw493.ScrollBarThickness = 2 vwevvw493.AutomaticCanvasSize = Enum.AutomaticSize.Y vwevvw493.CanvasSize = UDim2.new(0, 0, 0, 0) vwevvw493.ZIndex = 3 vwevvw493.Parent = vocq2dp85 Instance.new(_MEM[169], vwevvw493).CornerRadius = UDim.new(0, 8) local vm6uhzl94 = Instance.new(_MEM[170]) vm6uhzl94.Padding = UDim.new(0, 4) vm6uhzl94.Parent = vwevvw493 local vuj4ewo95 = Instance.new(_MEM[171]) vuj4ewo95.PaddingTop = UDim.new(0, 6) vuj4ewo95.PaddingLeft = UDim.new(0, 6) vuj4ewo95.PaddingRight = UDim.new(0, 6) vuj4ewo95.PaddingBottom = UDim.new(0, 6) vuj4ewo95.Parent = vwevvw493 local vos63p896 = Instance.new(_MEM[172]) vos63p896.Size = UDim2.new(1, -132, 1, -56) vos63p896.Position = UDim2.new(0, 124, 0, 50) vos63p896.BackgroundTransparency = 1 vos63p896.ZIndex = 3 vos63p896.Parent = vocq2dp85 local v9zdoou97, TabBtns = {}, {} local function ve0cq3w14(v1k3nqn162) for vsgssmk78, p in pairs(v9zdoou97) do p.Visible = (vsgssmk78 == v1k3nqn162) end for vsgssmk78, b in pairs(TabBtns) do b.BackgroundColor3 = (vsgssmk78 == v1k3nqn162) and Color3.fromRGB(35, 30, 55) or Color3.fromRGB(22, 22, 30) b.BackgroundTransparency = 0.35 b.TextColor3 = (vsgssmk78 == v1k3nqn162) and vauoe0p61 or vhceak966 end vdlivuy5() end local function vabh7je15(v1k3nqn162) local vj6ct9n98 = Instance.new(_MEM[173]) vj6ct9n98.Size = UDim2.new(1, 0, 1, 0) vj6ct9n98.BackgroundTransparency = 1 vj6ct9n98.BorderSizePixel = 0 vj6ct9n98.ScrollBarThickness = 3 vj6ct9n98.ScrollBarImageColor3 = vauoe0p61 vj6ct9n98.AutomaticCanvasSize = Enum.AutomaticSize.Y vj6ct9n98.CanvasSize = UDim2.new(0, 0, 0, 0) vj6ct9n98.Visible = false vj6ct9n98.ZIndex = 3 vj6ct9n98.Parent = vos63p896 local vmxkpkw99 = Instance.new(_MEM[174]) vmxkpkw99.Padding = UDim.new(0, 6) vmxkpkw99.SortOrder = Enum.SortOrder.LayoutOrder vmxkpkw99.Parent = vj6ct9n98 local vbm441b100 = Instance.new(_MEM[175]) vbm441b100.PaddingTop = UDim.new(0, 2) vbm441b100.PaddingBottom = UDim.new(0, 10) vbm441b100.PaddingRight = UDim.new(0, 4) vbm441b100.Parent = vj6ct9n98 vj6ct9n98:SetAttribute(_MEM[176], 0) v9zdoou97[v1k3nqn162] = vj6ct9n98 local v00u11j101 = Instance.new(_MEM[177]) v00u11j101.Size = UDim2.new(1, 0, 0, 30) v00u11j101.BackgroundColor3 = Color3.fromRGB(22, 22, 30) v00u11j101.BackgroundTransparency = 0.35 v00u11j101.Text = v1k3nqn162 v00u11j101.TextColor3 = vhceak966 v00u11j101.TextSize = 12 v00u11j101.Font = vphd25467 v00u11j101.ZIndex = 4 v00u11j101.Parent = vwevvw493 Instance.new(_MEM[178], v00u11j101).CornerRadius = UDim.new(0, 6) v00u11j101.MouseButton1Click:Connect(function() ve0cq3w14(v1k3nqn162) end) TabBtns[v1k3nqn162] = v00u11j101 return vj6ct9n98 end local function v1rpycj16(vj6ct9n98) local vo1oo6w57 = (vj6ct9n98:GetAttribute(_MEM[179]) or 0) + 1 vj6ct9n98:SetAttribute(_MEM[180], vo1oo6w57) return vo1oo6w57 end local function v7lxyui17(vj6ct9n98, title) local vbz5yo2102 = Instance.new(_MEM[181]) vbz5yo2102.LayoutOrder = v1rpycj16(vj6ct9n98) vbz5yo2102.Size = UDim2.new(1, 0, 0, 16) vbz5yo2102.BackgroundTransparency = 1 vbz5yo2102.Text = string.upper(title) vbz5yo2102.TextColor3 = vauoe0p61 vbz5yo2102.TextSize = 11 vbz5yo2102.Font = vphd25467 vbz5yo2102.TextXAlignment = Enum.TextXAlignment.Left vbz5yo2102.ZIndex = 4 vbz5yo2102.Parent = vj6ct9n98 end local vgevcjx103, ESPHL = {}, {} local function v6ndif718() for p, v2jxmuw124 in pairs(vgevcjx103) do pcall(function() for vwsx064159, x in pairs(v2jxmuw124) do if type(x) == _MEM[182] then for vwsx064159, vbz5yo2102 in pairs(x) do if vbz5yo2102 then pcall(function() vbz5yo2102:Remove() end) end end elseif x then pcall(function() x:Remove() end) end end end) vgevcjx103[p] = nil end for p, vvw012r135 in pairs(ESPHL) do pcall(function() if vvw012r135 then vvw012r135:Destroy() end end) ESPHL[p] = nil end end local function v472e8d19(vj6ct9n98, label, vm5zwva156) local vz560y7104 = Instance.new(_MEM[183]) vz560y7104.LayoutOrder = v1rpycj16(vj6ct9n98) vz560y7104.Size = UDim2.new(1, 0, 0, 34) vz560y7104.BackgroundColor3 = v0wakwm64 vz560y7104.BackgroundTransparency = T_CARD vz560y7104.BorderSizePixel = 0 vz560y7104.ZIndex = 4 vz560y7104.Parent = vj6ct9n98 Instance.new(_MEM[184], vz560y7104).CornerRadius = UDim.new(0, 8) local v11lwdb60 = Instance.new(_MEM[185]) v11lwdb60.Size = UDim2.new(1, -60, 1, 0) v11lwdb60.Position = UDim2.new(0, 10, 0, 0) v11lwdb60.BackgroundTransparency = 1 v11lwdb60.Text = label v11lwdb60.TextColor3 = v04hbhz65 v11lwdb60.TextSize = 12 v11lwdb60.Font = vphd25467 v11lwdb60.TextXAlignment = Enum.TextXAlignment.Left v11lwdb60.ZIndex = 5 v11lwdb60.Parent = vz560y7104 local v2rqbov105 = Instance.new(_MEM[186]) v2rqbov105.Size = UDim2.new(0, 40, 0, 20) v2rqbov105.Position = UDim2.new(1, -48, 0.5, -10) v2rqbov105.BackgroundColor3 = v05svx553[vm5zwva156] and vauoe0p61 or Color3.fromRGB(45, 45, 58) v2rqbov105.BackgroundTransparency = 0.15 v2rqbov105.Text = _MEM[187] v2rqbov105.ZIndex = 5 v2rqbov105.Parent = vz560y7104 Instance.new(_MEM[188], v2rqbov105).CornerRadius = UDim.new(1, 0) local vpm88f2106 = Instance.new(_MEM[189]) vpm88f2106.Size = UDim2.new(0, 14, 0, 14) vpm88f2106.Position = v05svx553[vm5zwva156] and UDim2.new(1, -17, 0.5, -7) or UDim2.new(0, 3, 0.5, -7) vpm88f2106.BackgroundColor3 = Color3.new(1, 1, 1) vpm88f2106.BorderSizePixel = 0 vpm88f2106.ZIndex = 6 vpm88f2106.Parent = v2rqbov105 Instance.new(_MEM[190], vpm88f2106).CornerRadius = UDim.new(1, 0) v2rqbov105.MouseButton1Click:Connect(function() v05svx553[vm5zwva156] = not v05svx553[vm5zwva156] local v2eqezx107 = v05svx553[vm5zwva156] v2rqbov105.BackgroundColor3 = v2eqezx107 and vauoe0p61 or Color3.fromRGB(45, 45, 58) vpm88f2106.Position = v2eqezx107 and UDim2.new(1, -17, 0.5, -7) or UDim2.new(0, 3, 0.5, -7) if vm5zwva156 == _MEM[191] then v6ndif718() end if vm5zwva156 == _MEM[192] and v2eqezx107 then v05svx553.Aimbot = true end if vm5zwva156 == _MEM[193] and v2eqezx107 then vmdqshn10() end if vm5zwva156 == _MEM[194] then vsh2zpd13(v2eqezx107) end vh5gecp3(v05svx553.ConfigName) vdlivuy5() end) end local function vjpf3dc20(vj6ct9n98, label, vm5zwva156, min, max, vt7dbxj150) local vz560y7104 = Instance.new(_MEM[195]) vz560y7104.LayoutOrder = v1rpycj16(vj6ct9n98) vz560y7104.Size = UDim2.new(1, 0, 0, 48) vz560y7104.BackgroundColor3 = v0wakwm64 vz560y7104.BackgroundTransparency = T_CARD vz560y7104.BorderSizePixel = 0 vz560y7104.ZIndex = 4 vz560y7104.Parent = vj6ct9n98 Instance.new(_MEM[196], vz560y7104).CornerRadius = UDim.new(0, 8) local v11lwdb60 = Instance.new(_MEM[197]) v11lwdb60.Size = UDim2.new(0.65, 0, 0, 16) v11lwdb60.Position = UDim2.new(0, 10, 0, 4) v11lwdb60.BackgroundTransparency = 1 v11lwdb60.Text = label v11lwdb60.TextColor3 = v04hbhz65 v11lwdb60.TextSize = 11 v11lwdb60.Font = vphd25467 v11lwdb60.TextXAlignment = Enum.TextXAlignment.Left v11lwdb60.ZIndex = 5 v11lwdb60.Parent = vz560y7104 local v7nqw6m108 = Instance.new(_MEM[198]) v7nqw6m108.Size = UDim2.new(0.3, -8, 0, 16) v7nqw6m108.Position = UDim2.new(0.7, 0, 0, 4) v7nqw6m108.BackgroundTransparency = 1 v7nqw6m108.Text = tostring(v05svx553[vm5zwva156]) v7nqw6m108.TextColor3 = vauoe0p61 v7nqw6m108.TextSize = 11 v7nqw6m108.Font = vphd25467 v7nqw6m108.TextXAlignment = Enum.TextXAlignment.Right v7nqw6m108.ZIndex = 5 v7nqw6m108.Parent = vz560y7104 local vzj3dqy109 = Instance.new(_MEM[199]) vzj3dqy109.Size = UDim2.new(1, -20, 0, 8) vzj3dqy109.Position = UDim2.new(0, 10, 0, 28) vzj3dqy109.BackgroundColor3 = Color3.fromRGB(40, 40, 55) vzj3dqy109.BackgroundTransparency = 0.25 vzj3dqy109.Text = _MEM[200] vzj3dqy109.ZIndex = 5 vzj3dqy109.Parent = vz560y7104 Instance.new(_MEM[201], vzj3dqy109).CornerRadius = UDim.new(1, 0) local v41z05i110 = Instance.new(_MEM[202]) v41z05i110.Size = UDim2.new(math.clamp((v05svx553[vm5zwva156] - min) / math.max(max - min, 0.001), 0, 1), 0, 1, 0) v41z05i110.BackgroundColor3 = vauoe0p61 v41z05i110.BorderSizePixel = 0 v41z05i110.ZIndex = 6 v41z05i110.Parent = vzj3dqy109 Instance.new(_MEM[203], v41z05i110).CornerRadius = UDim.new(1, 0) local function vgi5xuy21(x) local vki5l6p111 = math.clamp((x - vzj3dqy109.AbsolutePosition.X) / math.max(vzj3dqy109.AbsoluteSize.X, 1), 0, 1) local vk3af50112 = min + vki5l6p111 * (max - min) vk3af50112 = math.floor(vk3af50112 / vt7dbxj150 + 0.5) * vt7dbxj150 vk3af50112 = math.clamp(vk3af50112, min, max) v05svx553[vm5zwva156] = vk3af50112 v41z05i110.Size = UDim2.new((vk3af50112 - min) / math.max(max - min, 0.001), 0, 1, 0) v7nqw6m108.Text = tostring(vk3af50112) if vm5zwva156 == _MEM[204] then local v2ssr6775 = math.clamp(vk3af50112, 8, 128) v5bxjdx72.Size = UDim2.new(0, v2ssr6775, 0, v2ssr6775) end vh5gecp3(v05svx553.ConfigName) end vzj3dqy109.MouseButton1Down:Connect(function() local v0e7f2f113, c2 v0e7f2f113 = v4ujnn442.InputChanged:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseMovement or i.UserInputType == Enum.UserInputType.Touch then vgi5xuy21(i.Position.X) end end) c2 = v4ujnn442.InputEnded:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then if v0e7f2f113 then v0e7f2f113:Disconnect() end if c2 then c2:Disconnect() end end end) vgi5xuy21(v4ujnn442:GetMouseLocation().X) end) end local function vzyf99t22(vj6ct9n98, label, vm5zwva156, options) local vz560y7104 = Instance.new(_MEM[205]) vz560y7104.LayoutOrder = v1rpycj16(vj6ct9n98) vz560y7104.Size = UDim2.new(1, 0, 0, 34) vz560y7104.BackgroundColor3 = v0wakwm64 vz560y7104.BackgroundTransparency = T_CARD vz560y7104.BorderSizePixel = 0 vz560y7104.ZIndex = 4 vz560y7104.Parent = vj6ct9n98 Instance.new(_MEM[206], vz560y7104).CornerRadius = UDim.new(0, 8) local v11lwdb60 = Instance.new(_MEM[207]) v11lwdb60.Size = UDim2.new(0.4, 0, 1, 0) v11lwdb60.Position = UDim2.new(0, 10, 0, 0) v11lwdb60.BackgroundTransparency = 1 v11lwdb60.Text = label v11lwdb60.TextColor3 = v04hbhz65 v11lwdb60.TextSize = 12 v11lwdb60.Font = vphd25467 v11lwdb60.TextXAlignment = Enum.TextXAlignment.Left v11lwdb60.ZIndex = 5 v11lwdb60.Parent = vz560y7104 local v0sa6lp114 = 1 for i, vo1oo6w57 in ipairs(options) do if vo1oo6w57 == v05svx553[vm5zwva156] then v0sa6lp114 = i end end local v00u11j101 = Instance.new(_MEM[208]) v00u11j101.Size = UDim2.new(0.55, -12, 0, 22) v00u11j101.Position = UDim2.new(0.45, 0, 0.5, -11) v00u11j101.BackgroundColor3 = Color3.fromRGB(35, 32, 48) v00u11j101.BackgroundTransparency = 0.25 v00u11j101.Text = tostring(v05svx553[vm5zwva156]) v00u11j101.TextColor3 = vauoe0p61 v00u11j101.TextSize = 11 v00u11j101.Font = vphd25467 v00u11j101.ZIndex = 5 v00u11j101.Parent = vz560y7104 Instance.new(_MEM[209], v00u11j101).CornerRadius = UDim.new(0, 6) v00u11j101.MouseButton1Click:Connect(function() v0sa6lp114 = v0sa6lp114 % #options + 1 v05svx553[vm5zwva156] = options[v0sa6lp114] v00u11j101.Text = options[v0sa6lp114] if vm5zwva156 == _MEM[210] and v05svx553.DeviceSpoof then vmdqshn10() end if vm5zwva156 == _MEM[211] then v1y0pst8(v05svx553.CursorName) end vh5gecp3(v05svx553.ConfigName) vdlivuy5() end) end local function vrx0ulj23(vj6ct9n98, label, vm5zwva156, ph) local vz560y7104 = Instance.new(_MEM[212]) vz560y7104.LayoutOrder = v1rpycj16(vj6ct9n98) vz560y7104.Size = UDim2.new(1, 0, 0, 56) vz560y7104.BackgroundColor3 = v0wakwm64 vz560y7104.BackgroundTransparency = T_CARD vz560y7104.BorderSizePixel = 0 vz560y7104.ZIndex = 4 vz560y7104.Parent = vj6ct9n98 Instance.new(_MEM[213], vz560y7104).CornerRadius = UDim.new(0, 8) local v11lwdb60 = Instance.new(_MEM[214]) v11lwdb60.Size = UDim2.new(1, -16, 0, 16) v11lwdb60.Position = UDim2.new(0, 10, 0, 4) v11lwdb60.BackgroundTransparency = 1 v11lwdb60.Text = label v11lwdb60.TextColor3 = vhceak966 v11lwdb60.TextSize = 11 v11lwdb60.Font = vphd25467 v11lwdb60.TextXAlignment = Enum.TextXAlignment.Left v11lwdb60.ZIndex = 5 v11lwdb60.Parent = vz560y7104 local vgyek9r115 = Instance.new(_MEM[215]) vgyek9r115.Size = UDim2.new(1, -20, 0, 24) vgyek9r115.Position = UDim2.new(0, 10, 0, 24) vgyek9r115.BackgroundColor3 = Color3.fromRGB(14, 14, 20) vgyek9r115.BackgroundTransparency = 0.3 vgyek9r115.BorderSizePixel = 0 vgyek9r115.Text = tostring(v05svx553[vm5zwva156] or ph or _MEM[216]) vgyek9r115.PlaceholderText = ph or _MEM[217] vgyek9r115.TextColor3 = v04hbhz65 vgyek9r115.TextSize = 12 vgyek9r115.Font = vphd25467 vgyek9r115.ClearTextOnFocus = false vgyek9r115.ZIndex = 5 vgyek9r115.Parent = vz560y7104 Instance.new(_MEM[218], vgyek9r115).CornerRadius = UDim.new(0, 6) vgyek9r115.FocusLost:Connect(function() local vk3af50112 = vgyek9r115.Text if not vk3af50112 or vk3af50112 == _MEM[219] then vk3af50112 = ph or _MEM[220]; vgyek9r115.Text = vk3af50112 end v05svx553[vm5zwva156] = vk3af50112 vh5gecp3(v05svx553.ConfigName) vdlivuy5() end) end local function vwda8sx24(vj6ct9n98, label, fn) local v00u11j101 = Instance.new(_MEM[221]) v00u11j101.LayoutOrder = v1rpycj16(vj6ct9n98) v00u11j101.Size = UDim2.new(1, 0, 0, 32) v00u11j101.BackgroundColor3 = Color3.fromRGB(35, 30, 55) v00u11j101.BackgroundTransparency = 0.3 v00u11j101.Text = label v00u11j101.TextColor3 = vauoe0p61 v00u11j101.TextSize = 12 v00u11j101.Font = vphd25467 v00u11j101.ZIndex = 4 v00u11j101.Parent = vj6ct9n98 Instance.new(_MEM[222], v00u11j101).CornerRadius = UDim.new(0, 8) v00u11j101.MouseButton1Click:Connect(function() fn() vdlivuy5() end) end local v5fctvh116 = vabh7je15(_MEM[223]) local vjrf4m5117 = vabh7je15(_MEM[224]) local vx970e9118 = vabh7je15(_MEM[225]) local vo7v0j8119 = vabh7je15(_MEM[226]) local vmndequ120 = vabh7je15(_MEM[227]) local vd99dpb121 = vabh7je15(_MEM[228]) local v97ti7g122 = vabh7je15(_MEM[229]) v7lxyui17(v5fctvh116, _MEM[230]) v472e8d19(v5fctvh116, _MEM[231], _MEM[232]) vzyf99t22(v5fctvh116, _MEM[233], _MEM[234], {_MEM[235], _MEM[236], _MEM[237], _MEM[238], _MEM[239]}) vzyf99t22(v5fctvh116, _MEM[240], _MEM[241], {_MEM[242], _MEM[243], _MEM[244]}) vjpf3dc20(v5fctvh116, _MEM[245], _MEM[246], 40, 350, 1) vjpf3dc20(v5fctvh116, _MEM[247], _MEM[248], 0.1, 1, 0.05) v472e8d19(v5fctvh116, _MEM[249], _MEM[250]) v472e8d19(v5fctvh116, _MEM[251], _MEM[252]) v472e8d19(v5fctvh116, _MEM[253], _MEM[254]) v472e8d19(v5fctvh116, _MEM[255], _MEM[256]) vjpf3dc20(v5fctvh116, _MEM[257], _MEM[258], 0, 0.35, 0.01) v7lxyui17(v5fctvh116, _MEM[259]) v472e8d19(v5fctvh116, _MEM[260], _MEM[261]) vjpf3dc20(v5fctvh116, _MEM[262], _MEM[263], 10, 120, 1) v472e8d19(v5fctvh116, _MEM[264], _MEM[265]) vjpf3dc20(v5fctvh116, _MEM[266], _MEM[267], 0, 1, 0.05) v7lxyui17(vjrf4m5117, _MEM[268]) v472e8d19(vjrf4m5117, _MEM[269], _MEM[270]) vjpf3dc20(vjrf4m5117, _MEM[271], _MEM[272], 16, 80, 1) v472e8d19(vjrf4m5117, _MEM[273], _MEM[274]) v472e8d19(vjrf4m5117, _MEM[275], _MEM[276]) v472e8d19(vjrf4m5117, _MEM[277], _MEM[278]) v7lxyui17(vjrf4m5117, _MEM[279]) v472e8d19(vjrf4m5117, _MEM[280], _MEM[281]) vzyf99t22(vjrf4m5117, _MEM[282], _MEM[283], {_MEM[284], _MEM[285], _MEM[286]}) vjpf3dc20(vjrf4m5117, _MEM[287], _MEM[288], 0.5, 5, 0.1) vwda8sx24(vjrf4m5117, _MEM[289], function() vmdqshn10() end) v7lxyui17(vx970e9118, _MEM[290]) v472e8d19(vx970e9118, _MEM[291], _MEM[292]) vrx0ulj23(vx970e9118, _MEM[293], _MEM[294], _MEM[295]) v472e8d19(vx970e9118, _MEM[296], _MEM[297]) v7lxyui17(vo7v0j8119, _MEM[298]) v472e8d19(vo7v0j8119, _MEM[299], _MEM[300]) v472e8d19(vo7v0j8119, _MEM[301], _MEM[302]) v472e8d19(vo7v0j8119, _MEM[303], _MEM[304]) v7lxyui17(vmndequ120, _MEM[305]) v472e8d19(vmndequ120, _MEM[306], _MEM[307]) vjpf3dc20(vmndequ120, _MEM[308], _MEM[309], 0.1, 1, 0.05) vjpf3dc20(vmndequ120, _MEM[310], _MEM[311], 40, 350, 1) v472e8d19(vmndequ120, _MEM[312], _MEM[313]) v7lxyui17(vd99dpb121, _MEM[314]) v472e8d19(vd99dpb121, _MEM[315], _MEM[316]) v472e8d19(vd99dpb121, _MEM[317], _MEM[318]) vzyf99t22(vd99dpb121, _MEM[319], _MEM[320], {_MEM[321], _MEM[322], _MEM[323]}) v472e8d19(vd99dpb121, _MEM[324], _MEM[325]) v472e8d19(vd99dpb121, _MEM[326], _MEM[327]) v472e8d19(vd99dpb121, _MEM[328], _MEM[329]) v472e8d19(vd99dpb121, _MEM[330], _MEM[331]) v7lxyui17(vd99dpb121, _MEM[332]) v472e8d19(vd99dpb121, _MEM[333], _MEM[334]) vjpf3dc20(vd99dpb121, _MEM[335], _MEM[336], 80, 220, 5) vjpf3dc20(vd99dpb121, _MEM[337], _MEM[338], 50, 400, 10) v7lxyui17(vd99dpb121, _MEM[339]) vzyf99t22(vd99dpb121, _MEM[340], _MEM[341], verdsow70) vjpf3dc20(vd99dpb121, _MEM[342], _MEM[343], 8, 128, 1) for vwsx064159, vizeki158 in ipairs(vuo6s1m69) do vwda8sx24(vd99dpb121, vizeki158.Name, function() v1y0pst8(vizeki158.Name) vh5gecp3(v05svx553.ConfigName) end) end v7lxyui17(v97ti7g122, _MEM[344]) vrx0ulj23(v97ti7g122, _MEM[345], _MEM[346], _MEM[347]) vwda8sx24(v97ti7g122, _MEM[348], function() vh5gecp3(v05svx553.ConfigName) end) vwda8sx24(v97ti7g122, _MEM[349], function() vuoit2v4(v05svx553.ConfigName) end) v472e8d19(v97ti7g122, _MEM[350], _MEM[351]) v472e8d19(v97ti7g122, _MEM[352], _MEM[353]) ve0cq3w14(_MEM[354]) local vgfj12x123, d0, p0 vt74u7y88.InputBegan:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then vgfj12x123 = true d0 = i.Position p0 = vocq2dp85.Position vdlivuy5() end end) vt74u7y88.InputEnded:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then vgfj12x123 = false end end) v4ujnn442.InputChanged:Connect(function(i) if vgfj12x123 and (i.UserInputType == Enum.UserInputType.MouseMovement or i.UserInputType == Enum.UserInputType.Touch) then local v2jxmuw124 = i.Position - d0 vocq2dp85.Position = UDim2.new(p0.X.Scale, p0.X.Offset + v2jxmuw124.X, p0.Y.Scale, p0.Y.Offset + v2jxmuw124.Y) end end) local function vqttnpy25(vk3af50112) vocq2dp85.Visible = vk3af50112 vdlivuy5() end vm89nud92.MouseButton1Click:Connect(function() vqttnpy25(false) end) v4ujnn442.InputBegan:Connect(function(i) if i.KeyCode == Enum.KeyCode.RightControl or i.KeyCode == Enum.KeyCode.LeftControl then vqttnpy25(not vocq2dp85.Visible) end end) vrhdv5q43.RenderStepped:Connect(function() if vocq2dp85.Visible then vdlivuy5() end end) vqttnpy25(true) task.spawn(function() while true do local v2jxmuw124 = tonumber(v05svx553.DeviceSpoofDelay) or 1.5 if v2jxmuw124 < 0.4 then v2jxmuw124 = 0.4 end task.wait(v2jxmuw124) if v05svx553.DeviceSpoof then vmdqshn10() end end end) local vhitxig125 = { MB1 = Enum.UserInputType.MouseButton1, MB2 = Enum.UserInputType.MouseButton2, E = Enum.KeyCode.E, Q = Enum.KeyCode.Q, F = Enum.KeyCode.F, } local v1fepvt126, Shooting, lastPitch, lastShot = false, false, 0, 0 local vkh59fz127 = nil local vpwrlo9128 = _MEM[355] local vumaal8129 = 33054943 local v8n58t8130 = {51, 100, 255} local v5gqb0c131, currentMin, lastCycle, flagged = 1, 51, 0, {} local vwb39td132 = Color3.fromRGB(170, 0, 255) local function vh6hpik26(cls) if not vtjh44t59 then return nil end local v2q3wl552, vo1oo6w57 = pcall(function() return Drawing.new(cls) end) if v2q3wl552 then return vo1oo6w57 end return nil end local vwoergk133, radarBorder, radarCenter, radarCrossH, radarCrossV local vgdqssv134 = {} local function vyyh1vi27() if not vtjh44t59 or vwoergk133 then return end vwoergk133 = vh6hpik26(_MEM[356]) if vwoergk133 then vwoergk133.Filled = true vwoergk133.Color = Color3.fromRGB(10, 10, 14) vwoergk133.Transparency = 0.35 vwoergk133.NumSides = 64 vwoergk133.Visible = false end radarBorder = vh6hpik26(_MEM[357]) if radarBorder then radarBorder.Filled = false radarBorder.Thickness = 1.5 radarBorder.Color = vauoe0p61 radarBorder.NumSides = 64 radarBorder.Visible = false end radarCenter = vh6hpik26(_MEM[358]) if radarCenter then radarCenter.Filled = true radarCenter.Color = Color3.fromRGB(0, 255, 120) radarCenter.Radius = 3 radarCenter.NumSides = 12 radarCenter.Visible = false end radarCrossH = vh6hpik26(_MEM[359]) if radarCrossH then radarCrossH.Thickness = 1; radarCrossH.Color = Color3.fromRGB(60, 60, 80); radarCrossH.Visible = false end radarCrossV = vh6hpik26(_MEM[360]) if radarCrossV then radarCrossV.Thickness = 1; radarCrossV.Color = Color3.fromRGB(60, 60, 80); radarCrossV.Visible = false end end local function v7banz028() if vwoergk133 then vwoergk133.Visible = false end if radarBorder then radarBorder.Visible = false end if radarCenter then radarCenter.Visible = false end if radarCrossH then radarCrossH.Visible = false end if radarCrossV then radarCrossV.Visible = false end for vwsx064159, v2jxmuw124 in pairs(vgdqssv134) do pcall(function() if v2jxmuw124 then v2jxmuw124.Visible = false end end) end end local function v4fcyz229(p) if not p then return nil end local v2q3wl552, vizeki158 = pcall(function() return p.Character end) if v2q3wl552 then return vizeki158 end return nil end local function vdpodfu30(p) local vizeki158 = v4fcyz229(p) if not vizeki158 then return false end local vvw012r135 = vizeki158:FindFirstChildOfClass(_MEM[361]) return vvw012r135 and vvw012r135.Health > 0 end local function vcuhxdb31(p) if not p or p == vpl2xfl49 then return false end if not v05svx553.TeamCheck then return true end local ved7t79136, a = pcall(function() return vpl2xfl49.Team end) local vqxyyh7137, b = pcall(function() return p.Team end) if ved7t79136 and vqxyyh7137 and a and b then return a ~= b end return true end local function v666uam32(part) if not part or not part:IsA(_MEM[362]) then return true end if vxqv13f9(part) then return false end if part.CanCollide == false and part.Transparency >= 0.3 then return true end if part.Transparency >= 0.75 then return true end local vsgssmk78 = string.lower(part.Name or _MEM[363]) local ve8z7v479 = string.lower(part:GetFullName() or _MEM[364]) if string.find(vsgssmk78, _MEM[365], 1, true) then return true end if string.find(ve8z7v479, _MEM[366], 1, true) or string.find(ve8z7v479, _MEM[367], 1, true) then return true end return false end local function vez04d933(player) if not v05svx553.WallCheck then return true end local vp1c105138 = v4fcyz229(player) local vqobnay139 = vp1c105138 and vp1c105138:FindFirstChild(_MEM[368]) if not vqobnay139 then return false end local vjphfye140 = v4fcyz229(vpl2xfl49) local vnw08in141 = vnsv1y348.CFrame.Position + vnsv1y348.CFrame.LookVector * 1.2 local vlikqm2142 = vqobnay139.Position local vi4n4da143 = vlikqm2142 - vnw08in141 local vxyjnlc144 = vi4n4da143.Magnitude if vxyjnlc144 < 2 then return true end local vltufsd145 = {vp1c105138, vnsv1y348} if vjphfye140 then table.insert(vltufsd145, vjphfye140) end local vl7w8xg146 = RaycastParams.new() vl7w8xg146.FilterType = Enum.RaycastFilterType.Exclude vl7w8xg146.FilterDescendantsInstances = vltufsd145 vl7w8xg146.IgnoreWater = true local vfk7go6147, v7x65qx76, unit = 0, vnw08in141, vi4n4da143.Unit for vwsx064159 = 1, 8 do local vhq2x92148 = vxyjnlc144 - vfk7go6147 if vhq2x92148 <= 0.1 then return true end local v1nkrec149 = workspace:Raycast(v7x65qx76, unit * vhq2x92148, vl7w8xg146) if v1nkrec149 == nil then return true end if v1nkrec149.Instance and v1nkrec149.Instance:IsDescendantOf(vp1c105138) then return true end if (v1nkrec149.Position - vnw08in141).Magnitude < 1.2 and not vxqv13f9(v1nkrec149.Instance) then table.insert(vltufsd145, v1nkrec149.Instance) vl7w8xg146.FilterDescendantsInstances = vltufsd145 v7x65qx76 = v1nkrec149.Position + unit * 0.15 vfk7go6147 = vfk7go6147 + 0.15 elseif v666uam32(v1nkrec149.Instance) then table.insert(vltufsd145, v1nkrec149.Instance) vl7w8xg146.FilterDescendantsInstances = vltufsd145 local vt7dbxj150 = (v1nkrec149.Position - v7x65qx76).Magnitude v7x65qx76 = v1nkrec149.Position + unit * 0.12 vfk7go6147 = vfk7go6147 + vt7dbxj150 + 0.12 else return false end end return false end local function vszm7rm34(vqobnay139, vp1c105138) if not v05svx553.Prediction or not vqobnay139 then return vqobnay139.Position end local vbe7j0b151 = vp1c105138 and (vp1c105138:FindFirstChild(_MEM[369]) or vp1c105138:FindFirstChild(_MEM[370])) local v1unx9x152 = Vector3.zero if vbe7j0b151 then pcall(function() v1unx9x152 = vbe7j0b151.AssemblyLinearVelocity end) end return vqobnay139.Position + v1unx9x152 * (tonumber(v05svx553.PredictAmount) or 0.12) end local function v1zfqyg35(fov, needVis) local vru2ofm153, bd = nil, fov local vzps3td154 = vnsv1y348.ViewportSize / 2 for vwsx064159, plr in ipairs(vjiflwg41:GetPlayers()) do if plr and plr ~= vpl2xfl49 and vcuhxdb31(plr) and vdpodfu30(plr) then local vp1c105138 = v4fcyz229(plr) local vqobnay139 = vp1c105138 and vp1c105138:FindFirstChild(_MEM[371]) if vqobnay139 then local vu3zfrc155 = vszm7rm34(vqobnay139, vp1c105138) local v7x65qx76, v2eqezx107 = vnsv1y348:WorldToViewportPoint(vu3zfrc155) if v2eqezx107 then local v2jxmuw124 = (Vector2.new(v7x65qx76.X, v7x65qx76.Y) - vzps3td154).Magnitude if v2jxmuw124 < bd and ((not needVis) or vez04d933(plr)) then bd = v2jxmuw124 vru2ofm153 = vu3zfrc155 end end end end end return vru2ofm153 end v4ujnn442.InputBegan:Connect(function(i, gp) if i.UserInputType == Enum.UserInputType.MouseButton1 then Shooting = true end if gp or not v05svx553.Aimbot or v05svx553.MobileAim then return end local vm5zwva156 = vhitxig125[v05svx553.AimKey] or Enum.UserInputType.MouseButton2 if i.UserInputType == vm5zwva156 or i.KeyCode == vm5zwva156 then if v05svx553.AimMode == _MEM[372] then v1fepvt126 = true elseif v05svx553.AimMode == _MEM[373] then v1fepvt126 = not v1fepvt126 end end end) v4ujnn442.InputEnded:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then Shooting = false end local vm5zwva156 = vhitxig125[v05svx553.AimKey] or Enum.UserInputType.MouseButton2 if v05svx553.AimMode == _MEM[374] and (i.UserInputType == vm5zwva156 or i.KeyCode == vm5zwva156) then v1fepvt126 = false end end) local function vucfx9m36() local vizeki158 = v4fcyz229(vpl2xfl49) if not vizeki158 then return end local vg13cuv157 = vizeki158:FindFirstChild(_MEM[375]) local vvw012r135 = vizeki158:FindFirstChildOfClass(_MEM[376]) if not vg13cuv157 or not vvw012r135 or vvw012r135.Health <= 0 then return end local vwa73h0158 = vvw012r135:GetState() if vwa73h0158 == Enum.HumanoidStateType.Jumping or vwa73h0158 == Enum.HumanoidStateType.Freefall or vwa73h0158 == Enum.HumanoidStateType.Ragdoll then return end if vg13cuv157.CFrame.UpVector:Dot(Vector3.yAxis) >= 0.92 then return end local v7x65qx76 = vg13cuv157.Position local vwsx064159, v65dvxk175 = vg13cuv157.CFrame:ToOrientation() vg13cuv157.CFrame = CFrame.new(v7x65qx76) * CFrame.Angles(0, v65dvxk175, 0) end local function vfduho237(v2eqezx107) if vkh59fz127 then vkh59fz127:Disconnect(); vkh59fz127 = nil end if not v2eqezx107 then local vizeki158 = v4fcyz229(vpl2xfl49) if vizeki158 then for vwsx064159, p in ipairs(vizeki158:GetDescendants()) do if p:IsA(_MEM[377]) then p.CanCollide = true end end end return end vkh59fz127 = vrhdv5q43.Stepped:Connect(function() local vizeki158 = v4fcyz229(vpl2xfl49) if not vizeki158 then return end for vwsx064159, p in ipairs(vizeki158:GetDescendants()) do if p:IsA(_MEM[378]) then p.CanCollide = false end end end) end task.spawn(function() while true do task.wait(0.25) if v05svx553.AntiBow then pcall(vucfx9m36) end end end) task.spawn(function() while true do task.wait(0.5) if v05svx553.StreamProof then local ve8z7v479 = v05svx553.ShowVerified and (tostring(v05svx553.SpoofName) .. _MEM[379] .. vpwrlo9128) or tostring(v05svx553.SpoofName) pcall(function() vpl2xfl49.DisplayName = ve8z7v479 end) local vvw012r135 = v4fcyz229(vpl2xfl49) and v4fcyz229(vpl2xfl49):FindFirstChildOfClass(_MEM[380]) if vvw012r135 then pcall(function() vvw012r135.DisplayName = ve8z7v479 end) end end end end) task.spawn(function() while true do task.wait(2) if v05svx553.StaffDetect then local vo79pid160 = false for vwsx064159, p in ipairs(vjiflwg41:GetPlayers()) do if p and p ~= vpl2xfl49 then local v2q3wl552, rank = pcall(function() return p:GetRankInGroup(vumaal8129) end) if v2q3wl552 and type(rank) == _MEM[381] and rank >= currentMin and rank > 0 then vo79pid160 = true if not flagged[p.UserId] then flagged[p.UserId] = true if v05svx553.StaffLeave then task.delay(0.3, function() pcall(function() vpl2xfl49:Kick(_MEM[382]) end) end) end end end end end if vo79pid160 then lastCycle = tick() elseif tick() - lastCycle >= 4 then v5gqb0c131 = v5gqb0c131 % #v8n58t8130 + 1 currentMin = v8n58t8130[v5gqb0c131] lastCycle = tick() end end end end) vrhdv5q43.Heartbeat:Connect(function() local vizeki158 = v4fcyz229(vpl2xfl49) if vizeki158 then local vvw012r135 = vizeki158:FindFirstChildOfClass(_MEM[383]) if v05svx553.Speed and vvw012r135 and vvw012r135.Health > 0 then vvw012r135.WalkSpeed = v05svx553.SpeedValue or 24 end if v05svx553.Noclip then if not vkh59fz127 then vfduho237(true) end elseif vkh59fz127 then vfduho237(false) end end if v05svx553.Potato then vsh2zpd13(true) else vsh2zpd13(false) end end) local function vnxdmkk38(plr) if ESPHL[plr] then return end local vp1c105138 = v4fcyz229(plr) if not vp1c105138 then return end local vvw012r135 = Instance.new(_MEM[384]) vvw012r135.FillColor = vwb39td132 vvw012r135.OutlineColor = Color3.new(1, 1, 1) vvw012r135.FillTransparency = 0.5 vvw012r135.Adornee = vp1c105138 vvw012r135.Parent = vp1c105138 ESPHL[plr] = vvw012r135 end local function vp7iesn39(plr) if vgevcjx103[plr] then return end local vgyek9r115 = vh6hpik26(_MEM[385]) if not vgyek9r115 then return end vgyek9r115.Thickness = 1.5 vgyek9r115.Filled = false vgyek9r115.Visible = false local vgrxtw2161 = {} for i = 1, 8 do local vbz5yo2102 = vh6hpik26(_MEM[386]) if vbz5yo2102 then vbz5yo2102.Thickness = 1.5; vbz5yo2102.Visible = false; vgrxtw2161[i] = vbz5yo2102 end end local v1k3nqn162, vxyjnlc144 = vh6hpik26(_MEM[387]), vh6hpik26(_MEM[388]) if v1k3nqn162 then v1k3nqn162.Size = 14; v1k3nqn162.Center = true; v1k3nqn162.Outline = true; v1k3nqn162.Font = 2; v1k3nqn162.Visible = false end if vxyjnlc144 then vxyjnlc144.Size = 12; vxyjnlc144.Center = true; vxyjnlc144.Outline = true; vxyjnlc144.Font = 2; vxyjnlc144.Visible = false end local v1r4u6p163, hf = vh6hpik26(_MEM[389]), vh6hpik26(_MEM[390]) if v1r4u6p163 then v1r4u6p163.Filled = false; v1r4u6p163.Visible = false end if hf then hf.Filled = true; hf.Visible = false end local vf3vagh164 = vh6hpik26(_MEM[391]) if vf3vagh164 then vf3vagh164.NumSides = 16; vf3vagh164.Filled = true; vf3vagh164.Visible = false end vgevcjx103[plr] = {Box = vgyek9r115, Lines = vgrxtw2161, Name = v1k3nqn162, Dist = vxyjnlc144, HB = v1r4u6p163, HF = hf, Dot = vf3vagh164} end vjiflwg41.PlayerRemoving:Connect(function(p) if vgevcjx103[p] then pcall(function() for vwsx064159, x in pairs(vgevcjx103[p]) do if type(x) == _MEM[392] then for vwsx064159, vbz5yo2102 in pairs(x) do if vbz5yo2102 then pcall(function() vbz5yo2102:Remove() end) end end elseif x then pcall(function() x:Remove() end) end end end) vgevcjx103[p] = nil end if ESPHL[p] then pcall(function() ESPHL[p]:Destroy() end); ESPHL[p] = nil end if vgdqssv134[p] then pcall(function() vgdqssv134[p]:Remove() end); vgdqssv134[p] = nil end end) local vvma8jk165 = vh6hpik26(_MEM[393]) if vvma8jk165 then vvma8jk165.Thickness = 1 vvma8jk165.NumSides = 48 vvma8jk165.Filled = false vvma8jk165.Color = Color3.new(1, 1, 1) vvma8jk165.Visible = false end local vv752gr166 = vh6hpik26(_MEM[394]) if vv752gr166 then vv752gr166.Size = 16 vv752gr166.Outline = true vv752gr166.Font = 2 vv752gr166.Visible = false end local vbo2eu6167, lastF, fps = 0, tick(), 0 vrhdv5q43.RenderStepped:Connect(function() vbo2eu6167 = vbo2eu6167 + 1 if tick() - lastF >= 1 then fps = vbo2eu6167 vbo2eu6167 = 0 lastF = tick() end if v05svx553.ShowPerf and vv752gr166 then local vj3y71c168 = 0 pcall(function() vj3y71c168 = math.floor(v3pzlfi45.Network.ServerStatsItem[_MEM[395]]:GetValue()) end) vv752gr166.Text = _MEM[396] .. fps .. _MEM[397] .. vj3y71c168 vv752gr166.Position = Vector2.new(vnsv1y348.ViewportSize.X - 150, 10) vv752gr166.Color = vauoe0p61 vv752gr166.Visible = true elseif vv752gr166 then vv752gr166.Visible = false end if v05svx553.Radar and vtjh44t59 then vyyh1vi27() local v8w4h17169 = tonumber(v05svx553.RadarSize) or 140 local vhw3zk1170 = tonumber(v05svx553.RadarRange) or 200 local vqqed8y171 = v8w4h17169 / 2 local vzps3td154 = Vector2.new(20 + vqqed8y171, 20 + vqqed8y171) if vwoergk133 then vwoergk133.Position = vzps3td154; vwoergk133.Radius = vqqed8y171; vwoergk133.Visible = true end if radarBorder then radarBorder.Position = vzps3td154; radarBorder.Radius = vqqed8y171; radarBorder.Visible = true end if radarCenter then radarCenter.Position = vzps3td154; radarCenter.Visible = true end if radarCrossH then radarCrossH.From = Vector2.new(vzps3td154.X - vqqed8y171 + 4, vzps3td154.Y) radarCrossH.To = Vector2.new(vzps3td154.X + vqqed8y171 - 4, vzps3td154.Y) radarCrossH.Visible = true end if radarCrossV then radarCrossV.From = Vector2.new(vzps3td154.X, vzps3td154.Y - vqqed8y171 + 4) radarCrossV.To = Vector2.new(vzps3td154.X, vzps3td154.Y + vqqed8y171 - 4) radarCrossV.Visible = true end local vjhvz2b172 = v4fcyz229(vpl2xfl49) local vdwvk3e173 = vjhvz2b172 and (vjhvz2b172:FindFirstChild(_MEM[398]) or vjhvz2b172:FindFirstChild(_MEM[399])) local vst5vmq174 = vnsv1y348.CFrame.LookVector local v65dvxk175 = math.atan2(vst5vmq174.X, vst5vmq174.Z) local veh66fy176 = {} if vdwvk3e173 then for vwsx064159, plr in ipairs(vjiflwg41:GetPlayers()) do if plr ~= vpl2xfl49 and vcuhxdb31(plr) and vdpodfu30(plr) then local vp1c105138 = v4fcyz229(plr) local vbe7j0b151 = vp1c105138 and (vp1c105138:FindFirstChild(_MEM[400]) or vp1c105138:FindFirstChild(_MEM[401])) if vbe7j0b151 then local vv6q9r7177 = vbe7j0b151.Position - vdwvk3e173.Position if vv6q9r7177.Magnitude <= vhw3zk1170 then local vmdifzr178 = vv6q9r7177.X * math.cos(v65dvxk175) - vv6q9r7177.Z * math.sin(v65dvxk175) local vvda5v2179 = vv6q9r7177.X * math.sin(v65dvxk175) + vv6q9r7177.Z * math.cos(v65dvxk175) local vzc08y0180 = vqqed8y171 / vhw3zk1170 local v9vkx3n181, dy = vmdifzr178 * vzc08y0180, -vvda5v2179 * vzc08y0180 local vn9yd0i182 = math.sqrt(v9vkx3n181 * v9vkx3n181 + dy * dy) if vn9yd0i182 > vqqed8y171 - 4 then v9vkx3n181 = v9vkx3n181 / vn9yd0i182 * (vqqed8y171 - 4) dy = dy / vn9yd0i182 * (vqqed8y171 - 4) end if not vgdqssv134[plr] then local vk88gt3183 = vh6hpik26(_MEM[402]) if vk88gt3183 then vk88gt3183.Filled = true vk88gt3183.NumSides = 12 vk88gt3183.Radius = 4 vgdqssv134[plr] = vk88gt3183 end end local vk88gt3183 = vgdqssv134[plr] if vk88gt3183 then vk88gt3183.Position = Vector2.new(vzps3td154.X + v9vkx3n181, vzps3td154.Y + dy) vk88gt3183.Color = vwb39td132 vk88gt3183.Visible = true end veh66fy176[plr] = true end end end end end for p, v2jxmuw124 in pairs(vgdqssv134) do if not veh66fy176[p] then pcall(function() if v2jxmuw124 then v2jxmuw124.Visible = false end end) end end else v7banz028() end local v5ebmfb184, fovR = false, v05svx553.AimFOV or 150 if v05svx553.MobileAim then v5ebmfb184 = v05svx553.MobileShowFOV fovR = v05svx553.MobileFOV or 160 else v5ebmfb184 = v05svx553.ShowFOV and v05svx553.Aimbot fovR = v05svx553.AimFOV or 150 end if vvma8jk165 then vvma8jk165.Position = vnsv1y348.ViewportSize / 2 vvma8jk165.Radius = fovR vvma8jk165.Visible = v5ebmfb184 end local v7vhjoo185, smooth, fov = false, v05svx553.AimSmooth or 0.95, v05svx553.AimFOV or 150 if v05svx553.MobileAim then v7vhjoo185 = true smooth = v05svx553.MobileSmooth or 0.9 fov = v05svx553.MobileFOV or 160 elseif v05svx553.Aimbot then v7vhjoo185 = v1fepvt126 or (v05svx553.AimMode == _MEM[403]) smooth = v05svx553.AimSmooth or 0.95 fov = v05svx553.AimFOV or 150 end if v7vhjoo185 then local voo6lhx186 = v1zfqyg35(fov, true) if voo6lhx186 then if smooth >= 0.98 then vnsv1y348.CFrame = CFrame.new(vnsv1y348.CFrame.Position, voo6lhx186) else vnsv1y348.CFrame = vnsv1y348.CFrame:Lerp( CFrame.new(vnsv1y348.CFrame.Position, voo6lhx186), math.clamp(smooth, 0.1, 1) ) end end end if v05svx553.NoRecoil and Shooting then local vydyts6187 = vnsv1y348.CFrame local v7y0gtv188, v65dvxk175, roll = vydyts6187:ToOrientation() local v7jdmaa189 = v05svx553.RecoilAmount or 0 if v7y0gtv188 > lastPitch + 0.003 then local vp6v8sc190 = lastPitch + (v7y0gtv188 - lastPitch) * v7jdmaa189 vnsv1y348.CFrame = CFrame.new(vydyts6187.Position) * CFrame.fromOrientation(vp6v8sc190, v65dvxk175, roll) lastPitch = vp6v8sc190 else lastPitch = v7y0gtv188 end else lastPitch = select(1, vnsv1y348.CFrame:ToOrientation()) end if v05svx553.Triggerbot then local v11lwdb60 = v1zfqyg35(v05svx553.TriggerFOV or 45, v05svx553.WallCheck) if v11lwdb60 and tick() - lastShot > 0.1 then lastShot = tick() local vibf3pb191 = v4fcyz229(vpl2xfl49) and v4fcyz229(vpl2xfl49):FindFirstChildOfClass(_MEM[404]) if vibf3pb191 then pcall(function() vibf3pb191:Activate() end) end end end if not v05svx553.ESP then v6ndif718() else local vdwvk3e173 = v4fcyz229(vpl2xfl49) and v4fcyz229(vpl2xfl49):FindFirstChild(_MEM[405]) for vwsx064159, plr in ipairs(vjiflwg41:GetPlayers()) do if plr and plr ~= vpl2xfl49 and vcuhxdb31(plr) and vdpodfu30(plr) then local vp1c105138 = v4fcyz229(plr) local vbe7j0b151 = vp1c105138 and (vp1c105138:FindFirstChild(_MEM[406]) or vp1c105138:FindFirstChild(_MEM[407])) local vqobnay139 = vp1c105138 and vp1c105138:FindFirstChild(_MEM[408]) local vwbpetp192 = vp1c105138 and vp1c105138:FindFirstChildOfClass(_MEM[409]) if vbe7j0b151 and vqobnay139 then if vtjh44t59 then if not vgevcjx103[plr] then vp7iesn39(plr) end local v2jxmuw124 = vgevcjx103[plr] if v2jxmuw124 and v2jxmuw124.Box then local vk3af50112, v2eqezx107 = vnsv1y348:WorldToViewportPoint(vbe7j0b151.Position) if not v2eqezx107 then v2jxmuw124.Box.Visible = false if v2jxmuw124.Name then v2jxmuw124.Name.Visible = false end if v2jxmuw124.Dist then v2jxmuw124.Dist.Visible = false end if v2jxmuw124.HB then v2jxmuw124.HB.Visible = false end if v2jxmuw124.HF then v2jxmuw124.HF.Visible = false end if v2jxmuw124.Dot then v2jxmuw124.Dot.Visible = false end if v2jxmuw124.Lines then for li = 1, #v2jxmuw124.Lines do if v2jxmuw124.Lines[li] then v2jxmuw124.Lines[li].Visible = false end end end else local vcx0ujp193 = vnsv1y348:WorldToViewportPoint(vqobnay139.Position + Vector3.new(0, 1.1, 0)) local vgyzmoa194 = vnsv1y348:WorldToViewportPoint(vbe7j0b151.Position - Vector3.new(0, 2.8, 0)) local v1fpl14195 = math.abs(vgyzmoa194.Y - vcx0ujp193.Y) local vexi0l7196 = math.clamp(v1fpl14195 / 1.85, 8, 120) local v8w4h17169 = Vector2.new(vexi0l7196, v1fpl14195) local v7x65qx76 = Vector2.new(vk3af50112.X - vexi0l7196 / 2, vcx0ujp193.Y) local v30x5rc197 = math.clamp(vexi0l7196 * 0.25, 4, 12) local v4hwcyq198 = v05svx553.BoxStyle or _MEM[410] if v05svx553.ShowBoxes and (v4hwcyq198 == _MEM[411] or v4hwcyq198 == _MEM[412]) then v2jxmuw124.Box.Size = v8w4h17169 v2jxmuw124.Box.Position = v7x65qx76 v2jxmuw124.Box.Color = vwb39td132 v2jxmuw124.Box.Visible = true else v2jxmuw124.Box.Visible = false end if v05svx553.ShowBoxes and (v4hwcyq198 == _MEM[413] or v4hwcyq198 == _MEM[414]) and v2jxmuw124.Lines and v2jxmuw124.Lines[1] then local vk5k9r0199 = v2jxmuw124.Lines vk5k9r0199[1].From, vk5k9r0199[1].To = v7x65qx76, Vector2.new(v7x65qx76.X, v7x65qx76.Y + v30x5rc197) vk5k9r0199[2].From, vk5k9r0199[2].To = v7x65qx76, Vector2.new(v7x65qx76.X + v30x5rc197, v7x65qx76.Y) vk5k9r0199[3].From, vk5k9r0199[3].To = Vector2.new(v7x65qx76.X + v8w4h17169.X, v7x65qx76.Y), Vector2.new(v7x65qx76.X + v8w4h17169.X, v7x65qx76.Y + v30x5rc197) vk5k9r0199[4].From, vk5k9r0199[4].To = Vector2.new(v7x65qx76.X + v8w4h17169.X, v7x65qx76.Y), Vector2.new(v7x65qx76.X + v8w4h17169.X - v30x5rc197, v7x65qx76.Y) vk5k9r0199[5].From, vk5k9r0199[5].To = Vector2.new(v7x65qx76.X, v7x65qx76.Y + v8w4h17169.Y), Vector2.new(v7x65qx76.X, v7x65qx76.Y + v8w4h17169.Y - v30x5rc197) vk5k9r0199[6].From, vk5k9r0199[6].To = Vector2.new(v7x65qx76.X, v7x65qx76.Y + v8w4h17169.Y), Vector2.new(v7x65qx76.X + v30x5rc197, v7x65qx76.Y + v8w4h17169.Y) vk5k9r0199[7].From, vk5k9r0199[7].To = Vector2.new(v7x65qx76.X + v8w4h17169.X, v7x65qx76.Y + v8w4h17169.Y), Vector2.new(v7x65qx76.X + v8w4h17169.X, v7x65qx76.Y + v8w4h17169.Y - v30x5rc197) vk5k9r0199[8].From, vk5k9r0199[8].To = Vector2.new(v7x65qx76.X + v8w4h17169.X, v7x65qx76.Y + v8w4h17169.Y), Vector2.new(v7x65qx76.X + v8w4h17169.X - v30x5rc197, v7x65qx76.Y + v8w4h17169.Y) for li = 1, 8 do if vk5k9r0199[li] then vk5k9r0199[li].Color = vwb39td132; vk5k9r0199[li].Visible = true end end end if v05svx553.ShowNames and v2jxmuw124.Name then v2jxmuw124.Name.Text = plr.DisplayName v2jxmuw124.Name.Position = Vector2.new(vk3af50112.X, v7x65qx76.Y - 14) v2jxmuw124.Name.Color = vwb39td132 v2jxmuw124.Name.Visible = true elseif v2jxmuw124.Name then v2jxmuw124.Name.Visible = false end if v05svx553.ShowDistance and v2jxmuw124.Dist and vdwvk3e173 then v2jxmuw124.Dist.Text = tostring(math.floor((vbe7j0b151.Position - vdwvk3e173.Position).Magnitude)) .. _MEM[415] v2jxmuw124.Dist.Position = Vector2.new(vk3af50112.X, v7x65qx76.Y + v8w4h17169.Y + 2) v2jxmuw124.Dist.Visible = true elseif v2jxmuw124.Dist then v2jxmuw124.Dist.Visible = false end if v05svx553.ShowHealth and vwbpetp192 and v2jxmuw124.HB and v2jxmuw124.HF then local vzkzuil200 = math.clamp(vwbpetp192.Health / math.max(vwbpetp192.MaxHealth, 1), 0, 1) v2jxmuw124.HB.Size = Vector2.new(3, v8w4h17169.Y) v2jxmuw124.HB.Position = Vector2.new(v7x65qx76.X - 6, v7x65qx76.Y) v2jxmuw124.HB.Visible = true local vjweldm201 = v8w4h17169.Y * vzkzuil200 v2jxmuw124.HF.Size = Vector2.new(2, vjweldm201) v2jxmuw124.HF.Position = Vector2.new(v7x65qx76.X - 5.5, v7x65qx76.Y + v8w4h17169.Y - vjweldm201) v2jxmuw124.HF.Color = Color3.fromRGB(255 * (1 - vzkzuil200), 255 * vzkzuil200, 0) v2jxmuw124.HF.Visible = true end if v05svx553.ShowHeadDot and v2jxmuw124.Dot then local v7417m9202, on2 = vnsv1y348:WorldToViewportPoint(vqobnay139.Position) if on2 then v2jxmuw124.Dot.Position = Vector2.new(v7417m9202.X, v7417m9202.Y) v2jxmuw124.Dot.Radius = math.clamp(vexi0l7196 * 0.2, 4, 10) v2jxmuw124.Dot.Color = vwb39td132 v2jxmuw124.Dot.Visible = true else v2jxmuw124.Dot.Visible = false end end end end else vnxdmkk38(plr) end end else if vgevcjx103[plr] then pcall(function() for vwsx064159, x in pairs(vgevcjx103[plr]) do if type(x) == _MEM[416] then for vwsx064159, vbz5yo2102 in pairs(x) do if vbz5yo2102 then pcall(function() vbz5yo2102:Remove() end) end end elseif x then pcall(function() x:Remove() end) end end end) vgevcjx103[plr] = nil end if ESPHL[plr] then pcall(function() ESPHL[plr]:Destroy() end) ESPHL[plr] = nil end end end end end) task.spawn(function() while true do task.wait(15) vh5gecp3(v05svx553.ConfigName) end end) if v05svx553.Potato then vsh2zpd13(true) end if v05svx553.CursorName and v05svx553.CursorName ~= _MEM[417] then v1y0pst8(v05svx553.CursorName) end print(_MEM[418])
-            VM_ob9f_STATE = 999999
-        elseif VM_ob9f_STATE == 999999 then
-            break
+        task.wait(0.5)
+        if S.CursorName and S.CursorName ~= loadstring(base64decode("T2Zm"))() then
+            applyCursorByName(S.CursorName)
         end
     end
-    if os.clock() - _START > 5 then
-        while true do end
+end)
+
+PlayerGui.ChildAdded:Connect(function(child)
+    if child.Name == loadstring(base64decode("Q3Jvc3NoYWly"))() and S.CursorName == loadstring(base64decode("R2FtZSBDcm9zc2hhaXI="))() then
+        task.wait(0.1)
+        applyCursorByName(loadstring(base64decode("R2FtZSBDcm9zc2hhaXI="))())
     end
+end)
+
+local SOLID_KEYS = {
+    loadstring(base64decode("Ym94"))(),loadstring(base64decode("Y3JhdGU="))(),loadstring(base64decode("YmFycmVs"))(),loadstring(base64decode("ZHVtcHN0ZXI="))(),loadstring(base64decode("dHJhc2g="))(),loadstring(base64decode("Y29udGFpbmVy"))(),loadstring(base64decode("c2hpcHBpbmc="))(),
+    loadstring(base64decode("c2FuZGJhZw=="))(),loadstring(base64decode("cGFsbGV0"))(),loadstring(base64decode("Zm9ya2xpZnQ="))(),loadstring(base64decode("dHJ1Y2s="))(),loadstring(base64decode("Y2Fy"))(),loadstring(base64decode("dmFu"))(),loadstring(base64decode("Z2VuZXJhdG9y"))(),
+    loadstring(base64decode("ZWxlY3RyaWNhbA=="))(),loadstring(base64decode("ZnVzZQ=="))(),loadstring(base64decode("Y2FiaW5ldA=="))(),loadstring(base64decode("c2hlbGY="))(),loadstring(base64decode("bG9ja2Vy"))(),loadstring(base64decode("ZGVzaw=="))(),loadstring(base64decode("dGFibGU="))(),
+    loadstring(base64decode("Y291Y2g="))(),loadstring(base64decode("YmVuY2g="))(),loadstring(base64decode("c3RhaXJz"))(),loadstring(base64decode("bGFkZGVy"))(),loadstring(base64decode("cmFtcA=="))(),loadstring(base64decode("cGlwZQ=="))(),loadstring(base64decode("dmVudA=="))(),
+    loadstring(base64decode("ZG9vcg=="))(),loadstring(base64decode("d2luZG93"))(),loadstring(base64decode("Z2F0ZQ=="))(),loadstring(base64decode("ZmVuY2U="))(),loadstring(base64decode("cGlsbGFy"))(),
+}
+local function isSolidMapProp(part)
+    if not part then return false end
+    local n = string.lower(part.Name or loadstring(base64decode(""))())
+    local full = string.lower(part:GetFullName() or loadstring(base64decode(""))())
+    for kCXQgvu1 = 1, #SOLID_KEYS do
+        if string.find(n, SOLID_KEYS[kCXQgvu1], 1, true) or string.find(full, SOLID_KEYS[kCXQgvu1], 1, true) then
+            return true
+        end
+    end
+    return false
+end
+
+local DeviceRemote = nil
+pcall(function()
+    DeviceRemote = ReplicatedStorage:WaitForChild(loadstring(base64decode("R2FtZUV2ZW50cw=="))(), 8):WaitForChild(loadstring(base64decode("RGV2aWNlVXBkYXRl"))(), 8)
+end)
+local function fireDeviceUpdate()
+    if not DeviceRemote then
+        pcall(function() DeviceRemote = ReplicatedStorage.GameEvents.DeviceUpdate end)
+    end
+    if not DeviceRemote then return end
+    local mode = S.DeviceMode or loadstring(base64decode("Q29uc29sZQ=="))()
+    pcall(function()
+        if mode == loadstring(base64decode("Q29uc29sZQ=="))() then
+            DeviceRemote:FireServer()
+            pcall(function() DeviceRemote:FireServer(loadstring(base64decode("Q29uc29sZQ=="))()) end)
+            pcall(function() DeviceRemote:FireServer(loadstring(base64decode("R2FtZXBhZA=="))()) end)
+        elseif mode == loadstring(base64decode("RGVza3RvcA=="))() then
+            DeviceRemote:FireServer(loadstring(base64decode("RGVza3RvcA=="))())
+            pcall(function() DeviceRemote:FireServer(loadstring(base64decode("UEM="))()) end)
+            pcall(function() DeviceRemote:FireServer(loadstring(base64decode("TW91c2VLZXlib2FyZA=="))()) end)
+        elseif mode == loadstring(base64decode("TW9iaWxl"))() then
+            DeviceRemote:FireServer(loadstring(base64decode("TW9iaWxl"))())
+            pcall(function() DeviceRemote:FireServer(loadstring(base64decode("VG91Y2g="))()) end)
+        end
+    end)
+end
+
+local potatoOn, originalMaterials, originalLighting, disabledFX, potatoConn = false, {}, {}, {}, nil
+local function isInAnyCharacter(obj)
+    for _, plr in ipairs(Players:GetPlayers()) do
+        if plr.Character and obj:IsDescendantOf(plr.Character) then return true end
+    end
+    return false
+end
+local function stripEffects(root)
+    for _, obj in ipairs(root:GetDescendants()) do
+        pcall(function()
+            if obj:IsA(loadstring(base64decode("UGFydGljbGVFbWl0dGVy"))()) or obj:IsA(loadstring(base64decode("VHJhaWw="))()) or obj:IsA(loadstring(base64decode("QmVhbQ=="))())
+            or obj:IsA(loadstring(base64decode("U21va2U="))()) or obj:IsA(loadstring(base64decode("RmlyZQ=="))()) or obj:IsA(loadstring(base64decode("U3BhcmtsZXM="))()) then
+                if disabledFX[obj] == nil then disabledFX[obj] = obj.Enabled end
+                obj.Enabled = false
+            elseif obj:IsA(loadstring(base64decode("UG9pbnRMaWdodA=="))()) or obj:IsA(loadstring(base64decode("U3BvdExpZ2h0"))()) or obj:IsA(loadstring(base64decode("U3VyZmFjZUxpZ2h0"))()) then
+                if disabledFX[obj] == nil then disabledFX[obj] = obj.Enabled end
+                obj.Enabled = false
+            end
+        end)
+    end
+end
+local function applyPotato(on)
+    if on then
+        if potatoOn then return end
+        potatoOn = true
+        pcall(function()
+            originalLighting.GlobalShadows = Lighting.GlobalShadows
+            originalLighting.FogEnd = Lighting.FogEnd
+            originalLighting.Brightness = Lighting.Brightness
+            originalLighting.EnvironmentDiffuseScale = Lighting.EnvironmentDiffuseScale
+            originalLighting.EnvironmentSpecularScale = Lighting.EnvironmentSpecularScale
+        end)
+        pcall(function()
+            Lighting.GlobalShadows = false
+            Lighting.FogEnd = 9e9
+            Lighting.Brightness = 2
+            Lighting.EnvironmentDiffuseScale = 0
+            Lighting.EnvironmentSpecularScale = 0
+            if settings and settings().Rendering then
+                settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+            end
+        end)
+        pcall(function()
+            for _, fx in ipairs(Lighting:GetChildren()) do
+                if fx:IsA(loadstring(base64decode("Qmxvb21FZmZlY3Q="))()) or fx:IsA(loadstring(base64decode("Qmx1ckVmZmVjdA=="))()) or fx:IsA(loadstring(base64decode("U3VuUmF5c0VmZmVjdA=="))())
+                or fx:IsA(loadstring(base64decode("Q29sb3JDb3JyZWN0aW9uRWZmZWN0"))()) or fx:IsA(loadstring(base64decode("RGVwdGhPZkZpZWxkRWZmZWN0"))()) or fx:IsA(loadstring(base64decode("QXRtb3NwaGVyZQ=="))()) then
+                    if disabledFX[fx] == nil then disabledFX[fx] = fx.Enabled end
+                    fx.Enabled = false
+                end
+            end
+        end)
+        pcall(function()
+            for _, obj in ipairs(workspace:GetDescendants()) do
+                if obj:IsA(loadstring(base64decode("QmFzZVBhcnQ="))()) and not isInAnyCharacter(obj) then
+                    if originalMaterials[obj] == nil then
+                        originalMaterials[obj] = {Material=obj.Material, Reflectance=obj.Reflectance, CastShadow=obj.CastShadow}
+                    end
+                    obj.Material = Enum.Material.SmoothPlastic
+                    obj.Reflectance = 0
+                    obj.CastShadow = false
+                end
+            end
+        end)
+        stripEffects(workspace)
+        if potatoConn then potatoConn:Disconnect() end
+        potatoConn = workspace.DescendantAdded:Connect(function(obj)
+            if not S.Potato then return end
+            task.defer(function()
+                pcall(function()
+                    if obj:IsA(loadstring(base64decode("QmFzZVBhcnQ="))()) and not isInAnyCharacter(obj) then
+                        originalMaterials[obj] = originalMaterials[obj] or {Material=obj.Material, Reflectance=obj.Reflectance, CastShadow=obj.CastShadow}
+                        obj.Material = Enum.Material.SmoothPlastic
+                        obj.Reflectance = 0
+                        obj.CastShadow = false
+                    elseif obj:IsA(loadstring(base64decode("UGFydGljbGVFbWl0dGVy"))()) or obj:IsA(loadstring(base64decode("VHJhaWw="))()) or obj:IsA(loadstring(base64decode("QmVhbQ=="))())
+                        or obj:IsA(loadstring(base64decode("U21va2U="))()) or obj:IsA(loadstring(base64decode("RmlyZQ=="))()) or obj:IsA(loadstring(base64decode("U3BhcmtsZXM="))())
+                        or obj:IsA(loadstring(base64decode("UG9pbnRMaWdodA=="))()) or obj:IsA(loadstring(base64decode("U3BvdExpZ2h0"))()) or obj:IsA(loadstring(base64decode("U3VyZmFjZUxpZ2h0"))()) then
+                        obj.Enabled = false
+                    end
+                end)
+            end)
+        end)
+    else
+        if not potatoOn then return end
+        potatoOn = false
+        if potatoConn then potatoConn:Disconnect(); potatoConn = nil end
+        pcall(function()
+            if originalLighting.GlobalShadows ~= nil then Lighting.GlobalShadows = originalLighting.GlobalShadows end
+            if originalLighting.FogEnd then Lighting.FogEnd = originalLighting.FogEnd end
+            if originalLighting.Brightness then Lighting.Brightness = originalLighting.Brightness end
+            if originalLighting.EnvironmentDiffuseScale then Lighting.EnvironmentDiffuseScale = originalLighting.EnvironmentDiffuseScale end
+            if originalLighting.EnvironmentSpecularScale then Lighting.EnvironmentSpecularScale = originalLighting.EnvironmentSpecularScale end
+            if settings and settings().Rendering then settings().Rendering.QualityLevel = Enum.QualityLevel.Automatic end
+        end)
+        for fx, was in pairs(disabledFX) do
+            pcall(function() if fx and fx.Parent then fx.Enabled = was end end)
+        end
+        disabledFX = {}
+        for part, data in pairs(originalMaterials) do
+            pcall(function()
+                if part and part.Parent then
+                    part.Material = data.Material
+                    part.Reflectance = data.Reflectance
+                    part.CastShadow = data.CastShadow
+                end
+            end)
+        end
+        originalMaterials, originalLighting = {}, {}
+    end
+end
+
+-- UI builders
+local Gui = Instance.new(loadstring(base64decode("U2NyZWVuR3Vp"))())
+Gui.Name = loadstring(base64decode("TW9vbkh1YlVJ"))()
+Gui.ResetOnSpawn = false
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Gui.IgnoreGuiInset = true
+Gui.DisplayOrder = 999
+Gui.Parent = PlayerGui
+
+local vw = Camera.ViewportSize
+local Main = Instance.new(loadstring(base64decode("RnJhbWU="))())
+Main.Size = UDim2.new(0, math.min(560, vw.X - 30), 0, math.min(400, vw.Y - 60))
+Main.Position = UDim2.new(0.5, -Main.Size.X.Offset / 2, 0.5, -Main.Size.Y.Offset / 2)
+Main.BackgroundColor3 = BG
+Main.BackgroundTransparency = T_MAIN
+Main.BorderSizePixel = 0
+Main.Parent = Gui
+Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), Main).CornerRadius = UDim.new(0, 12)
+
+local BgImg = Instance.new(loadstring(base64decode("SW1hZ2VMYWJlbA=="))())
+BgImg.Size = UDim2.new(1, 0, 1, 0)
+BgImg.BackgroundTransparency = 1
+BgImg.Image = loadstring(base64decode("cmJ4YXNzZXRpZDovLzEzMjk0NDc0NTE4NDM3Mg=="))()
+BgImg.ScaleType = Enum.ScaleType.Crop
+BgImg.ImageTransparency = T_IMG
+BgImg.ZIndex = 0
+BgImg.Parent = Main
+Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), BgImg).CornerRadius = UDim.new(0, 12)
+
+local Dim = Instance.new(loadstring(base64decode("RnJhbWU="))())
+Dim.Size = UDim2.new(1, 0, 1, 0)
+Dim.BackgroundColor3 = Color3.fromRGB(5, 5, 10)
+Dim.BackgroundTransparency = T_DIM
+Dim.BorderSizePixel = 0
+Dim.ZIndex = 1
+Dim.Parent = Main
+Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), Dim).CornerRadius = UDim.new(0, 12)
+
+local Top = Instance.new(loadstring(base64decode("RnJhbWU="))())
+Top.Size = UDim2.new(1, 0, 0, 42)
+Top.BackgroundColor3 = PANEL
+Top.BackgroundTransparency = T_PANEL
+Top.BorderSizePixel = 0
+Top.ZIndex = 3
+Top.Parent = Main
+Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), Top).CornerRadius = UDim.new(0, 12)
+local TopFix = Instance.new(loadstring(base64decode("RnJhbWU="))())
+TopFix.Size = UDim2.new(1, 0, 0, 12)
+TopFix.Position = UDim2.new(0, 0, 1, -12)
+TopFix.BackgroundColor3 = PANEL
+TopFix.BackgroundTransparency = T_PANEL
+TopFix.BorderSizePixel = 0
+TopFix.ZIndex = 3
+TopFix.Parent = Top
+local line = Instance.new(loadstring(base64decode("RnJhbWU="))())
+line.Size = UDim2.new(1, 0, 0, 2)
+line.Position = UDim2.new(0, 0, 1, -2)
+line.BackgroundColor3 = ACCENT
+line.BorderSizePixel = 0
+line.ZIndex = 4
+line.Parent = Top
+
+local Title = Instance.new(loadstring(base64decode("VGV4dExhYmVs"))())
+Title.Size = UDim2.new(1, -40, 1, 0)
+Title.Position = UDim2.new(0, 14, 0, 0)
+Title.BackgroundTransparency = 1
+Title.Text = loadstring(base64decode("TU9PTiBIVUIgIMK3ICBqYWlsYmlyZA=="))()
+Title.TextColor3 = TEXT
+Title.TextSize = 14
+Title.Font = FONT
+Title.TextXAlignment = Enum.TextXAlignment.Left
+Title.ZIndex = 4
+Title.Parent = Top
+
+local Close = Instance.new(loadstring(base64decode("VGV4dEJ1dHRvbg=="))())
+Close.Size = UDim2.new(0, 28, 0, 28)
+Close.Position = UDim2.new(1, -34, 0.5, -14)
+Close.BackgroundColor3 = Color3.fromRGB(32, 28, 40)
+Close.BackgroundTransparency = 0.3
+Close.Text = loadstring(base64decode("WA=="))()
+Close.TextColor3 = MUTED
+Close.TextSize = 14
+Close.Font = FONT
+Close.ZIndex = 4
+Close.Parent = Top
+Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), Close).CornerRadius = UDim.new(0, 6)
+
+local Side = Instance.new(loadstring(base64decode("U2Nyb2xsaW5nRnJhbWU="))())
+Side.Size = UDim2.new(0, 110, 1, -52)
+Side.Position = UDim2.new(0, 8, 0, 48)
+Side.BackgroundColor3 = PANEL
+Side.BackgroundTransparency = T_PANEL
+Side.BorderSizePixel = 0
+Side.ScrollBarThickness = 2
+Side.AutomaticCanvasSize = Enum.AutomaticSize.Y
+Side.CanvasSize = UDim2.new(0, 0, 0, 0)
+Side.ZIndex = 3
+Side.Parent = Main
+Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), Side).CornerRadius = UDim.new(0, 8)
+local SL = Instance.new(loadstring(base64decode("VUlMaXN0TGF5b3V0"))())
+SL.Padding = UDim.new(0, 4)
+SL.Parent = Side
+local SPad = Instance.new(loadstring(base64decode("VUlQYWRkaW5n"))())
+SPad.PaddingTop = UDim.new(0, 6)
+SPad.PaddingLeft = UDim.new(0, 6)
+SPad.PaddingRight = UDim.new(0, 6)
+SPad.PaddingBottom = UDim.new(0, 6)
+SPad.Parent = Side
+
+local Content = Instance.new(loadstring(base64decode("RnJhbWU="))())
+Content.Size = UDim2.new(1, -132, 1, -56)
+Content.Position = UDim2.new(0, 124, 0, 50)
+Content.BackgroundTransparency = 1
+Content.ZIndex = 3
+Content.Parent = Main
+
+local Pages, TabBtns = {}, {}
+local function showPage(name)
+    for n, p in pairs(Pages) do p.Visible = (n == name) end
+    for n, b in pairs(TabBtns) do
+        b.BackgroundColor3 = (n == name) and Color3.fromRGB(35, 30, 55) or Color3.fromRGB(22, 22, 30)
+        b.BackgroundTransparency = 0.35
+        b.TextColor3 = (n == name) and ACCENT or MUTED
+    end
+    unlockMouse()
+end
+
+local function addTab(name)
+    local page = Instance.new(loadstring(base64decode("U2Nyb2xsaW5nRnJhbWU="))())
+    page.Size = UDim2.new(1, 0, 1, 0)
+    page.BackgroundTransparency = 1
+    page.BorderSizePixel = 0
+    page.ScrollBarThickness = 3
+    page.ScrollBarImageColor3 = ACCENT
+    page.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    page.CanvasSize = UDim2.new(0, 0, 0, 0)
+    page.Visible = false
+    page.ZIndex = 3
+    page.Parent = Content
+    local lay = Instance.new(loadstring(base64decode("VUlMaXN0TGF5b3V0"))())
+    lay.Padding = UDim.new(0, 6)
+    lay.SortOrder = Enum.SortOrder.LayoutOrder
+    lay.Parent = page
+    local pad = Instance.new(loadstring(base64decode("VUlQYWRkaW5n"))())
+    pad.PaddingTop = UDim.new(0, 2)
+    pad.PaddingBottom = UDim.new(0, 10)
+    pad.PaddingRight = UDim.new(0, 4)
+    pad.Parent = page
+    page:SetAttribute(loadstring(base64decode("Tw=="))(), 0)
+    Pages[name] = page
+    local btn = Instance.new(loadstring(base64decode("VGV4dEJ1dHRvbg=="))())
+    btn.Size = UDim2.new(1, 0, 0, 30)
+    btn.BackgroundColor3 = Color3.fromRGB(22, 22, 30)
+    btn.BackgroundTransparency = 0.35
+    btn.Text = name
+    btn.TextColor3 = MUTED
+    btn.TextSize = 12
+    btn.Font = FONT
+    btn.ZIndex = 4
+    btn.Parent = Side
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), btn).CornerRadius = UDim.new(0, 6)
+    btn.MouseButton1Click:Connect(function() showPage(name) end)
+    TabBtns[name] = btn
+    return page
+end
+
+local function nextO(page)
+    local o = (page:GetAttribute(loadstring(base64decode("Tw=="))()) or 0) + 1
+    page:SetAttribute(loadstring(base64decode("Tw=="))(), o)
+    return o
+end
+local function addSection(page, title)
+    local l = Instance.new(loadstring(base64decode("VGV4dExhYmVs"))())
+    l.LayoutOrder = nextO(page)
+    l.Size = UDim2.new(1, 0, 0, 16)
+    l.BackgroundTransparency = 1
+    l.Text = string.upper(title)
+    l.TextColor3 = ACCENT
+    l.TextSize = 11
+    l.Font = FONT
+    l.TextXAlignment = Enum.TextXAlignment.Left
+    l.ZIndex = 4
+    l.Parent = page
+end
+
+local ESPDraw, ESPHL = {}, {}
+local function clearESP()
+    for p, d in pairs(ESPDraw) do
+        pcall(function()
+            for _, x in pairs(d) do
+                if type(x) == loadstring(base64decode("dGFibGU="))() then
+                    for _, l in pairs(x) do if l then pcall(function() l:Remove() end) end end
+                elseif x then
+                    pcall(function() x:Remove() end)
+                end
+            end
+        end)
+        ESPDraw[p] = nil
+    end
+    for p, h in pairs(ESPHL) do
+        pcall(function() if h then h:Destroy() end end)
+        ESPHL[p] = nil
+    end
+end
+
+local function addToggle(page, label, key)
+    local row = Instance.new(loadstring(base64decode("RnJhbWU="))())
+    row.LayoutOrder = nextO(page)
+    row.Size = UDim2.new(1, 0, 0, 34)
+    row.BackgroundColor3 = CARD
+    row.BackgroundTransparency = T_CARD
+    row.BorderSizePixel = 0
+    row.ZIndex = 4
+    row.Parent = page
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), row).CornerRadius = UDim.new(0, 8)
+    local t = Instance.new(loadstring(base64decode("VGV4dExhYmVs"))())
+    t.Size = UDim2.new(1, -60, 1, 0)
+    t.Position = UDim2.new(0, 10, 0, 0)
+    t.BackgroundTransparency = 1
+    t.Text = label
+    t.TextColor3 = TEXT
+    t.TextSize = 12
+    t.Font = FONT
+    t.TextXAlignment = Enum.TextXAlignment.Left
+    t.ZIndex = 5
+    t.Parent = row
+    local pill = Instance.new(loadstring(base64decode("VGV4dEJ1dHRvbg=="))())
+    pill.Size = UDim2.new(0, 40, 0, 20)
+    pill.Position = UDim2.new(1, -48, 0.5, -10)
+    pill.BackgroundColor3 = S[key] and ACCENT or Color3.fromRGB(45, 45, 58)
+    pill.BackgroundTransparency = 0.15
+    pill.Text = loadstring(base64decode(""))()
+    pill.ZIndex = 5
+    pill.Parent = row
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), pill).CornerRadius = UDim.new(1, 0)
+    local knob = Instance.new(loadstring(base64decode("RnJhbWU="))())
+    knob.Size = UDim2.new(0, 14, 0, 14)
+    knob.Position = S[key] and UDim2.new(1, -17, 0.5, -7) or UDim2.new(0, 3, 0.5, -7)
+    knob.BackgroundColor3 = Color3.new(1, 1, 1)
+    knob.BorderSizePixel = 0
+    knob.ZIndex = 6
+    knob.Parent = pill
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), knob).CornerRadius = UDim.new(1, 0)
+    pill.MouseButton1Click:Connect(function()
+        S[key] = not S[key]
+        local on = S[key]
+        pill.BackgroundColor3 = on and ACCENT or Color3.fromRGB(45, 45, 58)
+        knob.Position = on and UDim2.new(1, -17, 0.5, -7) or UDim2.new(0, 3, 0.5, -7)
+        if key == loadstring(base64decode("RVNQ"))() then clearESP() end
+        if key == loadstring(base64decode("TW9iaWxlQWlt"))() and on then S.Aimbot = true end
+        if key == loadstring(base64decode("RGV2aWNlU3Bvb2Y="))() and on then fireDeviceUpdate() end
+        if key == loadstring(base64decode("UG90YXRv"))() then applyPotato(on) end
+        saveNamedConfig(S.ConfigName)
+        unlockMouse()
+    end)
+end
+
+local function addSlider(page, label, key, min, max, step)
+    local row = Instance.new(loadstring(base64decode("RnJhbWU="))())
+    row.LayoutOrder = nextO(page)
+    row.Size = UDim2.new(1, 0, 0, 48)
+    row.BackgroundColor3 = CARD
+    row.BackgroundTransparency = T_CARD
+    row.BorderSizePixel = 0
+    row.ZIndex = 4
+    row.Parent = page
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), row).CornerRadius = UDim.new(0, 8)
+    local t = Instance.new(loadstring(base64decode("VGV4dExhYmVs"))())
+    t.Size = UDim2.new(0.65, 0, 0, 16)
+    t.Position = UDim2.new(0, 10, 0, 4)
+    t.BackgroundTransparency = 1
+    t.Text = label
+    t.TextColor3 = TEXT
+    t.TextSize = 11
+    t.Font = FONT
+    t.TextXAlignment = Enum.TextXAlignment.Left
+    t.ZIndex = 5
+    t.Parent = row
+    local val = Instance.new(loadstring(base64decode("VGV4dExhYmVs"))())
+    val.Size = UDim2.new(0.3, -8, 0, 16)
+    val.Position = UDim2.new(0.7, 0, 0, 4)
+    val.BackgroundTransparency = 1
+    val.Text = tostring(S[key])
+    val.TextColor3 = ACCENT
+    val.TextSize = 11
+    val.Font = FONT
+    val.TextXAlignment = Enum.TextXAlignment.Right
+    val.ZIndex = 5
+    val.Parent = row
+    local bar = Instance.new(loadstring(base64decode("VGV4dEJ1dHRvbg=="))())
+    bar.Size = UDim2.new(1, -20, 0, 8)
+    bar.Position = UDim2.new(0, 10, 0, 28)
+    bar.BackgroundColor3 = Color3.fromRGB(40, 40, 55)
+    bar.BackgroundTransparency = 0.25
+    bar.Text = loadstring(base64decode(""))()
+    bar.ZIndex = 5
+    bar.Parent = row
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), bar).CornerRadius = UDim.new(1, 0)
+    local fill = Instance.new(loadstring(base64decode("RnJhbWU="))())
+    fill.Size = UDim2.new(math.clamp((S[key] - min) / math.max(max - min, 0.001), 0, 1), 0, 1, 0)
+    fill.BackgroundColor3 = ACCENT
+    fill.BorderSizePixel = 0
+    fill.ZIndex = 6
+    fill.Parent = bar
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), fill).CornerRadius = UDim.new(1, 0)
+    local function setX(x)
+        local rel = math.clamp((x - bar.AbsolutePosition.X) / math.max(bar.AbsoluteSize.X, 1), 0, 1)
+        local v = min + rel * (max - min)
+        v = math.floor(v / step + 0.5) * step
+        v = math.clamp(v, min, max)
+        S[key] = v
+        fill.Size = UDim2.new((v - min) / math.max(max - min, 0.001), 0, 1, 0)
+        val.Text = tostring(v)
+        if key == loadstring(base64decode("Q3Vyc29yU2l6ZQ=="))() then
+            local sz = math.clamp(v, 8, 128)
+            CursorImg.Size = UDim2.new(0, sz, 0, sz)
+        end
+        saveNamedConfig(S.ConfigName)
+    end
+    bar.MouseButton1Down:Connect(function()
+        local c1, c2
+        c1 = UIS.InputChanged:Connect(function(kCXQgvu1)
+            if kCXQgvu1.UserInputType == Enum.UserInputType.MouseMovement or kCXQgvu1.UserInputType == Enum.UserInputType.Touch then
+                setX(kCXQgvu1.Position.X)
+            end
+        end)
+        c2 = UIS.InputEnded:Connect(function(kCXQgvu1)
+            if kCXQgvu1.UserInputType == Enum.UserInputType.MouseButton1 or kCXQgvu1.UserInputType == Enum.UserInputType.Touch then
+                if c1 then c1:Disconnect() end
+                if c2 then c2:Disconnect() end
+            end
+        end)
+        setX(UIS:GetMouseLocation().X)
+    end)
+end
+
+local function addDropdown(page, label, key, options)
+    local row = Instance.new(loadstring(base64decode("RnJhbWU="))())
+    row.LayoutOrder = nextO(page)
+    row.Size = UDim2.new(1, 0, 0, 34)
+    row.BackgroundColor3 = CARD
+    row.BackgroundTransparency = T_CARD
+    row.BorderSizePixel = 0
+    row.ZIndex = 4
+    row.Parent = page
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), row).CornerRadius = UDim.new(0, 8)
+    local t = Instance.new(loadstring(base64decode("VGV4dExhYmVs"))())
+    t.Size = UDim2.new(0.4, 0, 1, 0)
+    t.Position = UDim2.new(0, 10, 0, 0)
+    t.BackgroundTransparency = 1
+    t.Text = label
+    t.TextColor3 = TEXT
+    t.TextSize = 12
+    t.Font = FONT
+    t.TextXAlignment = Enum.TextXAlignment.Left
+    t.ZIndex = 5
+    t.Parent = row
+    local idx = 1
+    for kCXQgvu1, o in ipairs(options) do
+        if o == S[key] then idx = kCXQgvu1 end
+    end
+    local btn = Instance.new(loadstring(base64decode("VGV4dEJ1dHRvbg=="))())
+    btn.Size = UDim2.new(0.55, -12, 0, 22)
+    btn.Position = UDim2.new(0.45, 0, 0.5, -11)
+    btn.BackgroundColor3 = Color3.fromRGB(35, 32, 48)
+    btn.BackgroundTransparency = 0.25
+    btn.Text = tostring(S[key])
+    btn.TextColor3 = ACCENT
+    btn.TextSize = 11
+    btn.Font = FONT
+    btn.ZIndex = 5
+    btn.Parent = row
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), btn).CornerRadius = UDim.new(0, 6)
+    btn.MouseButton1Click:Connect(function()
+        idx = idx % #options + 1
+        S[key] = options[idx]
+        btn.Text = options[idx]
+        if key == loadstring(base64decode("RGV2aWNlTW9kZQ=="))() and S.DeviceSpoof then fireDeviceUpdate() end
+        if key == loadstring(base64decode("Q3Vyc29yTmFtZQ=="))() then applyCursorByName(S.CursorName) end
+        saveNamedConfig(S.ConfigName)
+        unlockMouse()
+    end)
+end
+
+local function addInput(page, label, key, ph)
+    local row = Instance.new(loadstring(base64decode("RnJhbWU="))())
+    row.LayoutOrder = nextO(page)
+    row.Size = UDim2.new(1, 0, 0, 56)
+    row.BackgroundColor3 = CARD
+    row.BackgroundTransparency = T_CARD
+    row.BorderSizePixel = 0
+    row.ZIndex = 4
+    row.Parent = page
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), row).CornerRadius = UDim.new(0, 8)
+    local t = Instance.new(loadstring(base64decode("VGV4dExhYmVs"))())
+    t.Size = UDim2.new(1, -16, 0, 16)
+    t.Position = UDim2.new(0, 10, 0, 4)
+    t.BackgroundTransparency = 1
+    t.Text = label
+    t.TextColor3 = MUTED
+    t.TextSize = 11
+    t.Font = FONT
+    t.TextXAlignment = Enum.TextXAlignment.Left
+    t.ZIndex = 5
+    t.Parent = row
+    local box = Instance.new(loadstring(base64decode("VGV4dEJveA=="))())
+    box.Size = UDim2.new(1, -20, 0, 24)
+    box.Position = UDim2.new(0, 10, 0, 24)
+    box.BackgroundColor3 = Color3.fromRGB(14, 14, 20)
+    box.BackgroundTransparency = 0.3
+    box.BorderSizePixel = 0
+    box.Text = tostring(S[key] or ph or loadstring(base64decode(""))())
+    box.PlaceholderText = ph or loadstring(base64decode(""))()
+    box.TextColor3 = TEXT
+    box.TextSize = 12
+    box.Font = FONT
+    box.ClearTextOnFocus = false
+    box.ZIndex = 5
+    box.Parent = row
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), box).CornerRadius = UDim.new(0, 6)
+    box.FocusLost:Connect(function()
+        local v = box.Text
+        if not v or v == loadstring(base64decode(""))() then v = ph or loadstring(base64decode("ZGVmYXVsdA=="))(); box.Text = v end
+        S[key] = v
+        saveNamedConfig(S.ConfigName)
+        unlockMouse()
+    end)
+end
+
+local function addButton(page, label, fn)
+    local btn = Instance.new(loadstring(base64decode("VGV4dEJ1dHRvbg=="))())
+    btn.LayoutOrder = nextO(page)
+    btn.Size = UDim2.new(1, 0, 0, 32)
+    btn.BackgroundColor3 = Color3.fromRGB(35, 30, 55)
+    btn.BackgroundTransparency = 0.3
+    btn.Text = label
+    btn.TextColor3 = ACCENT
+    btn.TextSize = 12
+    btn.Font = FONT
+    btn.ZIndex = 4
+    btn.Parent = page
+    Instance.new(loadstring(base64decode("VUlDb3JuZXI="))(), btn).CornerRadius = UDim.new(0, 8)
+    btn.MouseButton1Click:Connect(function()
+        fn()
+        unlockMouse()
+    end)
+end
+
+local Combat = addTab(loadstring(base64decode("Q29tYmF0"))())
+local PlayerT = addTab(loadstring(base64decode("UGxheWVy"))())
+local Stream = addTab(loadstring(base64decode("U3RyZWFt"))())
+local Staff = addTab(loadstring(base64decode("U3RhZmY="))())
+local Mobile = addTab(loadstring(base64decode("TW9iaWxl"))())
+local Visuals = addTab(loadstring(base64decode("VmlzdWFscw=="))())
+local Sett = addTab(loadstring(base64decode("Q29uZmln"))())
+
+addSection(Combat, loadstring(base64decode("QWltYm90"))())
+addToggle(Combat, loadstring(base64decode("QWltYm90"))(), loadstring(base64decode("QWltYm90"))())
+addDropdown(Combat, loadstring(base64decode("S2V5"))(), loadstring(base64decode("QWltS2V5"))(), {loadstring(base64decode("TUIx"))(), loadstring(base64decode("TUIy"))(), loadstring(base64decode("RQ=="))(), loadstring(base64decode("UQ=="))(), loadstring(base64decode("Rg=="))()})
+addDropdown(Combat, loadstring(base64decode("TW9kZQ=="))(), loadstring(base64decode("QWltTW9kZQ=="))(), {loadstring(base64decode("SG9sZA=="))(), loadstring(base64decode("VG9nZ2xl"))(), loadstring(base64decode("QWx3YXlz"))()})
+addSlider(Combat, loadstring(base64decode("Rk9W"))(), loadstring(base64decode("QWltRk9W"))(), 40, 350, 1)
+addSlider(Combat, loadstring(base64decode("U21vb3RoIDE9aW5zdGFudA=="))(), loadstring(base64decode("QWltU21vb3Ro"))(), 0.1, 1, 0.05)
+addToggle(Combat, loadstring(base64decode("U2hvdyBGT1Y="))(), loadstring(base64decode("U2hvd0ZPVg=="))())
+addToggle(Combat, loadstring(base64decode("V2FsbCBDaGVjaw=="))(), loadstring(base64decode("V2FsbENoZWNr"))())
+addToggle(Combat, loadstring(base64decode("VGVhbSBDaGVjaw=="))(), loadstring(base64decode("VGVhbUNoZWNr"))())
+addToggle(Combat, loadstring(base64decode("UHJlZGljdGlvbg=="))(), loadstring(base64decode("UHJlZGljdGlvbg=="))())
+addSlider(Combat, loadstring(base64decode("UHJlZGljdCBBbW91bnQ="))(), loadstring(base64decode("UHJlZGljdEFtb3VudA=="))(), 0, 0.35, 0.01)
+addSection(Combat, loadstring(base64decode("T3RoZXI="))())
+addToggle(Combat, loadstring(base64decode("VHJpZ2dlcmJvdA=="))(), loadstring(base64decode("VHJpZ2dlcmJvdA=="))())
+addSlider(Combat, loadstring(base64decode("VHJpZ2dlciBGT1Y="))(), loadstring(base64decode("VHJpZ2dlckZPVg=="))(), 10, 120, 1)
+addToggle(Combat, loadstring(base64decode("Tm8gUmVjb2ls"))(), loadstring(base64decode("Tm9SZWNvaWw="))())
+addSlider(Combat, loadstring(base64decode("UmVjb2lsIEFtdA=="))(), loadstring(base64decode("UmVjb2lsQW1vdW50"))(), 0, 1, 0.05)
+
+addSection(PlayerT, loadstring(base64decode("TW92ZQ=="))())
+addToggle(PlayerT, loadstring(base64decode("U3BlZWQ="))(), loadstring(base64decode("U3BlZWQ="))())
+addSlider(PlayerT, loadstring(base64decode("U3BlZWQgVmFsdWU="))(), loadstring(base64decode("U3BlZWRWYWx1ZQ=="))(), 16, 80, 1)
+addToggle(PlayerT, loadstring(base64decode("Tm9jbGlw"))(), loadstring(base64decode("Tm9jbGlw"))())
+addToggle(PlayerT, loadstring(base64decode("QW50aS1Cb3c="))(), loadstring(base64decode("QW50aUJvdw=="))())
+addToggle(PlayerT, loadstring(base64decode("QW50aWNvbGlzw6Nv"))(), loadstring(base64decode("QW50aWNvbGlzYW8="))())
+addSection(PlayerT, loadstring(base64decode("RGV2aWNlIFNwb29m"))())
+addToggle(PlayerT, loadstring(base64decode("RGV2aWNlIFNwb29mIChsb29wKQ=="))(), loadstring(base64decode("RGV2aWNlU3Bvb2Y="))())
+addDropdown(PlayerT, loadstring(base64decode("RGV2aWNlIE1vZGU="))(), loadstring(base64decode("RGV2aWNlTW9kZQ=="))(), {loadstring(base64decode("Q29uc29sZQ=="))(), loadstring(base64decode("RGVza3RvcA=="))(), loadstring(base64decode("TW9iaWxl"))()})
+addSlider(PlayerT, loadstring(base64decode("U3Bvb2YgRGVsYXkgKHNlYyk="))(), loadstring(base64decode("RGV2aWNlU3Bvb2ZEZWxheQ=="))(), 0.5, 5, 0.1)
+addButton(PlayerT, loadstring(base64decode("QXBwbHkgRGV2aWNlIE5vdw=="))(), function()
+    fireDeviceUpdate()
+end)
+
+addSection(Stream, loadstring(base64decode("U3RyZWFt"))())
+addToggle(Stream, loadstring(base64decode("U3RyZWFtIFByb29m"))(), loadstring(base64decode("U3RyZWFtUHJvb2Y="))())
+addInput(Stream, loadstring(base64decode("RGlzcGxheSBuYW1l"))(), loadstring(base64decode("U3Bvb2ZOYW1l"))(), loadstring(base64decode("UGxheWVy"))())
+addToggle(Stream, loadstring(base64decode("VmVyaWZpZWQ="))(), loadstring(base64decode("U2hvd1ZlcmlmaWVk"))())
+
+addSection(Staff, loadstring(base64decode("U3RhZmY="))())
+addToggle(Staff, loadstring(base64decode("RGV0ZWN0"))(), loadstring(base64decode("U3RhZmZEZXRlY3Q="))())
+addToggle(Staff, loadstring(base64decode("Tm90aWZ5"))(), loadstring(base64decode("U3RhZmZOb3RpZnk="))())
+addToggle(Staff, loadstring(base64decode("TGVhdmU="))(), loadstring(base64decode("U3RhZmZMZWF2ZQ=="))())
+
+addSection(Mobile, loadstring(base64decode("TW9iaWxlIEFpbWJvdA=="))())
+addToggle(Mobile, loadstring(base64decode("TW9iaWxlIEFpbSBPTg=="))(), loadstring(base64decode("TW9iaWxlQWlt"))())
+addSlider(Mobile, loadstring(base64decode("TW9iaWxlIFNtb290aA=="))(), loadstring(base64decode("TW9iaWxlU21vb3Ro"))(), 0.1, 1, 0.05)
+addSlider(Mobile, loadstring(base64decode("TW9iaWxlIEZPVg=="))(), loadstring(base64decode("TW9iaWxlRk9W"))(), 40, 350, 1)
+addToggle(Mobile, loadstring(base64decode("TW9iaWxlIFNob3cgRk9W"))(), loadstring(base64decode("TW9iaWxlU2hvd0ZPVg=="))())
+
+addSection(Visuals, loadstring(base64decode("RVNQ"))())
+addToggle(Visuals, loadstring(base64decode("RVNQIEVuYWJsZWQ="))(), loadstring(base64decode("RVNQ"))())
+addToggle(Visuals, loadstring(base64decode("Qm94ZXM="))(), loadstring(base64decode("U2hvd0JveGVz"))())
+addDropdown(Visuals, loadstring(base64decode("Qm94IFN0eWxl"))(), loadstring(base64decode("Qm94U3R5bGU="))(), {loadstring(base64decode("Q29ybmVy"))(), loadstring(base64decode("RnVsbA=="))(), loadstring(base64decode("Qm90aA=="))()})
+addToggle(Visuals, loadstring(base64decode("TmFtZXM="))(), loadstring(base64decode("U2hvd05hbWVz"))())
+addToggle(Visuals, loadstring(base64decode("RGlzdGFuY2U="))(), loadstring(base64decode("U2hvd0Rpc3RhbmNl"))())
+addToggle(Visuals, loadstring(base64decode("SGVhbHRo"))(), loadstring(base64decode("U2hvd0hlYWx0aA=="))())
+addToggle(Visuals, loadstring(base64decode("SGVhZCBEb3Q="))(), loadstring(base64decode("U2hvd0hlYWREb3Q="))())
+addSection(Visuals, loadstring(base64decode("UmFkYXI="))())
+addToggle(Visuals, loadstring(base64decode("UmFkYXIgRVNQ"))(), loadstring(base64decode("UmFkYXI="))())
+addSlider(Visuals, loadstring(base64decode("UmFkYXIgU2l6ZQ=="))(), loadstring(base64decode("UmFkYXJTaXpl"))(), 80, 220, 5)
+addSlider(Visuals, loadstring(base64decode("UmFkYXIgUmFuZ2U="))(), loadstring(base64decode("UmFkYXJSYW5nZQ=="))(), 50, 400, 10)
+addSection(Visuals, loadstring(base64decode("Q3Vyc29y"))())
+addDropdown(Visuals, loadstring(base64decode("U2VsZWN0IEN1cnNvcg=="))(), loadstring(base64decode("Q3Vyc29yTmFtZQ=="))(), CURSOR_NAMES)
+addSlider(Visuals, loadstring(base64decode("Q3Vyc29yIFNpemU="))(), loadstring(base64decode("Q3Vyc29yU2l6ZQ=="))(), 8, 128, 1)
+for _, c in ipairs(CURSORS) do
+    addButton(Visuals, c.Name, function()
+        applyCursorByName(c.Name)
+        saveNamedConfig(S.ConfigName)
+    end)
+end
+
+addSection(Sett, loadstring(base64decode("TmFtZWQgQ29uZmln"))())
+addInput(Sett, loadstring(base64decode("Q29uZmlnIG5hbWU="))(), loadstring(base64decode("Q29uZmlnTmFtZQ=="))(), loadstring(base64decode("ZGVmYXVsdA=="))())
+addButton(Sett, loadstring(base64decode("U2F2ZSBDb25maWc="))(), function() saveNamedConfig(S.ConfigName) end)
+addButton(Sett, loadstring(base64decode("TG9hZCBDb25maWc="))(), function() loadNamedConfig(S.ConfigName) end)
+addToggle(Sett, loadstring(base64decode("RlBTICsgTVM="))(), loadstring(base64decode("U2hvd1BlcmY="))())
+addToggle(Sett, loadstring(base64decode("UG90YXRvIEZQUyBCb29zdA=="))(), loadstring(base64decode("UG90YXRv"))())
+
+showPage(loadstring(base64decode("Q29tYmF0"))())
+
+local dragging, d0, p0
+Top.InputBegan:Connect(function(kCXQgvu1)
+    if kCXQgvu1.UserInputType == Enum.UserInputType.MouseButton1 or kCXQgvu1.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        d0 = kCXQgvu1.Position
+        p0 = Main.Position
+        unlockMouse()
+    end
+end)
+Top.InputEnded:Connect(function(kCXQgvu1)
+    if kCXQgvu1.UserInputType == Enum.UserInputType.MouseButton1 or kCXQgvu1.UserInputType == Enum.UserInputType.Touch then
+        dragging = false
+    end
+end)
+UIS.InputChanged:Connect(function(kCXQgvu1)
+    if dragging and (kCXQgvu1.UserInputType == Enum.UserInputType.MouseMovement or kCXQgvu1.UserInputType == Enum.UserInputType.Touch) then
+        local d = kCXQgvu1.Position - d0
+        Main.Position = UDim2.new(p0.X.Scale, p0.X.Offset + d.X, p0.Y.Scale, p0.Y.Offset + d.Y)
+    end
+end)
+local function setOpen(v)
+    Main.Visible = v
+    unlockMouse()
+end
+Close.MouseButton1Click:Connect(function() setOpen(false) end)
+UIS.InputBegan:Connect(function(kCXQgvu1)
+    if kCXQgvu1.KeyCode == Enum.KeyCode.RightControl or kCXQgvu1.KeyCode == Enum.KeyCode.LeftControl then
+        setOpen(not Main.Visible)
+    end
+end)
+RunService.RenderStepped:Connect(function()
+    if Main.Visible then unlockMouse() end
+end)
+setOpen(true)
+
+task.spawn(function()
+    while true do
+        local d = tonumber(S.DeviceSpoofDelay) or 1.5
+        if d < 0.4 then d = 0.4 end
+        task.wait(d)
+        if S.DeviceSpoof then fireDeviceUpdate() end
+    end
+end)
+
+local KEY_MAP = {
+    MB1 = Enum.UserInputType.MouseButton1,
+    MB2 = Enum.UserInputType.MouseButton2,
+    E = Enum.KeyCode.E,
+    Q = Enum.KeyCode.Q,
+    F = Enum.KeyCode.F,
+}
+local AimbotActive, Shooting, lastPitch, lastShot = false, false, 0, 0
+local noclipConn = nil
+local VERIFIED = loadstring(base64decode("XHV7RTAwMH0="))()
+local StaffGroupId = 33054943
+local CYCLE = {51, 100, 255}
+local cycleIndex, currentMin, lastCycle, flagged = 1, 51, 0, {}
+local col = Color3.fromRGB(170, 0, 255)
+
+local function dnew(cls)
+    if not HasDrawing then return nil end
+    local ok, o = pcall(function() return Drawing.new(cls) end)
+    if ok then return o end
+    return nil
+end
+
+local radarBG, radarBorder, radarCenter, radarCrossH, radarCrossV
+local radarDots = {}
+local function ensureRadar()
+    if not HasDrawing or radarBG then return end
+    radarBG = dnew(loadstring(base64decode("Q2lyY2xl"))())
+    if radarBG then
+        radarBG.Filled = true
+        radarBG.Color = Color3.fromRGB(10, 10, 14)
+        radarBG.Transparency = 0.35
+        radarBG.NumSides = 64
+        radarBG.Visible = false
+    end
+    radarBorder = dnew(loadstring(base64decode("Q2lyY2xl"))())
+    if radarBorder then
+        radarBorder.Filled = false
+        radarBorder.Thickness = 1.5
+        radarBorder.Color = ACCENT
+        radarBorder.NumSides = 64
+        radarBorder.Visible = false
+    end
+    radarCenter = dnew(loadstring(base64decode("Q2lyY2xl"))())
+    if radarCenter then
+        radarCenter.Filled = true
+        radarCenter.Color = Color3.fromRGB(0, 255, 120)
+        radarCenter.Radius = 3
+        radarCenter.NumSides = 12
+        radarCenter.Visible = false
+    end
+    radarCrossH = dnew(loadstring(base64decode("TGluZQ=="))())
+    if radarCrossH then radarCrossH.Thickness = 1; radarCrossH.Color = Color3.fromRGB(60, 60, 80); radarCrossH.Visible = false end
+    radarCrossV = dnew(loadstring(base64decode("TGluZQ=="))())
+    if radarCrossV then radarCrossV.Thickness = 1; radarCrossV.Color = Color3.fromRGB(60, 60, 80); radarCrossV.Visible = false end
+end
+local function hideRadar()
+    if radarBG then radarBG.Visible = false end
+    if radarBorder then radarBorder.Visible = false end
+    if radarCenter then radarCenter.Visible = false end
+    if radarCrossH then radarCrossH.Visible = false end
+    if radarCrossV then radarCrossV.Visible = false end
+    for _, d in pairs(radarDots) do
+        pcall(function() if d then d.Visible = false end end)
+    end
+end
+
+local function getChar(p)
+    if not p then return nil end
+    local ok, c = pcall(function() return p.Character end)
+    if ok then return c end
+    return nil
+end
+local function isAlive(p)
+    local c = getChar(p)
+    if not c then return false end
+    local h = c:FindFirstChildOfClass(loadstring(base64decode("SHVtYW5vaWQ="))())
+    return h and h.Health > 0
+end
+local function isEnemy(p)
+    if not p or p == LocalPlayer then return false end
+    if not S.TeamCheck then return true end
+    local ok1, a = pcall(function() return LocalPlayer.Team end)
+    local ok2, b = pcall(function() return p.Team end)
+    if ok1 and ok2 and a and b then return a ~= b end
+    return true
+end
+
+local function isSoftPart(part)
+    if not part or not part:IsA(loadstring(base64decode("QmFzZVBhcnQ="))()) then return true end
+    if isSolidMapProp(part) then return false end
+    if part.CanCollide == false and part.Transparency >= 0.3 then return true end
+    if part.Transparency >= 0.75 then return true end
+    local n = string.lower(part.Name or loadstring(base64decode(""))())
+    local full = string.lower(part:GetFullName() or loadstring(base64decode(""))())
+    if string.find(n, loadstring(base64decode("Z2xhc3M="))(), 1, true) then return true end
+    if string.find(full, loadstring(base64decode("Y2FtZXJhbW9kZWw="))(), 1, true) or string.find(full, loadstring(base64decode("dmlld21vZGVs"))(), 1, true) then return true end
+    return false
+end
+
+local function isVisible(player)
+    if not S.WallCheck then return true end
+    local char = getChar(player)
+    local head = char and char:FindFirstChild(loadstring(base64decode("SGVhZA=="))())
+    if not head then return false end
+    local my = getChar(LocalPlayer)
+    local origin = Camera.CFrame.Position + Camera.CFrame.LookVector * 1.2
+    local target = head.Position
+    local dir = target - origin
+    local dist = dir.Magnitude
+    if dist < 2 then return true end
+    local ignore = {char, Camera}
+    if my then table.insert(ignore, my) end
+    local params = RaycastParams.new()
+    params.FilterType = Enum.RaycastFilterType.Exclude
+    params.FilterDescendantsInstances = ignore
+    params.IgnoreWater = true
+    local traveled, pos, unit = 0, origin, dir.Unit
+    for _ = 1, 8 do
+        local remain = dist - traveled
+        if remain <= 0.1 then return true end
+        local hit = workspace:Raycast(pos, unit * remain, params)
+        if hit == nil then return true end
+        if hit.Instance and hit.Instance:IsDescendantOf(char) then return true end
+        if (hit.Position - origin).Magnitude < 1.2 and not isSolidMapProp(hit.Instance) then
+            table.insert(ignore, hit.Instance)
+            params.FilterDescendantsInstances = ignore
+            pos = hit.Position + unit * 0.15
+            traveled = traveled + 0.15
+        elseif isSoftPart(hit.Instance) then
+            table.insert(ignore, hit.Instance)
+            params.FilterDescendantsInstances = ignore
+            local step = (hit.Position - pos).Magnitude
+            pos = hit.Position + unit * 0.12
+            traveled = traveled + step + 0.12
+        else
+            return false
+        end
+    end
+    return false
+end
+
+local function predictPos(head, char)
+    if not S.Prediction or not head then return head.Position end
+    local root = char and (char:FindFirstChild(loadstring(base64decode("SHVtYW5vaWRSb290UGFydA=="))()) or char:FindFirstChild(loadstring(base64decode("VG9yc28="))()))
+    local vel = Vector3.zero
+    if root then pcall(function() vel = root.AssemblyLinearVelocity end) end
+    return head.Position + vel * (tonumber(S.PredictAmount) or 0.12)
+end
+
+local function getClosest(fov, needVis)
+    local best, bd = nil, fov
+    local center = Camera.ViewportSize / 2
+    for _, plr in ipairs(Players:GetPlayers()) do
+        if plr and plr ~= LocalPlayer and isEnemy(plr) and isAlive(plr) then
+            local char = getChar(plr)
+            local head = char and char:FindFirstChild(loadstring(base64decode("SGVhZA=="))())
+            if head then
+                local aimAt = predictPos(head, char)
+                local pos, on = Camera:WorldToViewportPoint(aimAt)
+                if on then
+                    local d = (Vector2.new(pos.X, pos.Y) - center).Magnitude
+                    if d < bd and ((not needVis) or isVisible(plr)) then
+                        bd = d
+                        best = aimAt
+                    end
+                end
+            end
+        end
+    end
+    return best
+end
+
+UIS.InputBegan:Connect(function(kCXQgvu1, gp)
+    if kCXQgvu1.UserInputType == Enum.UserInputType.MouseButton1 then Shooting = true end
+    if gp or not S.Aimbot or S.MobileAim then return end
+    local key = KEY_MAP[S.AimKey] or Enum.UserInputType.MouseButton2
+    if kCXQgvu1.UserInputType == key or kCXQgvu1.KeyCode == key then
+        if S.AimMode == loadstring(base64decode("SG9sZA=="))() then AimbotActive = true
+        elseif S.AimMode == loadstring(base64decode("VG9nZ2xl"))() then AimbotActive = not AimbotActive end
+    end
+end)
+UIS.InputEnded:Connect(function(kCXQgvu1)
+    if kCXQgvu1.UserInputType == Enum.UserInputType.MouseButton1 then Shooting = false end
+    local key = KEY_MAP[S.AimKey] or Enum.UserInputType.MouseButton2
+    if S.AimMode == loadstring(base64decode("SG9sZA=="))() and (kCXQgvu1.UserInputType == key or kCXQgvu1.KeyCode == key) then
+        AimbotActive = false
+    end
+end)
+
+local function softUpright()
+    local c = getChar(LocalPlayer)
+    if not c then return end
+    local r = c:FindFirstChild(loadstring(base64decode("SHVtYW5vaWRSb290UGFydA=="))())
+    local h = c:FindFirstChildOfClass(loadstring(base64decode("SHVtYW5vaWQ="))())
+    if not r or not h or h.Health <= 0 then return end
+    local st = h:GetState()
+    if st == Enum.HumanoidStateType.Jumping or st == Enum.HumanoidStateType.Freefall or st == Enum.HumanoidStateType.Ragdoll then return end
+    if r.CFrame.UpVector:Dot(Vector3.yAxis) >= 0.92 then return end
+    local pos = r.Position
+    local _, yaw = r.CFrame:ToOrientation()
+    r.CFrame = CFrame.new(pos) * CFrame.Angles(0, yaw, 0)
+end
+
+local function setNoclip(on)
+    if noclipConn then noclipConn:Disconnect(); noclipConn = nil end
+    if not on then
+        local c = getChar(LocalPlayer)
+        if c then
+            for _, p in ipairs(c:GetDescendants()) do
+                if p:IsA(loadstring(base64decode("QmFzZVBhcnQ="))()) then p.CanCollide = true end
+            end
+        end
+        return
+    end
+    noclipConn = RunService.Stepped:Connect(function()
+        local c = getChar(LocalPlayer)
+        if not c then return end
+        for _, p in ipairs(c:GetDescendants()) do
+            if p:IsA(loadstring(base64decode("QmFzZVBhcnQ="))()) then p.CanCollide = false end
+        end
+    end)
+end
+
+task.spawn(function()
+    while true do
+        task.wait(0.25)
+        if S.AntiBow then pcall(softUpright) end
+    end
+end)
+task.spawn(function()
+    while true do
+        task.wait(0.5)
+        if S.StreamProof then
+            local full = S.ShowVerified and (tostring(S.SpoofName) .. loadstring(base64decode("IA=="))() .. VERIFIED) or tostring(S.SpoofName)
+            pcall(function() LocalPlayer.DisplayName = full end)
+            local h = getChar(LocalPlayer) and getChar(LocalPlayer):FindFirstChildOfClass(loadstring(base64decode("SHVtYW5vaWQ="))())
+            if h then pcall(function() h.DisplayName = full end) end
+        end
+    end
+end)
+task.spawn(function()
+    while true do
+        task.wait(2)
+        if S.StaffDetect then
+            local found = false
+            for _, p in ipairs(Players:GetPlayers()) do
+                if p and p ~= LocalPlayer then
+                    local ok, rank = pcall(function() return p:GetRankInGroup(StaffGroupId) end)
+                    if ok and type(rank) == loadstring(base64decode("bnVtYmVy"))() and rank >= currentMin and rank > 0 then
+                        found = true
+                        if not flagged[p.UserId] then
+                            flagged[p.UserId] = true
+                            if S.StaffLeave then
+                                task.delay(0.3, function()
+                                    pcall(function() LocalPlayer:Kick(loadstring(base64decode("U3RhZmY="))()) end)
+                                end)
+                            end
+                        end
+                    end
+                end
+            end
+            if found then
+                lastCycle = tick()
+            elseif tick() - lastCycle >= 4 then
+                cycleIndex = cycleIndex % #CYCLE + 1
+                currentMin = CYCLE[cycleIndex]
+                lastCycle = tick()
+            end
+        end
+    end
+end)
+
+RunService.Heartbeat:Connect(function()
+    local c = getChar(LocalPlayer)
+    if c then
+        local h = c:FindFirstChildOfClass(loadstring(base64decode("SHVtYW5vaWQ="))())
+        if S.Speed and h and h.Health > 0 then h.WalkSpeed = S.SpeedValue or 24 end
+        if S.Noclip then
+            if not noclipConn then setNoclip(true) end
+        elseif noclipConn then
+            setNoclip(false)
+        end
+    end
+    if S.Potato then applyPotato(true) else applyPotato(false) end
+end)
+
+local function ensureHL(plr)
+    if ESPHL[plr] then return end
+    local char = getChar(plr)
+    if not char then return end
+    local h = Instance.new(loadstring(base64decode("SGlnaGxpZ2h0"))())
+    h.FillColor = col
+    h.OutlineColor = Color3.new(1, 1, 1)
+    h.FillTransparency = 0.5
+    h.Adornee = char
+    h.Parent = char
+    ESPHL[plr] = h
+end
+local function createDrawESP(plr)
+    if ESPDraw[plr] then return end
+    local box = dnew(loadstring(base64decode("U3F1YXJl"))())
+    if not box then return end
+    box.Thickness = 1.5
+    box.Filled = false
+    box.Visible = false
+    local lines = {}
+    for kCXQgvu1 = 1, 8 do
+        local l = dnew(loadstring(base64decode("TGluZQ=="))())
+        if l then l.Thickness = 1.5; l.Visible = false; lines[kCXQgvu1] = l end
+    end
+    local name, dist = dnew(loadstring(base64decode("VGV4dA=="))()), dnew(loadstring(base64decode("VGV4dA=="))())
+    if name then name.Size = 14; name.Center = true; name.Outline = true; name.Font = 2; name.Visible = false end
+    if dist then dist.Size = 12; dist.Center = true; dist.Outline = true; dist.Font = 2; dist.Visible = false end
+    local hb, hf = dnew(loadstring(base64decode("U3F1YXJl"))()), dnew(loadstring(base64decode("U3F1YXJl"))())
+    if hb then hb.Filled = false; hb.Visible = false end
+    if hf then hf.Filled = true; hf.Visible = false end
+    local hd = dnew(loadstring(base64decode("Q2lyY2xl"))())
+    if hd then hd.NumSides = 16; hd.Filled = true; hd.Visible = false end
+    ESPDraw[plr] = {Box = box, Lines = lines, Name = name, Dist = dist, HB = hb, HF = hf, Dot = hd}
+end
+
+Players.PlayerRemoving:Connect(function(p)
+    if ESPDraw[p] then
+        pcall(function()
+            for _, x in pairs(ESPDraw[p]) do
+                if type(x) == loadstring(base64decode("dGFibGU="))() then
+                    for _, l in pairs(x) do if l then pcall(function() l:Remove() end) end end
+                elseif x then
+                    pcall(function() x:Remove() end)
+                end
+            end
+        end)
+        ESPDraw[p] = nil
+    end
+    if ESPHL[p] then pcall(function() ESPHL[p]:Destroy() end); ESPHL[p] = nil end
+    if radarDots[p] then pcall(function() radarDots[p]:Remove() end); radarDots[p] = nil end
+end)
+
+local fovC = dnew(loadstring(base64decode("Q2lyY2xl"))())
+if fovC then
+    fovC.Thickness = 1
+    fovC.NumSides = 48
+    fovC.Filled = false
+    fovC.Color = Color3.new(1, 1, 1)
+    fovC.Visible = false
+end
+local fpsT = dnew(loadstring(base64decode("VGV4dA=="))())
+if fpsT then
+    fpsT.Size = 16
+    fpsT.Outline = true
+    fpsT.Font = 2
+    fpsT.Visible = false
+end
+local frames, lastF, fps = 0, tick(), 0
+
+RunService.RenderStepped:Connect(function()
+    frames = frames + 1
+    if tick() - lastF >= 1 then
+        fps = frames
+        frames = 0
+        lastF = tick()
+    end
+
+    if S.ShowPerf and fpsT then
+        local ms = 0
+        pcall(function()
+            ms = math.floor(Stats.Network.ServerStatsItem[loadstring(base64decode("RGF0YSBQaW5n"))()]:GetValue())
+        end)
+        fpsT.Text = loadstring(base64decode("RlBTIA=="))() .. fps .. loadstring(base64decode("ICBNUyA="))() .. ms
+        fpsT.Position = Vector2.new(Camera.ViewportSize.X - 150, 10)
+        fpsT.Color = ACCENT
+        fpsT.Visible = true
+    elseif fpsT then
+        fpsT.Visible = false
+    end
+
+    if S.Radar and HasDrawing then
+        ensureRadar()
+        local size = tonumber(S.RadarSize) or 140
+        local range = tonumber(S.RadarRange) or 200
+        local half = size / 2
+        local center = Vector2.new(20 + half, 20 + half)
+        if radarBG then radarBG.Position = center; radarBG.Radius = half; radarBG.Visible = true end
+        if radarBorder then radarBorder.Position = center; radarBorder.Radius = half; radarBorder.Visible = true end
+        if radarCenter then radarCenter.Position = center; radarCenter.Visible = true end
+        if radarCrossH then
+            radarCrossH.From = Vector2.new(center.X - half + 4, center.Y)
+            radarCrossH.To = Vector2.new(center.X + half - 4, center.Y)
+            radarCrossH.Visible = true
+        end
+        if radarCrossV then
+            radarCrossV.From = Vector2.new(center.X, center.Y - half + 4)
+            radarCrossV.To = Vector2.new(center.X, center.Y + half - 4)
+            radarCrossV.Visible = true
+        end
+        local myChar = getChar(LocalPlayer)
+        local myRoot = myChar and (myChar:FindFirstChild(loadstring(base64decode("SHVtYW5vaWRSb290UGFydA=="))()) or myChar:FindFirstChild(loadstring(base64decode("VG9yc28="))()))
+        local camLook = Camera.CFrame.LookVector
+        local yaw = math.atan2(camLook.X, camLook.Z)
+        local seen = {}
+        if myRoot then
+            for _, plr in ipairs(Players:GetPlayers()) do
+                if plr ~= LocalPlayer and isEnemy(plr) and isAlive(plr) then
+                    local char = getChar(plr)
+                    local root = char and (char:FindFirstChild(loadstring(base64decode("SHVtYW5vaWRSb290UGFydA=="))()) or char:FindFirstChild(loadstring(base64decode("VG9yc28="))()))
+                    if root then
+                        local offset = root.Position - myRoot.Position
+                        if offset.Magnitude <= range then
+                            local rx = offset.X * math.cos(yaw) - offset.Z * math.sin(yaw)
+                            local rz = offset.X * math.sin(yaw) + offset.Z * math.cos(yaw)
+                            local scale = half / range
+                            local dx, dy = rx * scale, -rz * scale
+                            local mag = math.sqrt(dx * dx + dy * dy)
+                            if mag > half - 4 then
+                                dx = dx / mag * (half - 4)
+                                dy = dy / mag * (half - 4)
+                            end
+                            if not radarDots[plr] then
+                                local dot = dnew(loadstring(base64decode("Q2lyY2xl"))())
+                                if dot then
+                                    dot.Filled = true
+                                    dot.NumSides = 12
+                                    dot.Radius = 4
+                                    radarDots[plr] = dot
+                                end
+                            end
+                            local dot = radarDots[plr]
+                            if dot then
+                                dot.Position = Vector2.new(center.X + dx, center.Y + dy)
+                                dot.Color = col
+                                dot.Visible = true
+                            end
+                            seen[plr] = true
+                        end
+                    end
+                end
+            end
+        end
+        for p, d in pairs(radarDots) do
+            if not seen[p] then
+                pcall(function() if d then d.Visible = false end end)
+            end
+        end
+    else
+        hideRadar()
+    end
+
+    local showFov, fovR = false, S.AimFOV or 150
+    if S.MobileAim then
+        showFov = S.MobileShowFOV
+        fovR = S.MobileFOV or 160
+    else
+        showFov = S.ShowFOV and S.Aimbot
+        fovR = S.AimFOV or 150
+    end
+    if fovC then
+        fovC.Position = Camera.ViewportSize / 2
+        fovC.Radius = fovR
+        fovC.Visible = showFov
+    end
+
+    local useAim, smooth, fov = false, S.AimSmooth or 0.95, S.AimFOV or 150
+    if S.MobileAim then
+        useAim = true
+        smooth = S.MobileSmooth or 0.9
+        fov = S.MobileFOV or 160
+    elseif S.Aimbot then
+        useAim = AimbotActive or (S.AimMode == loadstring(base64decode("QWx3YXlz"))())
+        smooth = S.AimSmooth or 0.95
+        fov = S.AimFOV or 150
+    end
+    if useAim then
+        local aimPos = getClosest(fov, true)
+        if aimPos then
+            if smooth >= 0.98 then
+                Camera.CFrame = CFrame.new(Camera.CFrame.Position, aimPos)
+            else
+                Camera.CFrame = Camera.CFrame:Lerp(
+                    CFrame.new(Camera.CFrame.Position, aimPos),
+                    math.clamp(smooth, 0.1, 1)
+                )
+            end
+        end
+    end
+
+    if S.NoRecoil and Shooting then
+        local cf = Camera.CFrame
+        local pitch, yaw, roll = cf:ToOrientation()
+        local amt = S.RecoilAmount or 0
+        if pitch > lastPitch + 0.003 then
+            local mixed = lastPitch + (pitch - lastPitch) * amt
+            Camera.CFrame = CFrame.new(cf.Position) * CFrame.fromOrientation(mixed, yaw, roll)
+            lastPitch = mixed
+        else
+            lastPitch = pitch
+        end
+    else
+        lastPitch = select(1, Camera.CFrame:ToOrientation())
+    end
+
+    if S.Triggerbot then
+        local t = getClosest(S.TriggerFOV or 45, S.WallCheck)
+        if t and tick() - lastShot > 0.1 then
+            lastShot = tick()
+            local tool = getChar(LocalPlayer) and getChar(LocalPlayer):FindFirstChildOfClass(loadstring(base64decode("VG9vbA=="))())
+            if tool then pcall(function() tool:Activate() end) end
+        end
+    end
+
+    if not S.ESP then
+        clearESP()
+    else
+        local myRoot = getChar(LocalPlayer) and getChar(LocalPlayer):FindFirstChild(loadstring(base64decode("SHVtYW5vaWRSb290UGFydA=="))())
+        for _, plr in ipairs(Players:GetPlayers()) do
+            if plr and plr ~= LocalPlayer and isEnemy(plr) and isAlive(plr) then
+                local char = getChar(plr)
+                local root = char and (char:FindFirstChild(loadstring(base64decode("SHVtYW5vaWRSb290UGFydA=="))()) or char:FindFirstChild(loadstring(base64decode("VG9yc28="))()))
+                local head = char and char:FindFirstChild(loadstring(base64decode("SGVhZA=="))())
+                local hum = char and char:FindFirstChildOfClass(loadstring(base64decode("SHVtYW5vaWQ="))())
+                if root and head then
+                    if HasDrawing then
+                        if not ESPDraw[plr] then createDrawESP(plr) end
+                        local d = ESPDraw[plr]
+                        if d and d.Box then
+                            local v, on = Camera:WorldToViewportPoint(root.Position)
+                            if not on then
+                                d.Box.Visible = false
+                                if d.Name then d.Name.Visible = false end
+                                if d.Dist then d.Dist.Visible = false end
+                                if d.HB then d.HB.Visible = false end
+                                if d.HF then d.HF.Visible = false end
+                                if d.Dot then d.Dot.Visible = false end
+                                if d.Lines then
+                                    for li = 1, #d.Lines do
+                                        if d.Lines[li] then d.Lines[li].Visible = false end
+                                    end
+                                end
+                            else
+                                local top = Camera:WorldToViewportPoint(head.Position + Vector3.new(0, 1.1, 0))
+                                local bot = Camera:WorldToViewportPoint(root.Position - Vector3.new(0, 2.8, 0))
+                                local hgt = math.abs(bot.Y - top.Y)
+                                local w = math.clamp(hgt / 1.85, 8, 120)
+                                local size = Vector2.new(w, hgt)
+                                local pos = Vector2.new(v.X - w / 2, top.Y)
+                                local cl = math.clamp(w * 0.25, 4, 12)
+                                local style = S.BoxStyle or loadstring(base64decode("Q29ybmVy"))()
+                                if S.ShowBoxes and (style == loadstring(base64decode("RnVsbA=="))() or style == loadstring(base64decode("Qm90aA=="))()) then
+                                    d.Box.Size = size
+                                    d.Box.Position = pos
+                                    d.Box.Color = col
+                                    d.Box.Visible = true
+                                else
+                                    d.Box.Visible = false
+                                end
+                                if S.ShowBoxes and (style == loadstring(base64decode("Q29ybmVy"))() or style == loadstring(base64decode("Qm90aA=="))()) and d.Lines and d.Lines[1] then
+                                    local L = d.Lines
+                                    L[1].From, L[1].To = pos, Vector2.new(pos.X, pos.Y + cl)
+                                    L[2].From, L[2].To = pos, Vector2.new(pos.X + cl, pos.Y)
+                                    L[3].From, L[3].To = Vector2.new(pos.X + size.X, pos.Y), Vector2.new(pos.X + size.X, pos.Y + cl)
+                                    L[4].From, L[4].To = Vector2.new(pos.X + size.X, pos.Y), Vector2.new(pos.X + size.X - cl, pos.Y)
+                                    L[5].From, L[5].To = Vector2.new(pos.X, pos.Y + size.Y), Vector2.new(pos.X, pos.Y + size.Y - cl)
+                                    L[6].From, L[6].To = Vector2.new(pos.X, pos.Y + size.Y), Vector2.new(pos.X + cl, pos.Y + size.Y)
+                                    L[7].From, L[7].To = Vector2.new(pos.X + size.X, pos.Y + size.Y), Vector2.new(pos.X + size.X, pos.Y + size.Y - cl)
+                                    L[8].From, L[8].To = Vector2.new(pos.X + size.X, pos.Y + size.Y), Vector2.new(pos.X + size.X - cl, pos.Y + size.Y)
+                                    for li = 1, 8 do
+                                        if L[li] then L[li].Color = col; L[li].Visible = true end
+                                    end
+                                end
+                                if S.ShowNames and d.Name then
+                                    d.Name.Text = plr.DisplayName
+                                    d.Name.Position = Vector2.new(v.X, pos.Y - 14)
+                                    d.Name.Color = col
+                                    d.Name.Visible = true
+                                elseif d.Name then
+                                    d.Name.Visible = false
+                                end
+                                if S.ShowDistance and d.Dist and myRoot then
+                                    d.Dist.Text = tostring(math.floor((root.Position - myRoot.Position).Magnitude)) .. loadstring(base64decode("bQ=="))()
+                                    d.Dist.Position = Vector2.new(v.X, pos.Y + size.Y + 2)
+                                    d.Dist.Visible = true
+                                elseif d.Dist then
+                                    d.Dist.Visible = false
+                                end
+                                if S.ShowHealth and hum and d.HB and d.HF then
+                                    local pct = math.clamp(hum.Health / math.max(hum.MaxHealth, 1), 0, 1)
+                                    d.HB.Size = Vector2.new(3, size.Y)
+                                    d.HB.Position = Vector2.new(pos.X - 6, pos.Y)
+                                    d.HB.Visible = true
+                                    local fh = size.Y * pct
+                                    d.HF.Size = Vector2.new(2, fh)
+                                    d.HF.Position = Vector2.new(pos.X - 5.5, pos.Y + size.Y - fh)
+                                    d.HF.Color = Color3.fromRGB(255 * (1 - pct), 255 * pct, 0)
+                                    d.HF.Visible = true
+                                end
+                                if S.ShowHeadDot and d.Dot then
+                                    local hp, on2 = Camera:WorldToViewportPoint(head.Position)
+                                    if on2 then
+                                        d.Dot.Position = Vector2.new(hp.X, hp.Y)
+                                        d.Dot.Radius = math.clamp(w * 0.2, 4, 10)
+                                        d.Dot.Color = col
+                                        d.Dot.Visible = true
+                                    else
+                                        d.Dot.Visible = false
+                                    end
+                                end
+                            end
+                        end
+                    else
+                        ensureHL(plr)
+                    end
+                end
+            else
+                if ESPDraw[plr] then
+                    pcall(function()
+                        for _, x in pairs(ESPDraw[plr]) do
+                            if type(x) == loadstring(base64decode("dGFibGU="))() then
+                                for _, l in pairs(x) do if l then pcall(function() l:Remove() end) end end
+                            elseif x then
+                                pcall(function() x:Remove() end)
+                            end
+                        end
+                    end)
+                    ESPDraw[plr] = nil
+                end
+                if ESPHL[plr] then
+                    pcall(function() ESPHL[plr]:Destroy() end)
+                    ESPHL[plr] = nil
+                end
+            end
+        end
+    end
+end)
+
+task.spawn(function()
+    while true do
+        task.wait(15)
+        saveNamedConfig(S.ConfigName)
+    end
+end)
+
+if S.Potato then applyPotato(true) end
+if S.CursorName and S.CursorName ~= loadstring(base64decode("T2Zm"))() then applyCursorByName(S.CursorName) end
+print(loadstring(base64decode("W01vb24gSHViXSBDbGVhbiBidWlsZCBPSyB8IEN1cnNvciBzaXplIDgtMTI4IHwgRG8gTk9UIG9iZnVzY2F0ZSB0aGlzIHJhdw=="))())
+end
+D1LovpKj(T3pgq)
 end)(...)

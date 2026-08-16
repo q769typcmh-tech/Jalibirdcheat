@@ -19,218 +19,208 @@ pcall(function()
 	end;
 end);
 task.wait(.25);
-local n = getgenv or function()
+local g = getgenv or function()
 		return _G;
 	end;
-local W = game:GetService("Players");
-local l = game:GetService("UserInputService");
-local H = game:GetService("RunService");
-local v = game:GetService("Lighting");
-local E = game:GetService("Stats");
-local g = game:GetService("HttpService");
-local u = game:GetService("TweenService");
-local y = game:GetService("ReplicatedStorage");
-local m = game:GetService("VirtualInputManager");
-local T = workspace.CurrentCamera;
-local M = l:GetPlatform();
-if M == Enum.Platform.IOS or M == Enum.Platform.Android then
-	local n = W.LocalPlayer;
-	if n then
-		pcall(function()
-			n:Kick("Sorry bro this is for PC, there is no mobile version.");
-		end);
-	end;
-	return;
-end;
-local Y = W.LocalPlayer or W.PlayerAdded:Wait();
-local s = Y:WaitForChild("PlayerGui", 60);
-if not s then
+local h = game:GetService("Players");
+local K = game:GetService("UserInputService");
+local j = game:GetService("RunService");
+local T = game:GetService("Lighting");
+local R = game:GetService("Stats");
+local L = game:GetService("HttpService");
+local H = game:GetService("TweenService");
+local o = game:GetService("ReplicatedStorage");
+local I = game:GetService("VirtualInputManager");
+local Z = workspace.CurrentCamera;
+local s = h.LocalPlayer or h.PlayerAdded:Wait();
+local w = s:WaitForChild("PlayerGui", 60);
+if not w then
 	warn("[Moon] PlayerGui timeout");
 	return;
 end;
-local function G()
+local function b()
 	if gethui then
-		local n, W = pcall(function()
+		local g, h = pcall(function()
 				return gethui();
 			end);
-		if n and W then
-			return W;
+		if g and h then
+			return h;
 		end;
 	end;
 	return game:GetService("CoreGui");
 end;
-local R = G();
+local v = b();
 pcall(function()
-	for n, W in ipairs({
+	for g, h in ipairs({
 		"MoonHubUI",
 		"MoonCursorUI",
 		"MoonLoadUI",
 		"MoonFOVGui",
 		"MoonESPGui",
 	}) do
-		local l = s:FindFirstChild(W);
-		if l then
-			l:Destroy();
+		local K = w:FindFirstChild(h);
+		if K then
+			K:Destroy();
 		end;
-		local H = R:FindFirstChild(W);
-		if H then
-			H:Destroy();
+		local j = v:FindFirstChild(h);
+		if j then
+			j:Destroy();
 		end;
 	end;
 end);
 task.wait(.05);
-local t;
+local B;
 pcall(function()
-	t = Y:GetMouse();
+	B = s:GetMouse();
 end);
-local function O()
-	local W = "Unknown";
+local function r()
+	local h = "Unknown";
 	pcall(function()
 		if identifyexecutor then
-			local n, l = identifyexecutor();
-			W = tostring(n or "Unknown");
-			if l then
-				W = W .. (" " .. tostring(l));
+			local g, K = identifyexecutor();
+			h = tostring(g or "Unknown");
+			if K then
+				h = h .. (" " .. tostring(K));
 			end;
 		elseif getexecutorname then
-			W = tostring(getexecutorname());
+			h = tostring(getexecutorname());
 		elseif syn and syn.request then
-			W = "Synapse";
+			h = "Synapse";
 		elseif fluxus then
-			W = "Fluxus";
+			h = "Fluxus";
 		elseif KRNL_LOADED then
-			W = "Krnl";
+			h = "Krnl";
 		elseif is_sirhurt_closure then
-			W = "Sirhurt";
+			h = "Sirhurt";
 		elseif pebc_execute then
-			W = "Parallel";
-		elseif SecureDelta or (n()).SecureDelta then
-			W = "Delta";
-		elseif (n()).drew or (n()).IS_COCO_LOADED then
-			W = "Coco";
-		elseif (n()).X.X or (n()).WXApple then
-			W = "Wave";
-		elseif (n()).IsElectron then
-			W = "Electron";
-		elseif (n()).executor_name then
-			W = tostring((n()).executor_name);
+			h = "Parallel";
+		elseif SecureDelta or (g()).SecureDelta then
+			h = "Delta";
+		elseif (g()).drew or (g()).IS_COCO_LOADED then
+			h = "Coco";
+		elseif (g()).X.X or (g()).WXApple then
+			h = "Wave";
+		elseif (g()).IsElectron then
+			h = "Electron";
+		elseif (g()).executor_name then
+			h = tostring((g()).executor_name);
 		end;
 	end);
-	if W == "Unknown" or W == "" then
+	if h == "Unknown" or h == "" then
 		pcall(function()
-			if (n()).OPIUMWARE or (n()).Opiumware then
-				W = "Opiumware";
+			if (g()).OPIUMWARE or (g()).Opiumware then
+				h = "Opiumware";
 			end;
 		end);
 	end;
-	return W;
+	return h;
 end;
-local X = O();
-local a = Instance.new("ScreenGui");
-a.Name = "MoonLoadUI";
-a.ResetOnSpawn = false;
-a.IgnoreGuiInset = true;
-a.DisplayOrder = 9999;
-a.Parent = s;
+local E = r();
+local X = Instance.new("ScreenGui");
+X.Name = "MoonLoadUI";
+X.ResetOnSpawn = false;
+X.IgnoreGuiInset = true;
+X.DisplayOrder = 9999;
+X.Parent = w;
 task.spawn(function()
 	task.wait(8);
 	pcall(function()
-		if a and a.Parent then
-			a:Destroy();
+		if X and X.Parent then
+			X:Destroy();
 		end;
 	end);
 end);
-local P = Instance.new("Frame");
-P.Size = UDim2.new(1, 0, 1, 0);
-P.BackgroundColor3 = Color3.fromRGB(8, 8, 12);
-P.BorderSizePixel = 0;
-P.Parent = a;
-local D = Instance.new("Frame");
-D.Size = UDim2.new(0, 320, 0, 160);
-D.Position = UDim2.new(.5, -160, .5, -80);
-D.BackgroundColor3 = Color3.fromRGB(16, 16, 22);
-D.BorderSizePixel = 0;
-D.Parent = P;
-(Instance.new("UICorner", D)).CornerRadius = UDim.new(0, 14);
-local q = Instance.new("TextLabel");
-q.Size = UDim2.new(1, -20, 0, 28);
-q.Position = UDim2.new(0, 10, 0, 14);
-q.BackgroundTransparency = 1;
-q.Text = "MOON HUB";
-q.TextColor3 = Color3.fromRGB(138, 99, 255);
-q.TextSize = 20;
-q.Font = Enum.Font.GothamBold;
-q.Parent = D;
-local U = Instance.new("TextLabel");
-U.Size = UDim2.new(1, -20, 0, 18);
-U.Position = UDim2.new(0, 10, 0, 42);
-U.BackgroundTransparency = 1;
-U.Text = "jailbird";
-U.TextColor3 = Color3.fromRGB(160, 160, 180);
-U.TextSize = 12;
-U.Font = Enum.Font.Gotham;
-U.Parent = D;
-local Z = Instance.new("TextLabel");
-Z.Size = UDim2.new(1, -20, 0, 18);
-Z.Position = UDim2.new(0, 10, 0, 70);
-Z.BackgroundTransparency = 1;
-Z.Text = "Starting...";
-Z.TextColor3 = Color3.fromRGB(220, 220, 230);
-Z.TextSize = 12;
-Z.Font = Enum.Font.Gotham;
-Z.TextXAlignment = Enum.TextXAlignment.Left;
-Z.Parent = D;
-local e = Instance.new("Frame");
-e.Size = UDim2.new(1, -24, 0, 10);
-e.Position = UDim2.new(0, 12, 0, 100);
-e.BackgroundColor3 = Color3.fromRGB(30, 30, 40);
-e.BorderSizePixel = 0;
-e.Parent = D;
-(Instance.new("UICorner", e)).CornerRadius = UDim.new(1, 0);
-local Q = Instance.new("Frame");
-Q.Size = UDim2.new(0, 0, 1, 0);
-Q.BackgroundColor3 = Color3.fromRGB(138, 99, 255);
-Q.BorderSizePixel = 0;
-Q.Parent = e;
-(Instance.new("UICorner", Q)).CornerRadius = UDim.new(1, 0);
-local z = Instance.new("TextLabel");
-z.Size = UDim2.new(1, -20, 0, 32);
-z.Position = UDim2.new(0, 10, 0, 118);
-z.BackgroundTransparency = 1;
-z.Text = "Executor: " .. X;
-z.TextColor3 = Color3.fromRGB(140, 140, 160);
-z.TextSize = 11;
-z.Font = Enum.Font.Gotham;
-z.TextXAlignment = Enum.TextXAlignment.Left;
-z.TextYAlignment = Enum.TextYAlignment.Top;
-z.Parent = D;
-local function J(n, W)
-	n = math.clamp(n, 0, 1);
+local c = Instance.new("Frame");
+c.Size = UDim2.new(1, 0, 1, 0);
+c.BackgroundColor3 = Color3.fromRGB(8, 8, 12);
+c.BorderSizePixel = 0;
+c.Parent = X;
+local p = Instance.new("Frame");
+p.Size = UDim2.new(0, 320, 0, 160);
+p.Position = UDim2.new(.5, -160, .5, -80);
+p.BackgroundColor3 = Color3.fromRGB(16, 16, 22);
+p.BorderSizePixel = 0;
+p.Parent = c;
+(Instance.new("UICorner", p)).CornerRadius = UDim.new(0, 14);
+local f = Instance.new("TextLabel");
+f.Size = UDim2.new(1, -20, 0, 28);
+f.Position = UDim2.new(0, 10, 0, 14);
+f.BackgroundTransparency = 1;
+f.Text = "MOON HUB";
+f.TextColor3 = Color3.fromRGB(138, 99, 255);
+f.TextSize = 20;
+f.Font = Enum.Font.GothamBold;
+f.Parent = p;
+local P = Instance.new("TextLabel");
+P.Size = UDim2.new(1, -20, 0, 18);
+P.Position = UDim2.new(0, 10, 0, 42);
+P.BackgroundTransparency = 1;
+P.Text = "jailbird";
+P.TextColor3 = Color3.fromRGB(160, 160, 180);
+P.TextSize = 12;
+P.Font = Enum.Font.Gotham;
+P.Parent = p;
+local Y = Instance.new("TextLabel");
+Y.Size = UDim2.new(1, -20, 0, 18);
+Y.Position = UDim2.new(0, 10, 0, 70);
+Y.BackgroundTransparency = 1;
+Y.Text = "Starting...";
+Y.TextColor3 = Color3.fromRGB(220, 220, 230);
+Y.TextSize = 12;
+Y.Font = Enum.Font.Gotham;
+Y.TextXAlignment = Enum.TextXAlignment.Left;
+Y.Parent = p;
+local x = Instance.new("Frame");
+x.Size = UDim2.new(1, -24, 0, 10);
+x.Position = UDim2.new(0, 12, 0, 100);
+x.BackgroundColor3 = Color3.fromRGB(30, 30, 40);
+x.BorderSizePixel = 0;
+x.Parent = p;
+(Instance.new("UICorner", x)).CornerRadius = UDim.new(1, 0);
+local u = Instance.new("Frame");
+u.Size = UDim2.new(0, 0, 1, 0);
+u.BackgroundColor3 = Color3.fromRGB(138, 99, 255);
+u.BorderSizePixel = 0;
+u.Parent = x;
+(Instance.new("UICorner", u)).CornerRadius = UDim.new(1, 0);
+local F = Instance.new("TextLabel");
+F.Size = UDim2.new(1, -20, 0, 32);
+F.Position = UDim2.new(0, 10, 0, 118);
+F.BackgroundTransparency = 1;
+F.Text = "Executor: " .. E;
+F.TextColor3 = Color3.fromRGB(140, 140, 160);
+F.TextSize = 11;
+F.Font = Enum.Font.Gotham;
+F.TextXAlignment = Enum.TextXAlignment.Left;
+F.TextYAlignment = Enum.TextYAlignment.Top;
+F.Parent = p;
+local function N(g, h)
+	g = math.clamp(g, 0, 1);
 	pcall(function()
-		Z.Text = W or Z.Text;
-		(u:Create(Q, TweenInfo.new(.25, Enum.EasingStyle.Quad), { Size = UDim2.new(n, 0, 1, 0) })):Play();
+		Y.Text = h or Y.Text;
+		(H:Create(u, TweenInfo.new(.25, Enum.EasingStyle.Quad), { Size = UDim2.new(g, 0, 1, 0) })):Play();
 	end);
 end;
-J(.08, "Detecting executor...");
+N(.08, "Detecting executor...");
 task.wait(.2);
-J(.2, "Executor: " .. X);
+N(.2, "Executor: " .. E);
 task.wait(.15);
-J(.35, "Loading config...");
+N(.35, "Loading config...");
 task.wait(.1);
-local function L(n, W)
+local function W(g, h)
 	pcall(function()
 		if writefile then
-			writefile(n, W);
+			writefile(g, h);
 		end;
 	end);
 end;
-local function r(n)
-	local W, l = pcall(function()
-			if isfile and (isfile(n) and readfile) then
-				return readfile(n);
+local function l(g)
+	local h, K = pcall(function()
+			if isfile and (isfile(g) and readfile) then
+				return readfile(g);
 			end;
 		end);
-	return W and l or nil;
+	return h and K or nil;
 end;
 pcall(function()
 	if makefolder then
@@ -238,9 +228,9 @@ pcall(function()
 		makefolder("MoonHub/Configs");
 	end;
 end);
-(n()).MoonHubState = (n()).MoonHubState or {};
-local F = (n()).MoonHubState;
-local N = {
+(g()).MoonHubState = (g()).MoonHubState or {};
+local y = (g()).MoonHubState;
+local m = {
 		Aimbot = false,
 		AimKey = "MB2",
 		AimMode = "Hold",
@@ -275,6 +265,8 @@ local N = {
 		ShowDistance = true,
 		ShowHealth = true,
 		ShowHeadDot = true,
+		Chams = false,
+		GadgetESP = false,
 		RGBESP = false,
 		ESPColorR = 170,
 		ESPColorG = 0,
@@ -300,145 +292,145 @@ local N = {
 		MobileShowFOV = true,
 		ConfigName = "default",
 	};
-for n, W in pairs(N) do
-	if F[n] == nil then
-		F[n] = W;
+for g, h in pairs(m) do
+	if y[g] == nil then
+		y[g] = h;
 	end;
 end;
-F.NoRecoil = nil;
-F.NoJumpCooldown = nil;
-F.KillAuraDelay = nil;
-F.HideFromRecord = nil;
-if type(F.CursorSize) ~= "number" then
-	F.CursorSize = 32;
+y.NoRecoil = nil;
+y.NoJumpCooldown = nil;
+y.KillAuraDelay = nil;
+y.HideFromRecord = nil;
+if type(y.CursorSize) ~= "number" then
+	y.CursorSize = 32;
 end;
-if type(F.AimSmooth) ~= "number" then
-	F.AimSmooth = .95;
+if type(y.AimSmooth) ~= "number" then
+	y.AimSmooth = .95;
 end;
-if type(F.FOVValue) ~= "number" then
-	F.FOVValue = 90;
+if type(y.FOVValue) ~= "number" then
+	y.FOVValue = 90;
 end;
-if type(F.TriggerDelay) ~= "number" then
-	F.TriggerDelay = .06;
+if type(y.TriggerDelay) ~= "number" then
+	y.TriggerDelay = .06;
 end;
-if type(F.TriggerFOV) ~= "number" then
-	F.TriggerFOV = 55;
+if type(y.TriggerFOV) ~= "number" then
+	y.TriggerFOV = 55;
 end;
-if type(F.DeviceSpoofDelay) ~= "number" then
-	F.DeviceSpoofDelay = 1.5;
+if type(y.DeviceSpoofDelay) ~= "number" then
+	y.DeviceSpoofDelay = 1.5;
 end;
-F.StretchAmount = math.clamp(tonumber(F.StretchAmount) or .53, .3, 1);
-if F.HitboxPart ~= "Head" and F.HitboxPart ~= "Torso" then
-	F.HitboxPart = "Head";
+y.StretchAmount = math.clamp(tonumber(y.StretchAmount) or .53, .3, 1);
+if y.HitboxPart ~= "Head" and y.HitboxPart ~= "Torso" then
+	y.HitboxPart = "Head";
 end;
-if type(F.KillAuraRange) ~= "number" then
-	F.KillAuraRange = 90;
+if type(y.KillAuraRange) ~= "number" then
+	y.KillAuraRange = 90;
 end;
-if type(F.KillAuraBehind) ~= "number" then
-	F.KillAuraBehind = 3.2;
+if type(y.KillAuraBehind) ~= "number" then
+	y.KillAuraBehind = 3.2;
 end;
-local j = false;
+local e = false;
 task.delay(2.5, function()
-	j = true;
+	e = true;
 end);
-local function S()
-	local n = (tostring(F.ConfigName or "default")):gsub("[^%w%-%_]", "");
-	if n == "" then
-		n = "default";
+local function D()
+	local g = (tostring(y.ConfigName or "default")):gsub("[^%w%-%_]", "");
+	if g == "" then
+		g = "default";
 	end;
-	F.ConfigName = n;
-	F.NoRecoil = nil;
-	F.NoJumpCooldown = nil;
-	F.KillAuraDelay = nil;
-	F.HideFromRecord = nil;
-	F.StretchAmount = math.clamp(tonumber(F.StretchAmount) or .53, .3, 1);
-	L("MoonHub/Configs/" .. (n .. ".json"), g:JSONEncode(F));
-	L("MoonHub/Jailbird.json", g:JSONEncode(F));
+	y.ConfigName = g;
+	y.NoRecoil = nil;
+	y.NoJumpCooldown = nil;
+	y.KillAuraDelay = nil;
+	y.HideFromRecord = nil;
+	y.StretchAmount = math.clamp(tonumber(y.StretchAmount) or .53, .3, 1);
+	W("MoonHub/Configs/" .. (g .. ".json"), L:JSONEncode(y));
+	W("MoonHub/Jailbird.json", L:JSONEncode(y));
 end;
-local function I()
-	local n = (tostring(F.ConfigName or "default")):gsub("[^%w%-%_]", "");
-	local W = r("MoonHub/Configs/" .. (n .. ".json")) or r("MoonHub/Jailbird.json");
-	if W then
+local function V()
+	local g = (tostring(y.ConfigName or "default")):gsub("[^%w%-%_]", "");
+	local h = l("MoonHub/Configs/" .. (g .. ".json")) or l("MoonHub/Jailbird.json");
+	if h then
 		pcall(function()
-			local n = g:JSONDecode(W);
-			if type(n) == "table" then
-				for n, W in pairs(n) do
-					F[n] = W;
+			local g = L:JSONDecode(h);
+			if type(g) == "table" then
+				for g, h in pairs(g) do
+					y[g] = h;
 				end;
 			end;
 		end);
 	end;
-	F.NoRecoil = nil;
-	F.NoJumpCooldown = nil;
-	F.KillAuraDelay = nil;
-	F.HideFromRecord = nil;
-	if type(F.DeviceSpoofDelay) ~= "number" then
-		F.DeviceSpoofDelay = 1.5;
+	y.NoRecoil = nil;
+	y.NoJumpCooldown = nil;
+	y.KillAuraDelay = nil;
+	y.HideFromRecord = nil;
+	if type(y.DeviceSpoofDelay) ~= "number" then
+		y.DeviceSpoofDelay = 1.5;
 	end;
-	F.StretchAmount = math.clamp(tonumber(F.StretchAmount) or .53, .3, 1);
-	if not j then
-		local n = F.ScreenStretch == true;
-		F.ScreenStretch = false;
+	y.StretchAmount = math.clamp(tonumber(y.StretchAmount) or .53, .3, 1);
+	if not e then
+		local g = y.ScreenStretch == true;
+		y.ScreenStretch = false;
 		task.delay(2.6, function()
-			if n then
-				F.ScreenStretch = true;
+			if g then
+				y.ScreenStretch = true;
 			end;
-			j = true;
+			e = true;
 		end);
 	end;
-	if F.HitboxPart ~= "Head" and F.HitboxPart ~= "Torso" then
-		F.HitboxPart = "Head";
+	if y.HitboxPart ~= "Head" and y.HitboxPart ~= "Torso" then
+		y.HitboxPart = "Head";
 	end;
 end;
-pcall(I);
-J(.5, "Loading Drawing...");
-local B = false;
-local A = nil;
-local function x(n)
-	if not n or type(n.new) ~= "function" then
+pcall(V);
+N(.5, "Loading Drawing...");
+local C = false;
+local S = nil;
+local function J(g)
+	if not g or type(g.new) ~= "function" then
 		return false;
 	end;
-	local W = pcall(function()
-			local W = n.new("Text");
-			W.Visible = false;
-			W:Remove();
+	local h = pcall(function()
+			local h = g.new("Text");
+			h.Visible = false;
+			h:Remove();
 		end);
-	if W then
-		B = true;
-		A = n;
+	if h then
+		C = true;
+		S = g;
 		return true;
 	end;
 	return false;
 end;
-x(Drawing);
-x((n()).Drawing);
+J(Drawing);
+J((g()).Drawing);
 pcall(function()
-	x((getrenv()).Drawing);
+	J((getrenv()).Drawing);
 end);
 pcall(function()
-	x(getrawmetatable and getrawmetatable(Drawing));
+	J(getrawmetatable and getrawmetatable(Drawing));
 end);
-J(.65, B and "Drawing OK" or "Drawing missing (ESP disabled)");
-local d = Color3.fromRGB(138, 99, 255);
-local b = Color3.fromRGB(12, 12, 16);
-local k = Color3.fromRGB(18, 18, 24);
-local f = Color3.fromRGB(20, 20, 28);
-local c = Color3.fromRGB(235, 235, 245);
-local w = Color3.fromRGB(160, 160, 180);
-local i = Enum.Font.Gotham;
-local function K()
-	if F.RGBESP then
+N(.65, C and "Drawing OK" or "Drawing missing (ESP off)");
+local A = Color3.fromRGB(138, 99, 255);
+local M = Color3.fromRGB(12, 12, 16);
+local G = Color3.fromRGB(18, 18, 24);
+local O = Color3.fromRGB(20, 20, 28);
+local n = Color3.fromRGB(235, 235, 245);
+local z = Color3.fromRGB(160, 160, 180);
+local d = Enum.Font.Gotham;
+local function t()
+	if y.RGBESP then
 		return Color3.fromHSV(((tick() * .4)) % 1, 1, 1);
 	end;
-	return Color3.fromRGB(math.clamp(tonumber(F.ESPColorR) or 170, 0, 255), math.clamp(tonumber(F.ESPColorG) or 0, 0, 255), math.clamp(tonumber(F.ESPColorB) or 255, 0, 255));
+	return Color3.fromRGB(math.clamp(tonumber(y.ESPColorR) or 170, 0, 255), math.clamp(tonumber(y.ESPColorG) or 0, 0, 255), math.clamp(tonumber(y.ESPColorB) or 255, 0, 255));
 end;
-local function V()
+local function q()
 	pcall(function()
-		l.MouseBehavior = Enum.MouseBehavior.Default;
-		l.MouseIconEnabled = true;
+		K.MouseBehavior = Enum.MouseBehavior.Default;
+		K.MouseIconEnabled = true;
 	end);
 end;
-local C = {
+local Q = {
 		{ Name = "Off", Id = nil },
 		{ Name = "Game Crosshair", Id = "GAME" },
 		{ Name = "Star Wars", Id = "5462831" },
@@ -448,167 +440,167 @@ local C = {
 		{ Name = "Hello Kitty", Id = "10973237327" },
 		{ Name = "Eye", Id = "12534101433" },
 	};
-local h = {};
-for n, W in ipairs(C) do
-	h[n] = W.Name;
+local k = {};
+for g, h in ipairs(Q) do
+	k[g] = h.Name;
 end;
-local p = Instance.new("ScreenGui");
-p.Name = "MoonCursorUI";
-p.ResetOnSpawn = false;
-p.IgnoreGuiInset = true;
-p.DisplayOrder = 10000;
-p.Parent = s;
-local o = Instance.new("ImageLabel");
-o.BackgroundTransparency = 1;
-o.AnchorPoint = Vector2.new(.5, .5);
-o.Size = UDim2.new(0, 32, 0, 32);
-o.Visible = false;
-o.ZIndex = 100;
-o.Parent = p;
-local function nz(n)
-	local W = s:FindFirstChild("Crosshair");
-	if not W then
+local i = Instance.new("ScreenGui");
+i.Name = "MoonCursorUI";
+i.ResetOnSpawn = false;
+i.IgnoreGuiInset = true;
+i.DisplayOrder = 10000;
+i.Parent = w;
+local U = Instance.new("ImageLabel");
+U.BackgroundTransparency = 1;
+U.AnchorPoint = Vector2.new(.5, .5);
+U.Size = UDim2.new(0, 32, 0, 32);
+U.Visible = false;
+U.ZIndex = 100;
+U.Parent = i;
+local function a(g)
+	local h = w:FindFirstChild("Crosshair");
+	if not h then
 		return;
 	end;
 	pcall(function()
-		if W:IsA("ScreenGui") then
-			W.Enabled = n;
+		if h:IsA("ScreenGui") then
+			h.Enabled = g;
 		end;
-		W.Visible = n;
-		for W, l in ipairs(W:GetDescendants()) do
-			if l:IsA("GuiObject") then
-				l.Visible = n;
+		h.Visible = g;
+		for h, K in ipairs(h:GetDescendants()) do
+			if K:IsA("GuiObject") then
+				K.Visible = g;
 			end;
 		end;
 	end);
 end;
-local function Wz(n)
-	n = n or F.CursorName or "Off";
-	F.CursorName = n;
-	local W = C[1];
-	for l, H in ipairs(C) do
-		if H.Name == n then
-			W = H;
+local function gd(g)
+	g = g or y.CursorName or "Off";
+	y.CursorName = g;
+	local h = Q[1];
+	for K, j in ipairs(Q) do
+		if j.Name == g then
+			h = j;
 			break;
 		end;
 	end;
-	nz(false);
-	o.Visible = false;
-	local H = math.clamp(tonumber(F.CursorSize) or 32, 8, 128);
-	o.Size = UDim2.new(0, H, 0, H);
-	if not W.Id or W.Name == "Off" then
+	a(false);
+	U.Visible = false;
+	local j = math.clamp(tonumber(y.CursorSize) or 32, 8, 128);
+	U.Size = UDim2.new(0, j, 0, j);
+	if not h.Id or h.Name == "Off" then
 		pcall(function()
-			if t then
-				t.Icon = "";
+			if B then
+				B.Icon = "";
 			end;
-			l.MouseIconEnabled = true;
+			K.MouseIconEnabled = true;
 		end);
 		return;
 	end;
-	if W.Id == "GAME" then
-		nz(true);
+	if h.Id == "GAME" then
+		a(true);
 		pcall(function()
-			if t then
-				t.Icon = "rbxassetid://0";
+			if B then
+				B.Icon = "rbxassetid://0";
 			end;
-			l.MouseIconEnabled = true;
+			K.MouseIconEnabled = true;
 		end);
 		return;
 	end;
 	pcall(function()
-		l.MouseIconEnabled = false;
-		if t then
-			t.Icon = "rbxassetid://0";
+		K.MouseIconEnabled = false;
+		if B then
+			B.Icon = "rbxassetid://0";
 		end;
-		o.Image = "rbxassetid://" .. tostring(W.Id);
-		o.Visible = true;
+		U.Image = "rbxassetid://" .. tostring(h.Id);
+		U.Visible = true;
 	end);
 end;
-local lz = 70;
+local hd = 70;
 pcall(function()
-	lz = T.FieldOfView;
+	hd = Z.FieldOfView;
 end);
-local function Hz()
-	if not F.CustomFOV then
+local function Kd()
+	if not y.CustomFOV then
 		return;
 	end;
-	local n = math.clamp(tonumber(F.FOVValue) or 90, 40, 120);
+	local g = math.clamp(tonumber(y.FOVValue) or 90, 40, 120);
 	pcall(function()
-		if math.abs(T.FieldOfView - n) > .5 then
-			T.FieldOfView = n;
+		if math.abs(Z.FieldOfView - g) > .5 then
+			Z.FieldOfView = g;
 		end;
 	end);
 end;
-local vz = false;
-local function Ez()
-	if not j then
+local jd = false;
+local function Td()
+	if not e then
 		return;
 	end;
-	if not F.ScreenStretch then
+	if not y.ScreenStretch then
 		return;
 	end;
-	if vz then
+	if jd then
 		return;
 	end;
-	if not T or not T.Parent then
+	if not Z or not Z.Parent then
 		return;
 	end;
-	local n = math.clamp(tonumber(F.StretchAmount) or .53, .3, 1);
-	if n >= .995 then
+	local g = math.clamp(tonumber(y.StretchAmount) or .53, .3, 1);
+	if g >= .995 then
 		return;
 	end;
 	pcall(function()
-		local W = T.CFrame;
-		if W then
-			T.CFrame = W * CFrame.new(0, 0, 0, 1, 0, 0, 0, n, 0, 0, 0, 1);
+		local h = Z.CFrame;
+		if h then
+			Z.CFrame = h * CFrame.new(0, 0, 0, 1, 0, 0, 0, g, 0, 0, 0, 1);
 		end;
 	end);
 end;
-local function gz(n)
-	local W = Y.Character;
-	if not W then
+local function Rd(g)
+	local h = s.Character;
+	if not h then
 		return;
 	end;
-	local l = W:FindFirstChild("HumanoidRootPart");
-	if not l or not n then
+	local K = h:FindFirstChild("HumanoidRootPart");
+	if not K or not g then
 		return;
 	end;
 	pcall(function()
-		local W = l.Position;
-		l.CFrame = CFrame.new(W, Vector3.new(n.X, W.Y, n.Z));
+		local h = K.Position;
+		K.CFrame = CFrame.new(h, Vector3.new(g.X, h.Y, g.Z));
 	end);
 end;
-local function uz(n)
-	if not n then
+local function Ld(g)
+	if not g then
 		return nil;
 	end;
-	local W, l = pcall(function()
-			return n.Character;
+	local h, K = pcall(function()
+			return g.Character;
 		end);
-	return W and l or nil;
+	return h and K or nil;
 end;
-local function yz(n)
-	local W = uz(n);
-	if not W then
+local function Hd(g)
+	local h = Ld(g);
+	if not h then
 		return false;
 	end;
-	local l = W:FindFirstChildOfClass("Humanoid");
-	return l ~= nil and l.Health > 0;
+	local K = h:FindFirstChildOfClass("Humanoid");
+	return K ~= nil and K.Health > 0;
 end;
-local function mz(n)
-	if not n or n == Y then
+local function od(g)
+	if not g or g == s then
 		return false;
 	end;
-	if not F.TeamCheck then
+	if not y.TeamCheck then
 		return true;
 	end;
-	local W, l = Y.Team, n.Team;
-	if W and l then
-		return W ~= l;
+	local h, K = s.Team, g.Team;
+	if h and K then
+		return h ~= K;
 	end;
 	return true;
 end;
-local Tz = {
+local Id = {
 		"box",
 		"crate",
 		"barrel",
@@ -640,1344 +632,1523 @@ local Tz = {
 		"pallet",
 		"forklift",
 	};
-local function Mz(n, W)
-	for l = 1, #W, 1 do
-		if string.find(n, W[l], 1, true) then
+local function Zd(g, h)
+	for K = 1, #h, 1 do
+		if string.find(g, h[K], 1, true) then
 			return true;
 		end;
 	end;
 	return false;
 end;
-local function Yz(n)
-	if not n or not n:IsA("BasePart") then
+local function sd(g)
+	if not g or not g:IsA("BasePart") then
 		return true;
 	end;
-	local W = string.lower(n.Name or "");
-	local l = string.lower(n:GetFullName() or "");
-	local H = string.lower(tostring(n.Material));
-	if string.find(W, "glass", 1, true) or string.find(H, "glass", 1, true) then
+	local h = string.lower(g.Name or "");
+	local K = string.lower(g:GetFullName() or "");
+	local j = string.lower(tostring(g.Material));
+	if string.find(h, "glass", 1, true) or string.find(j, "glass", 1, true) then
 		return true;
 	end;
-	if n.Transparency >= .7 then
+	if g.Transparency >= .7 then
 		return true;
 	end;
-	if string.find(W, "door", 1, true) or string.find(l, "door", 1, true) then
-		if string.find(W, "wood", 1, true) or string.find(l, "wood", 1, true) then
+	if string.find(h, "door", 1, true) or string.find(K, "door", 1, true) then
+		if string.find(h, "wood", 1, true) or string.find(K, "wood", 1, true) then
 			return false;
 		end;
 		return true;
 	end;
-	if string.find(W, "window", 1, true) then
+	if string.find(h, "window", 1, true) then
 		return true;
 	end;
-	if n.CanCollide == false and n.Transparency >= .25 then
+	if g.CanCollide == false and g.Transparency >= .25 then
 		return true;
 	end;
-	if Mz(W, Tz) or Mz(l, Tz) then
+	if Zd(h, Id) or Zd(K, Id) then
 		return false;
 	end;
 	return false;
 end;
-local function sz(n)
-	if not F.WallCheck then
+local function wd(g)
+	if not y.WallCheck then
 		return true;
 	end;
-	local W = uz(n);
-	local l = W and W:FindFirstChild("Head");
-	if not l then
+	local h = Ld(g);
+	local K = h and h:FindFirstChild("Head");
+	if not K then
 		return false;
 	end;
-	local H = uz(Y);
-	local v = T.CFrame.Position + T.CFrame.LookVector * .8;
-	local E = l.Position;
-	local g = E - v;
-	local u = g.Magnitude;
-	if u < 1.5 then
+	local j = Ld(s);
+	local T = Z.CFrame.Position + Z.CFrame.LookVector * .8;
+	local R = K.Position;
+	local L = R - T;
+	local H = L.Magnitude;
+	if H < 1.5 then
 		return true;
 	end;
-	local y = { T };
-	if H then
-		table.insert(y, H);
+	local o = { Z };
+	if j then
+		table.insert(o, j);
 	end;
-	if W then
-		table.insert(y, W);
+	if h then
+		table.insert(o, h);
 	end;
-	local m = RaycastParams.new();
-	m.FilterType = Enum.RaycastFilterType.Exclude;
-	m.FilterDescendantsInstances = y;
-	m.IgnoreWater = true;
-	local M, s, G = 0, v, g.Unit;
-	for n = 1, 12, 1 do
-		local l = u - M;
-		if l <= .15 then
+	local I = RaycastParams.new();
+	I.FilterType = Enum.RaycastFilterType.Exclude;
+	I.FilterDescendantsInstances = o;
+	I.IgnoreWater = true;
+	local w, b, v = 0, T, L.Unit;
+	for g = 1, 12, 1 do
+		local K = H - w;
+		if K <= .15 then
 			return true;
 		end;
-		local H = workspace:Raycast(s, G * l, m);
-		if not H then
+		local j = workspace:Raycast(b, v * K, I);
+		if not j then
 			return true;
 		end;
-		if H.Instance and (W and H.Instance:IsDescendantOf(W)) then
+		if j.Instance and (h and j.Instance:IsDescendantOf(h)) then
 			return true;
 		end;
-		if Yz(H.Instance) then
-			table.insert(y, H.Instance);
-			m.FilterDescendantsInstances = y;
-			local n = ((H.Position - s)).Magnitude;
-			s = H.Position + G * .15;
-			M = (M + n) + .15;
+		if sd(j.Instance) then
+			table.insert(o, j.Instance);
+			I.FilterDescendantsInstances = o;
+			local g = ((j.Position - b)).Magnitude;
+			b = j.Position + v * .15;
+			w = (w + g) + .15;
 		else
 			return false;
 		end;
 	end;
 	return false;
 end;
-local function Gz(n, W)
-	if not F.Prediction or not n then
-		return n.Position;
+local function bd(g, h)
+	if not y.Prediction or not g then
+		return g.Position;
 	end;
-	local l = W and ((W:FindFirstChild("HumanoidRootPart") or W:FindFirstChild("Torso")));
-	local H = Vector3.zero;
-	if l then
+	local K = h and ((h:FindFirstChild("HumanoidRootPart") or h:FindFirstChild("Torso")));
+	local j = Vector3.zero;
+	if K then
 		pcall(function()
-			H = l.AssemblyLinearVelocity;
+			j = K.AssemblyLinearVelocity;
 		end);
 	end;
-	return n.Position + H * ((tonumber(F.PredictAmount) or .12));
+	return g.Position + j * ((tonumber(y.PredictAmount) or .12));
 end;
-local function Rz(n, l)
-	local H, v, E = nil, nil, n;
-	local g = T.ViewportSize / 2;
-	for n, W in ipairs(W:GetPlayers()) do
-		if W ~= Y and (mz(W) and yz(W)) then
-			local n = uz(W);
-			local u = n and n:FindFirstChild("Head");
-			if u then
-				local y = Gz(u, n);
-				local m, M = T:WorldToViewportPoint(y);
-				if M and m.Z > 0 then
-					local n = ((Vector2.new(m.X, m.Y) - g)).Magnitude;
-					if n < E and (((not l) or sz(W))) then
-						E = n;
-						H = W;
-						v = y;
+local function vd(g, K)
+	local j, T, R = nil, nil, g;
+	local L = Z.ViewportSize / 2;
+	for g, h in ipairs(h:GetPlayers()) do
+		if h ~= s and (od(h) and Hd(h)) then
+			local g = Ld(h);
+			local H = g and g:FindFirstChild("Head");
+			if H then
+				local o = bd(H, g);
+				local I, s = Z:WorldToViewportPoint(o);
+				if s and I.Z > 0 then
+					local g = ((Vector2.new(I.X, I.Y) - L)).Magnitude;
+					if g < R and (((not K) or wd(h))) then
+						R = g;
+						j = h;
+						T = o;
 					end;
 				end;
 			end;
 		end;
 	end;
-	return H, v;
+	return j, T;
 end;
-local tz = {};
-local function Oz(n)
-	return n and ((n:FindFirstChild("Torso") or n:FindFirstChild("UpperTorso")));
+local Bd = {};
+local function rd(g)
+	return g and ((g:FindFirstChild("Torso") or g:FindFirstChild("UpperTorso")));
 end;
-local function Xz(n)
-	if not n then
+local function Ed(g)
+	if not g then
 		return;
 	end;
-	local W = tz[n];
-	if W then
+	local h = Bd[g];
+	if h then
 		pcall(function()
-			n.Size = W;
+			g.Size = h;
 		end);
-		tz[n] = nil;
+		Bd[g] = nil;
 	end;
 end;
-local function az()
-	for n, W in pairs(tz) do
-		Xz(n);
+local function Xd()
+	for g, h in pairs(Bd) do
+		Ed(g);
 	end;
-	tz = {};
+	Bd = {};
 end;
-local function Pz(n, W)
-	if not n or not n:IsA("BasePart") then
+local function cd(g, h)
+	if not g or not g:IsA("BasePart") then
 		return;
 	end;
-	if tz[n] == nil then
-		tz[n] = n.Size;
+	if Bd[g] == nil then
+		Bd[g] = g.Size;
 	end;
-	local l = math.clamp(tonumber(W) or 3, 1.2, 12);
+	local K = math.clamp(tonumber(h) or 3, 1.2, 12);
 	pcall(function()
-		n.Size = Vector3.new(l, l, l);
-		n.Massless = true;
-		n.CanCollide = false;
+		g.Size = Vector3.new(K, K, K);
+		g.Massless = true;
+		g.CanCollide = false;
 	end);
 end;
-local function Dz()
-	if not F.Hitbox then
-		az();
+local function pd()
+	if not y.Hitbox then
+		Xd();
 		return;
 	end;
-	local n = F.HitboxPart;
-	local l = tonumber(F.HitboxSize) or 3;
-	for W, H in ipairs(W:GetPlayers()) do
-		if H ~= Y and (mz(H) and yz(H)) then
-			local W = uz(H);
-			if W then
-				local H = W:FindFirstChild("Head");
-				local v = Oz(W);
-				if n == "Head" then
-					if H then
-						Pz(H, l);
+	local g = y.HitboxPart;
+	local K = tonumber(y.HitboxSize) or 3;
+	for h, j in ipairs(h:GetPlayers()) do
+		if j ~= s and (od(j) and Hd(j)) then
+			local h = Ld(j);
+			if h then
+				local j = h:FindFirstChild("Head");
+				local T = rd(h);
+				if g == "Head" then
+					if j then
+						cd(j, K);
 					end;
-					if v then
-						Xz(v);
+					if T then
+						Ed(T);
 					end;
 				else
-					if v then
-						Pz(v, l);
+					if T then
+						cd(T, K);
 					end;
-					if H then
-						Xz(H);
+					if j then
+						Ed(j);
 					end;
 				end;
 			end;
 		end;
 	end;
 end;
-local qz = 0;
-local function Uz()
-	local n = uz(Y);
-	if not n then
+local fd = 0;
+local function Pd()
+	local g = Ld(s);
+	if not g then
 		return nil;
 	end;
-	return n:FindFirstChildOfClass("Tool");
+	return g:FindFirstChildOfClass("Tool");
 end;
-local function Zz()
-	local n = Uz();
-	if n then
+local function Yd()
+	local g = Pd();
+	if g then
 		pcall(function()
-			n:Activate();
+			g:Activate();
 		end);
 		task.defer(function()
 			pcall(function()
-				if n and n.Parent then
-					n:Activate();
+				if g and g.Parent then
+					g:Activate();
 				end;
 			end);
 		end);
 	end;
 	pcall(function()
-		local n = T.ViewportSize;
-		local W, l = n.X / 2, n.Y / 2;
-		m:SendMouseButtonEvent(W, l, 0, true, game, 1);
+		local g = Z.ViewportSize;
+		local h, K = g.X / 2, g.Y / 2;
+		I:SendMouseButtonEvent(h, K, 0, true, game, 1);
 		task.wait(.02);
-		m:SendMouseButtonEvent(W, l, 0, false, game, 1);
+		I:SendMouseButtonEvent(h, K, 0, false, game, 1);
 	end);
 end;
-local function ez()
-	if not F.Triggerbot then
+local function xd()
+	if not y.Triggerbot then
 		return;
 	end;
-	if not Uz() then
+	if not Pd() then
 		return;
 	end;
-	local n = tonumber(F.TriggerDelay) or .06;
-	if tick() - qz < n then
+	local g = tonumber(y.TriggerDelay) or .06;
+	if tick() - fd < g then
 		return;
 	end;
-	local W = tonumber(F.TriggerFOV) or 55;
-	local l = Rz(W, F.WallCheck);
-	if l then
-		qz = tick();
-		Zz();
+	local h = tonumber(y.TriggerFOV) or 55;
+	local K = vd(h, y.WallCheck);
+	if K then
+		fd = tick();
+		Yd();
 	end;
 end;
-local Qz = nil;
-local function zz(n)
-	local l = uz(Y);
-	local H = l and l:FindFirstChild("HumanoidRootPart");
-	if not H then
+local ud = nil;
+local function Fd(g)
+	local K = Ld(s);
+	local j = K and K:FindFirstChild("HumanoidRootPart");
+	if not j then
 		return nil;
 	end;
-	local v = tonumber(F.KillAuraRange) or 90;
-	local E, g = nil, v;
-	for W, l in ipairs(W:GetPlayers()) do
-		if l ~= Y and (l ~= n and (mz(l) and yz(l))) then
-			local n = uz(l);
-			local W = n and n:FindFirstChild("HumanoidRootPart");
-			local v = n and n:FindFirstChild("Head");
-			if W and v then
-				local n = ((W.Position - H.Position)).Magnitude;
-				if n < g then
-					g = n;
-					E = l;
+	local T = tonumber(y.KillAuraRange) or 90;
+	local R, L = nil, T;
+	for h, K in ipairs(h:GetPlayers()) do
+		if K ~= s and (K ~= g and (od(K) and Hd(K))) then
+			local g = Ld(K);
+			local h = g and g:FindFirstChild("HumanoidRootPart");
+			local T = g and g:FindFirstChild("Head");
+			if h and T then
+				local g = ((h.Position - j.Position)).Magnitude;
+				if g < L then
+					L = g;
+					R = K;
 				end;
 			end;
 		end;
 	end;
-	return E;
+	return R;
 end;
-local function Jz(n)
-	local W = uz(Y);
-	local l = W and W:FindFirstChild("HumanoidRootPart");
-	local H = uz(n);
-	local v = H and H:FindFirstChild("HumanoidRootPart");
-	local E = H and H:FindFirstChild("Head");
-	if not l or not v or not E then
+local function Nd(g)
+	local h = Ld(s);
+	local K = h and h:FindFirstChild("HumanoidRootPart");
+	local j = Ld(g);
+	local T = j and j:FindFirstChild("HumanoidRootPart");
+	local R = j and j:FindFirstChild("Head");
+	if not K or not T or not R then
 		return false;
 	end;
-	local g = tonumber(F.KillAuraBehind) or 3.2;
-	local u = v.CFrame.LookVector;
-	local y = (v.Position - u * g) + Vector3.new(0, 1.4, 0);
+	local L = tonumber(y.KillAuraBehind) or 3.2;
+	local H = T.CFrame.LookVector;
+	local o = (T.Position - H * L) + Vector3.new(0, 1.4, 0);
 	pcall(function()
-		l.CFrame = CFrame.new(y, E.Position);
+		K.CFrame = CFrame.new(o, R.Position);
 	end);
 	pcall(function()
-		T.CFrame = CFrame.new(T.CFrame.Position, E.Position);
+		Z.CFrame = CFrame.new(Z.CFrame.Position, R.Position);
 	end);
 	return true;
 end;
-local function Lz()
-	if not F.KillAura then
-		Qz = nil;
+local function Wd()
+	if not y.KillAura then
+		ud = nil;
 		return;
 	end;
-	local n = uz(Y);
-	local W = n and n:FindFirstChildOfClass("Humanoid");
-	if not W or W.Health <= 0 then
-		Qz = nil;
+	local g = Ld(s);
+	local h = g and g:FindFirstChildOfClass("Humanoid");
+	if not h or h.Health <= 0 then
+		ud = nil;
 		return;
 	end;
-	if not Qz or not yz(Qz) or not mz(Qz) then
-		Qz = zz(Qz);
+	if not ud or not Hd(ud) or not od(ud) then
+		ud = Fd(ud);
 	end;
-	if not Qz then
+	if not ud then
 		return;
 	end;
-	if Jz(Qz) then
-		Zz();
+	if Nd(ud) then
+		Yd();
 	else
-		Qz = nil;
+		ud = nil;
 	end;
 end;
-local rz = nil;
+local ld = nil;
 pcall(function()
-	rz = (y:WaitForChild("GameEvents", 8)):WaitForChild("DeviceUpdate", 8);
+	ld = (o:WaitForChild("GameEvents", 8)):WaitForChild("DeviceUpdate", 8);
 end);
-local function Fz()
-	if not rz then
+local function yd()
+	if not ld then
 		pcall(function()
-			rz = y.GameEvents.DeviceUpdate;
+			ld = o.GameEvents.DeviceUpdate;
 		end);
 	end;
-	if not rz then
+	if not ld then
 		return;
 	end;
-	local n = F.DeviceMode or "Console";
+	local g = y.DeviceMode or "Console";
 	pcall(function()
-		if n == "Console" then
-			rz:FireServer();
+		if g == "Console" then
+			ld:FireServer();
 			pcall(function()
-				rz:FireServer("Console");
+				ld:FireServer("Console");
 			end);
-		elseif n == "Desktop" then
-			rz:FireServer("Desktop");
+		elseif g == "Desktop" then
+			ld:FireServer("Desktop");
 		else
-			rz:FireServer("Mobile");
+			ld:FireServer("Mobile");
 		end;
 	end);
 end;
 task.spawn(function()
 	while true do
-		local n = tonumber(F.DeviceSpoofDelay) or 1.5;
-		if n < .3 then
-			n = .3;
+		local g = tonumber(y.DeviceSpoofDelay) or 1.5;
+		if g < .3 then
+			g = .3;
 		end;
-		task.wait(n);
-		if F.DeviceSpoof then
-			pcall(Fz);
+		task.wait(g);
+		if y.DeviceSpoof then
+			pcall(yd);
 		end;
 	end;
 end);
-J(.78, "Building ESP...");
-local Nz = {};
-local function jz(n)
-	if not B or not A then
+N(.78, "Building ESP...");
+local md = {};
+local function ed(g)
+	if not C or not S then
 		return nil;
 	end;
-	local W, l = pcall(function()
-			return A.new(n);
+	local h, K = pcall(function()
+			return S.new(g);
 		end);
-	if W and l then
-		return l;
+	if h and K then
+		return K;
 	end;
 	return nil;
 end;
-local function Sz(n)
-	if not n then
+local function Dd(g)
+	if not g then
 		return;
 	end;
 	pcall(function()
-		if n.Remove then
-			n:Remove();
-		elseif n.Destroy then
-			n:Destroy();
+		if g.Remove then
+			g:Remove();
+		elseif g.Destroy then
+			g:Destroy();
 		else
-			n.Visible = false;
+			g.Visible = false;
 		end;
 	end);
 end;
-local function Iz(n)
-	local W = Nz[n];
-	if not W then
+local function Vd(g)
+	local h = md[g];
+	if not h then
 		return;
 	end;
-	for n, W in pairs(W) do
-		if type(W) == "table" then
-			for n, W in pairs(W) do
-				Sz(W);
+	for g, h in pairs(h) do
+		if type(h) == "table" then
+			for g, h in pairs(h) do
+				Dd(h);
 			end;
 		else
-			Sz(W);
+			Dd(h);
 		end;
 	end;
-	Nz[n] = nil;
+	md[g] = nil;
 end;
-local function Bz()
-	for n in pairs(Nz) do
-		Iz(n);
+local function Cd()
+	for g in pairs(md) do
+		Vd(g);
 	end;
-	Nz = {};
+	md = {};
 end;
-local function Az(n)
-	if Nz[n] then
-		return Nz[n];
+local function Sd(g)
+	if md[g] then
+		return md[g];
 	end;
-	if not B then
+	if not C then
 		return nil;
 	end;
-	local W = jz("Square");
-	if not W then
+	local h = ed("Square");
+	if not h then
 		return nil;
 	end;
 	pcall(function()
-		W.Thickness = 1.5;
-		W.Filled = false;
-		W.Visible = false;
+		h.Thickness = 1.5;
+		h.Filled = false;
+		h.Visible = false;
 	end);
-	local l = {};
-	for n = 1, 8, 1 do
-		local W = jz("Line");
-		if W then
+	local K = {};
+	for g = 1, 8, 1 do
+		local h = ed("Line");
+		if h then
 			pcall(function()
-				W.Thickness = 1.5;
-				W.Visible = false;
+				h.Thickness = 1.5;
+				h.Visible = false;
 			end);
-			l[n] = W;
+			K[g] = h;
 		end;
 	end;
-	local H = jz("Text");
+	local j = ed("Text");
+	if j then
+		pcall(function()
+			j.Size = 14;
+			j.Center = true;
+			j.Outline = true;
+			j.Visible = false;
+		end);
+		pcall(function()
+			j.Font = 2;
+		end);
+	end;
+	local T = ed("Text");
+	if T then
+		pcall(function()
+			T.Size = 12;
+			T.Center = true;
+			T.Outline = true;
+			T.Visible = false;
+		end);
+		pcall(function()
+			T.Font = 2;
+		end);
+	end;
+	local R = ed("Square");
+	if R then
+		pcall(function()
+			R.Filled = false;
+			R.Visible = false;
+		end);
+	end;
+	local L = ed("Square");
+	if L then
+		pcall(function()
+			L.Filled = true;
+			L.Visible = false;
+		end);
+	end;
+	local H = ed("Circle");
 	if H then
 		pcall(function()
-			H.Size = 14;
-			H.Center = true;
-			H.Outline = true;
+			H.NumSides = 16;
+			H.Filled = true;
 			H.Visible = false;
 		end);
-		pcall(function()
-			H.Font = 2;
-		end);
 	end;
-	local v = jz("Text");
-	if v then
-		pcall(function()
-			v.Size = 12;
-			v.Center = true;
-			v.Outline = true;
-			v.Visible = false;
-		end);
-		pcall(function()
-			v.Font = 2;
-		end);
-	end;
-	local E = jz("Square");
-	if E then
-		pcall(function()
-			E.Filled = false;
-			E.Visible = false;
-		end);
-	end;
-	local g = jz("Square");
-	if g then
-		pcall(function()
-			g.Filled = true;
-			g.Visible = false;
-		end);
-	end;
-	local u = jz("Circle");
-	if u then
-		pcall(function()
-			u.NumSides = 16;
-			u.Filled = true;
-			u.Visible = false;
-		end);
-	end;
-	Nz[n] = {
-			Box = W,
-			Lines = l,
-			Name = H,
-			Dist = v,
-			HB = E,
-			HF = g,
-			Dot = u,
+	md[g] = {
+			Box = h,
+			Lines = K,
+			Name = j,
+			Dist = T,
+			HB = R,
+			HF = L,
+			Dot = H,
 		};
-	return Nz[n];
+	return md[g];
 end;
-local function xz(n)
-	if not n then
+local function Jd(g)
+	if not g then
 		return;
 	end;
 	pcall(function()
-		if n.Box then
-			n.Box.Visible = false;
+		if g.Box then
+			g.Box.Visible = false;
 		end;
-		if n.Name then
-			n.Name.Visible = false;
+		if g.Name then
+			g.Name.Visible = false;
 		end;
-		if n.Dist then
-			n.Dist.Visible = false;
+		if g.Dist then
+			g.Dist.Visible = false;
 		end;
-		if n.HB then
-			n.HB.Visible = false;
+		if g.HB then
+			g.HB.Visible = false;
 		end;
-		if n.HF then
-			n.HF.Visible = false;
+		if g.HF then
+			g.HF.Visible = false;
 		end;
-		if n.Dot then
-			n.Dot.Visible = false;
+		if g.Dot then
+			g.Dot.Visible = false;
 		end;
-		if n.Lines then
-			for W = 1, #n.Lines, 1 do
-				if n.Lines[W] then
-					n.Lines[W].Visible = false;
+		if g.Lines then
+			for h = 1, #g.Lines, 1 do
+				if g.Lines[h] then
+					g.Lines[h].Visible = false;
 				end;
 			end;
 		end;
 	end);
 end;
-local function dz()
-	if not F.ESP then
-		Bz();
+local function Ad()
+	if not y.ESP then
+		Cd();
 		return;
 	end;
-	if not B then
+	if not C then
 		return;
 	end;
-	if not T or not T.Parent then
+	if not Z or not Z.Parent then
 		return;
 	end;
-	local n = T.ViewportSize;
-	if n.X < 1 or n.Y < 1 then
+	local g = Z.ViewportSize;
+	if g.X < 1 or g.Y < 1 then
 		return;
 	end;
-	local l = K();
-	local H = uz(Y) and (uz(Y)):FindFirstChild("HumanoidRootPart");
-	local v = {};
-	for n, W in ipairs(W:GetPlayers()) do
-		if W ~= Y and (mz(W) and yz(W)) then
-			v[W] = true;
-			local n = uz(W);
-			local E = n and ((n:FindFirstChild("HumanoidRootPart") or n:FindFirstChild("Torso")));
-			local g = n and n:FindFirstChild("Head");
-			local u = n and n:FindFirstChildOfClass("Humanoid");
-			if not E or not g then
-				Iz(W);
+	local K = t();
+	local j = Ld(s) and (Ld(s)):FindFirstChild("HumanoidRootPart");
+	local T = {};
+	for g, h in ipairs(h:GetPlayers()) do
+		if h ~= s and (od(h) and Hd(h)) then
+			T[h] = true;
+			local g = Ld(h);
+			local R = g and ((g:FindFirstChild("HumanoidRootPart") or g:FindFirstChild("Torso")));
+			local L = g and g:FindFirstChild("Head");
+			local H = g and g:FindFirstChildOfClass("Humanoid");
+			if not R or not L then
+				Vd(h);
 				continue;
 			end;
-			local y = Az(W);
-			if not y or not y.Box then
+			local o = Sd(h);
+			if not o or not o.Box then
 				continue;
 			end;
-			local m, M = T:WorldToViewportPoint(E.Position);
-			local Y, s = T:WorldToViewportPoint(g.Position + Vector3.new(0, 1.1, 0));
-			local G, R = T:WorldToViewportPoint(E.Position - Vector3.new(0, 2.8, 0));
-			if not m or not Y or not M or not s then
-				xz(y);
+			local I, s = Z:WorldToViewportPoint(R.Position);
+			local w, b = Z:WorldToViewportPoint(L.Position + Vector3.new(0, 1.1, 0));
+			local v, B = Z:WorldToViewportPoint(R.Position - Vector3.new(0, 2.8, 0));
+			if not I or not w or not s or not b then
+				Jd(o);
 				continue;
 			end;
-			if m.Z <= 0 or Y.Z <= 0 then
-				xz(y);
+			if I.Z <= 0 or w.Z <= 0 then
+				Jd(o);
 				continue;
 			end;
-			local t = G or m;
-			local O = math.max(math.abs(t.Y - Y.Y), 8);
-			local X = math.clamp(O / 1.85, 8, 120);
-			local a = m.X - X / 2;
-			local P = Y.Y;
-			local D = Vector2.new(X, O);
-			local q = math.clamp(X * .25, 4, 12);
-			local U = F.BoxStyle or "Corner";
-			if F.ShowBoxes and ((U == "Full" or U == "Both")) then
-				y.Box.Size = D;
-				y.Box.Position = Vector2.new(a, P);
-				y.Box.Color = l;
-				y.Box.Visible = true;
+			local r = v or I;
+			local E = math.max(math.abs(r.Y - w.Y), 8);
+			local X = math.clamp(E / 1.85, 8, 120);
+			local c = I.X - X / 2;
+			local p = w.Y;
+			local f = Vector2.new(X, E);
+			local P = math.clamp(X * .25, 4, 12);
+			local Y = y.BoxStyle or "Corner";
+			if y.ShowBoxes and ((Y == "Full" or Y == "Both")) then
+				o.Box.Size = f;
+				o.Box.Position = Vector2.new(c, p);
+				o.Box.Color = K;
+				o.Box.Visible = true;
 			else
-				y.Box.Visible = false;
+				o.Box.Visible = false;
 			end;
-			if F.ShowBoxes and (((U == "Corner" or U == "Both")) and (y.Lines and y.Lines[1])) then
-				local n, W = a, P;
-				local H, v = a + X, P + O;
-				y.Lines[1].From, y.Lines[1].To = Vector2.new(n, W), Vector2.new(n, W + q);
-				y.Lines[2].From, y.Lines[2].To = Vector2.new(n, W), Vector2.new(n + q, W);
-				y.Lines[3].From, y.Lines[3].To = Vector2.new(H, W), Vector2.new(H, W + q);
-				y.Lines[4].From, y.Lines[4].To = Vector2.new(H, W), Vector2.new(H - q, W);
-				y.Lines[5].From, y.Lines[5].To = Vector2.new(n, v), Vector2.new(n, v - q);
-				y.Lines[6].From, y.Lines[6].To = Vector2.new(n, v), Vector2.new(n + q, v);
-				y.Lines[7].From, y.Lines[7].To = Vector2.new(H, v), Vector2.new(H, v - q);
-				y.Lines[8].From, y.Lines[8].To = Vector2.new(H, v), Vector2.new(H - q, v);
-				for n = 1, 8, 1 do
-					if y.Lines[n] then
-						y.Lines[n].Color = l;
-						y.Lines[n].Visible = true;
+			if y.ShowBoxes and (((Y == "Corner" or Y == "Both")) and (o.Lines and o.Lines[1])) then
+				local g, h = c, p;
+				local j, T = c + X, p + E;
+				o.Lines[1].From, o.Lines[1].To = Vector2.new(g, h), Vector2.new(g, h + P);
+				o.Lines[2].From, o.Lines[2].To = Vector2.new(g, h), Vector2.new(g + P, h);
+				o.Lines[3].From, o.Lines[3].To = Vector2.new(j, h), Vector2.new(j, h + P);
+				o.Lines[4].From, o.Lines[4].To = Vector2.new(j, h), Vector2.new(j - P, h);
+				o.Lines[5].From, o.Lines[5].To = Vector2.new(g, T), Vector2.new(g, T - P);
+				o.Lines[6].From, o.Lines[6].To = Vector2.new(g, T), Vector2.new(g + P, T);
+				o.Lines[7].From, o.Lines[7].To = Vector2.new(j, T), Vector2.new(j, T - P);
+				o.Lines[8].From, o.Lines[8].To = Vector2.new(j, T), Vector2.new(j - P, T);
+				for g = 1, 8, 1 do
+					if o.Lines[g] then
+						o.Lines[g].Color = K;
+						o.Lines[g].Visible = true;
 					end;
 				end;
-			elseif y.Lines then
-				for n = 1, 8, 1 do
-					if y.Lines[n] then
-						y.Lines[n].Visible = false;
+			elseif o.Lines then
+				for g = 1, 8, 1 do
+					if o.Lines[g] then
+						o.Lines[g].Visible = false;
 					end;
 				end;
 			end;
-			if F.ShowNames and y.Name then
-				y.Name.Text = W.DisplayName;
-				y.Name.Position = Vector2.new(m.X, Y.Y - 18);
-				y.Name.Color = l;
-				y.Name.Visible = true;
-			elseif y.Name then
-				y.Name.Visible = false;
+			if y.ShowNames and o.Name then
+				o.Name.Text = h.DisplayName;
+				o.Name.Position = Vector2.new(I.X, w.Y - 18);
+				o.Name.Color = K;
+				o.Name.Visible = true;
+			elseif o.Name then
+				o.Name.Visible = false;
 			end;
-			if F.ShowDistance and (y.Dist and H) then
-				y.Dist.Text = math.floor(((E.Position - H.Position)).Magnitude) .. "m";
-				y.Dist.Position = Vector2.new(m.X, (P + O) + 2);
-				y.Dist.Color = l;
-				y.Dist.Visible = true;
-			elseif y.Dist then
-				y.Dist.Visible = false;
+			if y.ShowDistance and (o.Dist and j) then
+				o.Dist.Text = math.floor(((R.Position - j.Position)).Magnitude) .. "m";
+				o.Dist.Position = Vector2.new(I.X, (p + E) + 2);
+				o.Dist.Color = K;
+				o.Dist.Visible = true;
+			elseif o.Dist then
+				o.Dist.Visible = false;
 			end;
-			if F.ShowHealth and (u and (y.HB and y.HF)) then
-				local n = math.clamp(u.Health / math.max(u.MaxHealth, 1), 0, 1);
-				y.HB.Size = Vector2.new(3, O);
-				y.HB.Position = Vector2.new(a - 6, P);
-				y.HB.Color = l;
-				y.HB.Visible = true;
-				local W = O * n;
-				y.HF.Size = Vector2.new(2, W);
-				y.HF.Position = Vector2.new(a - 5.5, (P + O) - W);
-				y.HF.Color = Color3.fromRGB(255 * ((1 - n)), 255 * n, 0);
-				y.HF.Visible = true;
+			if y.ShowHealth and (H and (o.HB and o.HF)) then
+				local g = math.clamp(H.Health / math.max(H.MaxHealth, 1), 0, 1);
+				o.HB.Size = Vector2.new(3, E);
+				o.HB.Position = Vector2.new(c - 6, p);
+				o.HB.Color = K;
+				o.HB.Visible = true;
+				local h = E * g;
+				o.HF.Size = Vector2.new(2, h);
+				o.HF.Position = Vector2.new(c - 5.5, (p + E) - h);
+				o.HF.Color = Color3.fromRGB(255 * ((1 - g)), 255 * g, 0);
+				o.HF.Visible = true;
 			else
-				if y.HB then
-					y.HB.Visible = false;
+				if o.HB then
+					o.HB.Visible = false;
 				end;
-				if y.HF then
-					y.HF.Visible = false;
+				if o.HF then
+					o.HF.Visible = false;
 				end;
 			end;
-			if F.ShowHeadDot and y.Dot then
-				local n, W = T:WorldToViewportPoint(g.Position);
-				if n and (W and n.Z > 0) then
-					y.Dot.Position = Vector2.new(n.X, n.Y);
-					y.Dot.Radius = math.clamp(X * .18, 3, 9);
-					y.Dot.Color = l;
-					y.Dot.Visible = true;
+			if y.ShowHeadDot and o.Dot then
+				local g, h = Z:WorldToViewportPoint(L.Position);
+				if g and (h and g.Z > 0) then
+					o.Dot.Position = Vector2.new(g.X, g.Y);
+					o.Dot.Radius = math.clamp(X * .18, 3, 9);
+					o.Dot.Color = K;
+					o.Dot.Visible = true;
 				else
-					y.Dot.Visible = false;
+					o.Dot.Visible = false;
 				end;
-			elseif y.Dot then
-				y.Dot.Visible = false;
+			elseif o.Dot then
+				o.Dot.Visible = false;
 			end;
 		end;
 	end;
-	for n in pairs(Nz) do
-		if not v[n] then
-			Iz(n);
+	for g in pairs(md) do
+		if not T[g] then
+			Vd(g);
 		end;
 	end;
 end;
-W.PlayerRemoving:Connect(function(n)
-	Iz(n);
-	if Qz == n then
-		Qz = nil;
+local Md = {};
+local function Gd()
+	for g, h in pairs(Md) do
+		pcall(function()
+			h:Destroy();
+		end);
+		Md[g] = nil;
 	end;
-	local W = uz(n);
-	if W then
-		Xz(W:FindFirstChild("Head"));
-		Xz(Oz(W));
+end;
+local function Od()
+	if not y.Chams then
+		Gd();
+		return;
+	end;
+	local g = t();
+	local K = {};
+	for h, j in ipairs(h:GetPlayers()) do
+		if j ~= s and (od(j) and Hd(j)) then
+			K[j] = true;
+			local h = Ld(j);
+			if h then
+				local K = Md[j];
+				if not K or not K.Parent then
+					K = Instance.new("Highlight");
+					K.Name = "MoonChams";
+					K.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop;
+					K.FillTransparency = .5;
+					K.OutlineTransparency = 0;
+					K.Parent = h;
+					Md[j] = K;
+				end;
+				K.FillColor = g;
+				K.OutlineColor = g;
+				K.Enabled = true;
+			end;
+		end;
+	end;
+	for g, h in pairs(Md) do
+		if not K[g] then
+			pcall(function()
+				h:Destroy();
+			end);
+			Md[g] = nil;
+		end;
+	end;
+end;
+local nd = {
+		"smoke grenade",
+		"decoy grenade",
+		"red smoke",
+		"sticky grenade",
+		"flashbang",
+		"proximity alarm",
+		"frag grenade",
+		"molotov",
+		"frost smoke",
+		"tear gas",
+		"poison gas",
+		"black smoke",
+	};
+local zd = {
+		["smoke grenade"] = Color3.fromRGB(180, 180, 180),
+		["decoy grenade"] = Color3.fromRGB(160, 80, 255),
+		["red smoke"] = Color3.fromRGB(255, 50, 50),
+		["sticky grenade"] = Color3.fromRGB(255, 130, 0),
+		flashbang = Color3.fromRGB(255, 255, 0),
+		["proximity alarm"] = Color3.fromRGB(0, 255, 255),
+		["frag grenade"] = Color3.fromRGB(0, 200, 0),
+		molotov = Color3.fromRGB(255, 80, 0),
+		["frost smoke"] = Color3.fromRGB(100, 180, 255),
+		["tear gas"] = Color3.fromRGB(180, 255, 0),
+		["poison gas"] = Color3.fromRGB(0, 255, 0),
+		["black smoke"] = Color3.fromRGB(40, 40, 40),
+	};
+local dd = {};
+local td = 0;
+local function qd()
+	for g, h in pairs(dd) do
+		pcall(function()
+			h:Destroy();
+		end);
+		dd[g] = nil;
+	end;
+end;
+local function Qd(g)
+	local h = g:lower();
+	for g, K in pairs(zd) do
+		if h:find(g, 1, true) then
+			return K;
+		end;
+	end;
+	return Color3.fromRGB(255, 255, 255);
+end;
+local function kd(g)
+	if g:IsA("BasePart") then
+		return g;
+	end;
+	if g:IsA("Tool") then
+		return g:FindFirstChild("Handle") or g:FindFirstChildOfClass("BasePart") or g;
+	end;
+	if g:IsA("Model") then
+		return g:FindFirstChildOfClass("BasePart") or g;
+	end;
+	return nil;
+end;
+local function id()
+	if not y.GadgetESP then
+		qd();
+		return;
+	end;
+	td = td + 1;
+	if td < 30 then
+		return;
+	end;
+	td = 0;
+	local g = {};
+	for h, K in ipairs(workspace:GetDescendants()) do
+		local j = K.Name:lower();
+		local T = false;
+		for g, h in ipairs(nd) do
+			if j:find(h, 1, true) then
+				T = true;
+				break;
+			end;
+		end;
+		if T then
+			local h = kd(K);
+			if h then
+				g[h] = true;
+				local K = dd[h];
+				if not K or not K.Parent then
+					K = Instance.new("Highlight");
+					K.Name = "MoonGadgetESP";
+					K.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop;
+					K.FillTransparency = .4;
+					K.OutlineTransparency = 0;
+					K.Parent = h;
+					dd[h] = K;
+				end;
+				local T = Qd(j);
+				K.FillColor = T;
+				K.OutlineColor = T;
+				K.Enabled = true;
+			end;
+		end;
+	end;
+	for h, K in pairs(dd) do
+		if not g[h] then
+			pcall(function()
+				K:Destroy();
+			end);
+			dd[h] = nil;
+		end;
+	end;
+end;
+h.PlayerRemoving:Connect(function(g)
+	Vd(g);
+	pcall(function()
+		if Md[g] then
+			Md[g]:Destroy();
+			Md[g] = nil;
+		end;
+	end);
+	if ud == g then
+		ud = nil;
+	end;
+	local h = Ld(g);
+	if h then
+		Ed(h:FindFirstChild("Head"));
+		Ed(rd(h));
 	end;
 end);
-local function bz(n)
-	n.CharacterRemoving:Connect(function()
-		Iz(n);
+local function Ud(g)
+	g.CharacterRemoving:Connect(function()
+		Vd(g);
+		pcall(function()
+			if Md[g] then
+				Md[g]:Destroy();
+				Md[g] = nil;
+			end;
+		end);
 	end);
-	n.CharacterAdded:Connect(function()
+	g.CharacterAdded:Connect(function()
 		task.wait(.3);
-		Iz(n);
+		Vd(g);
 	end);
 end;
-W.PlayerAdded:Connect(bz);
-for n, W in ipairs(W:GetPlayers()) do
-	bz(W);
+h.PlayerAdded:Connect(Ud);
+for g, h in ipairs(h:GetPlayers()) do
+	Ud(h);
 end;
-local kz = false;
-local function fz(n)
-	if n == kz then
+local ad = false;
+local function gh(g)
+	if g == ad then
 		return;
 	end;
-	kz = n;
+	ad = g;
 	pcall(function()
-		v.GlobalShadows = not n;
-		if n then
-			v.FogEnd = 9000000000;
+		T.GlobalShadows = not g;
+		if g then
+			T.FogEnd = 9000000000;
 			if settings and (settings()).Rendering then
 				(settings()).Rendering.QualityLevel = Enum.QualityLevel.Level01;
 			end;
-			for n, l in ipairs(workspace:GetDescendants()) do
-				if l:IsA("BasePart") then
-					local n = false;
-					for W, H in ipairs(W:GetPlayers()) do
-						if H.Character and l:IsDescendantOf(H.Character) then
-							n = true;
+			for g, K in ipairs(workspace:GetDescendants()) do
+				if K:IsA("BasePart") then
+					local g = false;
+					for h, j in ipairs(h:GetPlayers()) do
+						if j.Character and K:IsDescendantOf(j.Character) then
+							g = true;
 							break;
 						end;
 					end;
-					if not n then
-						l.Material = Enum.Material.SmoothPlastic;
-						l.CastShadow = false;
+					if not g then
+						K.Material = Enum.Material.SmoothPlastic;
+						K.CastShadow = false;
 					end;
-				elseif l:IsA("ParticleEmitter") or l:IsA("Trail") or l:IsA("Beam") then
-					l.Enabled = false;
+				elseif K:IsA("ParticleEmitter") or K:IsA("Trail") or K:IsA("Beam") then
+					K.Enabled = false;
 				end;
 			end;
 		end;
 	end);
 end;
-local cz = "\226\156\147";
+local hh = "\226\156\147";
 pcall(function()
 	if utf8 and utf8.char then
-		cz = utf8.char(57344);
+		hh = utf8.char(57344);
 	end;
 end);
-J(.9, "Building UI...");
-local wz = Instance.new("ScreenGui");
-wz.Name = "MoonHubUI";
-wz.ResetOnSpawn = false;
-wz.IgnoreGuiInset = true;
-wz.DisplayOrder = 999;
-wz.Parent = s;
-local iz = Instance.new("Frame");
-iz.Size = UDim2.new(0, math.min(540, T.ViewportSize.X - 20), 0, math.min(420, T.ViewportSize.Y - 50));
-iz.Position = UDim2.new(.5, -iz.Size.X.Offset / 2, .5, -iz.Size.Y.Offset / 2);
-iz.BackgroundColor3 = b;
-iz.BackgroundTransparency = .15;
-iz.BorderSizePixel = 0;
-iz.Visible = false;
-iz.Parent = wz;
-(Instance.new("UICorner", iz)).CornerRadius = UDim.new(0, 12);
-local Kz = Instance.new("Frame");
-Kz.Size = UDim2.new(1, 0, 0, 40);
-Kz.BackgroundColor3 = k;
-Kz.BorderSizePixel = 0;
-Kz.Parent = iz;
-(Instance.new("UICorner", Kz)).CornerRadius = UDim.new(0, 12);
-local Vz = Instance.new("TextLabel");
-Vz.Size = UDim2.new(1, -40, 1, 0);
-Vz.Position = UDim2.new(0, 12, 0, 0);
-Vz.BackgroundTransparency = 1;
-Vz.Text = "MOON HUB  |  jailbird";
-Vz.TextColor3 = c;
-Vz.TextSize = 14;
-Vz.Font = i;
-Vz.TextXAlignment = Enum.TextXAlignment.Left;
-Vz.Parent = Kz;
-local Cz = Instance.new("TextButton");
-Cz.Size = UDim2.new(0, 28, 0, 28);
-Cz.Position = UDim2.new(1, -34, .5, -14);
-Cz.BackgroundColor3 = Color3.fromRGB(40, 30, 50);
-Cz.Text = "X";
-Cz.TextColor3 = w;
-Cz.Font = i;
-Cz.TextSize = 14;
-Cz.Parent = Kz;
-(Instance.new("UICorner", Cz)).CornerRadius = UDim.new(0, 6);
-local hz = Instance.new("TextLabel");
-hz.Size = UDim2.new(1, -16, 0, 18);
-hz.Position = UDim2.new(0, 8, 0, 40);
-hz.BackgroundTransparency = 1;
-hz.Text = "Executor: " .. X;
-hz.TextColor3 = w;
-hz.TextSize = 11;
-hz.Font = i;
-hz.TextXAlignment = Enum.TextXAlignment.Left;
-hz.Parent = iz;
-local pz = Instance.new("ScrollingFrame");
-pz.Size = UDim2.new(0, 100, 1, -66);
-pz.Position = UDim2.new(0, 8, 0, 60);
-pz.BackgroundColor3 = k;
-pz.BorderSizePixel = 0;
-pz.ScrollBarThickness = 2;
-pz.AutomaticCanvasSize = Enum.AutomaticSize.Y;
-pz.CanvasSize = UDim2.new(0, 0, 0, 0);
-pz.Parent = iz;
-(Instance.new("UICorner", pz)).CornerRadius = UDim.new(0, 8);
-local oz = Instance.new("UIListLayout");
-oz.Padding = UDim.new(0, 4);
-oz.Parent = pz;
-local nR = Instance.new("UIPadding");
-nR.PaddingTop = UDim.new(0, 6);
-nR.PaddingLeft = UDim.new(0, 6);
-nR.PaddingRight = UDim.new(0, 6);
-nR.Parent = pz;
-local WR = Instance.new("Frame");
-WR.Size = UDim2.new(1, -120, 1, -70);
-WR.Position = UDim2.new(0, 114, 0, 62);
-WR.BackgroundTransparency = 1;
-WR.Parent = iz;
-local lR, HR = {}, {};
-local function vR(n)
-	for W, l in pairs(lR) do
-		l.Visible = (W == n);
+N(.9, "Building UI...");
+local Kh = Instance.new("ScreenGui");
+Kh.Name = "MoonHubUI";
+Kh.ResetOnSpawn = false;
+Kh.IgnoreGuiInset = true;
+Kh.DisplayOrder = 999;
+Kh.Parent = w;
+local jh = Instance.new("Frame");
+jh.Size = UDim2.new(0, math.min(540, Z.ViewportSize.X - 20), 0, math.min(420, Z.ViewportSize.Y - 50));
+jh.Position = UDim2.new(.5, -jh.Size.X.Offset / 2, .5, -jh.Size.Y.Offset / 2);
+jh.BackgroundColor3 = M;
+jh.BackgroundTransparency = .15;
+jh.BorderSizePixel = 0;
+jh.Visible = false;
+jh.Parent = Kh;
+(Instance.new("UICorner", jh)).CornerRadius = UDim.new(0, 12);
+local Th = Instance.new("Frame");
+Th.Size = UDim2.new(1, 0, 0, 40);
+Th.BackgroundColor3 = G;
+Th.BorderSizePixel = 0;
+Th.Parent = jh;
+(Instance.new("UICorner", Th)).CornerRadius = UDim.new(0, 12);
+local Rh = Instance.new("TextLabel");
+Rh.Size = UDim2.new(1, -40, 1, 0);
+Rh.Position = UDim2.new(0, 12, 0, 0);
+Rh.BackgroundTransparency = 1;
+Rh.Text = "MOON HUB  |  jailbird";
+Rh.TextColor3 = n;
+Rh.TextSize = 14;
+Rh.Font = d;
+Rh.TextXAlignment = Enum.TextXAlignment.Left;
+Rh.Parent = Th;
+local Lh = Instance.new("TextButton");
+Lh.Size = UDim2.new(0, 28, 0, 28);
+Lh.Position = UDim2.new(1, -34, .5, -14);
+Lh.BackgroundColor3 = Color3.fromRGB(40, 30, 50);
+Lh.Text = "X";
+Lh.TextColor3 = z;
+Lh.Font = d;
+Lh.TextSize = 14;
+Lh.Parent = Th;
+(Instance.new("UICorner", Lh)).CornerRadius = UDim.new(0, 6);
+local Hh = Instance.new("TextLabel");
+Hh.Size = UDim2.new(1, -16, 0, 18);
+Hh.Position = UDim2.new(0, 8, 0, 40);
+Hh.BackgroundTransparency = 1;
+Hh.Text = "Executor: " .. E;
+Hh.TextColor3 = z;
+Hh.TextSize = 11;
+Hh.Font = d;
+Hh.TextXAlignment = Enum.TextXAlignment.Left;
+Hh.Parent = jh;
+local oh = Instance.new("ScrollingFrame");
+oh.Size = UDim2.new(0, 100, 1, -66);
+oh.Position = UDim2.new(0, 8, 0, 60);
+oh.BackgroundColor3 = G;
+oh.BorderSizePixel = 0;
+oh.ScrollBarThickness = 2;
+oh.AutomaticCanvasSize = Enum.AutomaticSize.Y;
+oh.CanvasSize = UDim2.new(0, 0, 0, 0);
+oh.Parent = jh;
+(Instance.new("UICorner", oh)).CornerRadius = UDim.new(0, 8);
+local Ih = Instance.new("UIListLayout");
+Ih.Padding = UDim.new(0, 4);
+Ih.Parent = oh;
+local Zh = Instance.new("UIPadding");
+Zh.PaddingTop = UDim.new(0, 6);
+Zh.PaddingLeft = UDim.new(0, 6);
+Zh.PaddingRight = UDim.new(0, 6);
+Zh.Parent = oh;
+local sh = Instance.new("Frame");
+sh.Size = UDim2.new(1, -120, 1, -70);
+sh.Position = UDim2.new(0, 114, 0, 62);
+sh.BackgroundTransparency = 1;
+sh.Parent = jh;
+local wh, bh = {}, {};
+local function vh(g)
+	for h, K in pairs(wh) do
+		K.Visible = (h == g);
 	end;
-	for W, l in pairs(HR) do
-		l.BackgroundColor3 = (W == n) and Color3.fromRGB(40, 35, 60) or Color3.fromRGB(22, 22, 30);
-		l.TextColor3 = (W == n) and d or w;
+	for h, K in pairs(bh) do
+		K.BackgroundColor3 = (h == g) and Color3.fromRGB(40, 35, 60) or Color3.fromRGB(22, 22, 30);
+		K.TextColor3 = (h == g) and A or z;
 	end;
-	V();
+	q();
 end;
-local function ER(n)
-	local W = Instance.new("ScrollingFrame");
-	W.Size = UDim2.new(1, 0, 1, 0);
-	W.BackgroundTransparency = 1;
-	W.BorderSizePixel = 0;
-	W.ScrollBarThickness = 3;
-	W.AutomaticCanvasSize = Enum.AutomaticSize.Y;
-	W.CanvasSize = UDim2.new(0, 0, 0, 0);
-	W.Visible = false;
-	W.Parent = WR;
-	local l = Instance.new("UIListLayout");
-	l.Padding = UDim.new(0, 5);
-	l.SortOrder = Enum.SortOrder.LayoutOrder;
-	l.Parent = W;
-	local H = Instance.new("UIPadding");
-	H.PaddingBottom = UDim.new(0, 10);
-	H.Parent = W;
-	W:SetAttribute("O", 0);
-	lR[n] = W;
-	local v = Instance.new("TextButton");
-	v.Size = UDim2.new(1, 0, 0, 28);
-	v.BackgroundColor3 = Color3.fromRGB(22, 22, 30);
-	v.Text = n;
-	v.TextColor3 = w;
-	v.TextSize = 12;
-	v.Font = i;
-	v.Parent = pz;
-	(Instance.new("UICorner", v)).CornerRadius = UDim.new(0, 6);
-	v.MouseButton1Click:Connect(function()
-		vR(n);
+local function Bh(g)
+	local h = Instance.new("ScrollingFrame");
+	h.Size = UDim2.new(1, 0, 1, 0);
+	h.BackgroundTransparency = 1;
+	h.BorderSizePixel = 0;
+	h.ScrollBarThickness = 3;
+	h.AutomaticCanvasSize = Enum.AutomaticSize.Y;
+	h.CanvasSize = UDim2.new(0, 0, 0, 0);
+	h.Visible = false;
+	h.Parent = sh;
+	local K = Instance.new("UIListLayout");
+	K.Padding = UDim.new(0, 5);
+	K.SortOrder = Enum.SortOrder.LayoutOrder;
+	K.Parent = h;
+	local j = Instance.new("UIPadding");
+	j.PaddingBottom = UDim.new(0, 10);
+	j.Parent = h;
+	h:SetAttribute("O", 0);
+	wh[g] = h;
+	local T = Instance.new("TextButton");
+	T.Size = UDim2.new(1, 0, 0, 28);
+	T.BackgroundColor3 = Color3.fromRGB(22, 22, 30);
+	T.Text = g;
+	T.TextColor3 = z;
+	T.TextSize = 12;
+	T.Font = d;
+	T.Parent = oh;
+	(Instance.new("UICorner", T)).CornerRadius = UDim.new(0, 6);
+	T.MouseButton1Click:Connect(function()
+		vh(g);
 	end);
-	HR[n] = v;
-	return W;
+	bh[g] = T;
+	return h;
 end;
-local function gR(n)
-	local W = ((n:GetAttribute("O") or 0)) + 1;
-	n:SetAttribute("O", W);
-	return W;
+local function rh(g)
+	local h = ((g:GetAttribute("O") or 0)) + 1;
+	g:SetAttribute("O", h);
+	return h;
 end;
-local function uR(n, W)
-	local l = Instance.new("TextLabel");
-	l.LayoutOrder = gR(n);
-	l.Size = UDim2.new(1, 0, 0, 16);
-	l.BackgroundTransparency = 1;
-	l.Text = string.upper(W);
-	l.TextColor3 = d;
-	l.TextSize = 11;
-	l.Font = i;
-	l.TextXAlignment = Enum.TextXAlignment.Left;
-	l.Parent = n;
+local function Eh(g, h)
+	local K = Instance.new("TextLabel");
+	K.LayoutOrder = rh(g);
+	K.Size = UDim2.new(1, 0, 0, 16);
+	K.BackgroundTransparency = 1;
+	K.Text = string.upper(h);
+	K.TextColor3 = A;
+	K.TextSize = 11;
+	K.Font = d;
+	K.TextXAlignment = Enum.TextXAlignment.Left;
+	K.Parent = g;
 end;
-local function yR(n, W, l)
-	local H = Instance.new("Frame");
-	H.LayoutOrder = gR(n);
-	H.Size = UDim2.new(1, 0, 0, 32);
-	H.BackgroundColor3 = f;
-	H.BorderSizePixel = 0;
-	H.Parent = n;
-	(Instance.new("UICorner", H)).CornerRadius = UDim.new(0, 8);
-	local v = Instance.new("TextLabel");
-	v.Size = UDim2.new(1, -55, 1, 0);
-	v.Position = UDim2.new(0, 10, 0, 0);
-	v.BackgroundTransparency = 1;
-	v.Text = W;
-	v.TextColor3 = c;
-	v.TextSize = 12;
-	v.Font = i;
-	v.TextXAlignment = Enum.TextXAlignment.Left;
-	v.Parent = H;
-	local E = Instance.new("TextButton");
-	E.Size = UDim2.new(0, 40, 0, 18);
-	E.Position = UDim2.new(1, -48, .5, -9);
-	E.BackgroundColor3 = F[l] and d or Color3.fromRGB(45, 45, 58);
-	E.Text = "";
-	E.Parent = H;
-	(Instance.new("UICorner", E)).CornerRadius = UDim.new(1, 0);
-	local g = Instance.new("Frame");
-	g.Size = UDim2.new(0, 14, 0, 14);
-	g.Position = F[l] and UDim2.new(1, -16, .5, -7) or UDim2.new(0, 2, .5, -7);
-	g.BackgroundColor3 = Color3.new(1, 1, 1);
-	g.BorderSizePixel = 0;
-	g.Parent = E;
-	(Instance.new("UICorner", g)).CornerRadius = UDim.new(1, 0);
-	E.MouseButton1Click:Connect(function()
-		F[l] = not F[l];
-		local n = F[l];
-		E.BackgroundColor3 = n and d or Color3.fromRGB(45, 45, 58);
-		g.Position = n and UDim2.new(1, -16, .5, -7) or UDim2.new(0, 2, .5, -7);
-		if l == "ESP" then
-			if not n then
-				Bz();
+local function Xh(g, h, K)
+	local j = Instance.new("Frame");
+	j.LayoutOrder = rh(g);
+	j.Size = UDim2.new(1, 0, 0, 32);
+	j.BackgroundColor3 = O;
+	j.BorderSizePixel = 0;
+	j.Parent = g;
+	(Instance.new("UICorner", j)).CornerRadius = UDim.new(0, 8);
+	local T = Instance.new("TextLabel");
+	T.Size = UDim2.new(1, -55, 1, 0);
+	T.Position = UDim2.new(0, 10, 0, 0);
+	T.BackgroundTransparency = 1;
+	T.Text = h;
+	T.TextColor3 = n;
+	T.TextSize = 12;
+	T.Font = d;
+	T.TextXAlignment = Enum.TextXAlignment.Left;
+	T.Parent = j;
+	local R = Instance.new("TextButton");
+	R.Size = UDim2.new(0, 40, 0, 18);
+	R.Position = UDim2.new(1, -48, .5, -9);
+	R.BackgroundColor3 = y[K] and A or Color3.fromRGB(45, 45, 58);
+	R.Text = "";
+	R.Parent = j;
+	(Instance.new("UICorner", R)).CornerRadius = UDim.new(1, 0);
+	local L = Instance.new("Frame");
+	L.Size = UDim2.new(0, 14, 0, 14);
+	L.Position = y[K] and UDim2.new(1, -16, .5, -7) or UDim2.new(0, 2, .5, -7);
+	L.BackgroundColor3 = Color3.new(1, 1, 1);
+	L.BorderSizePixel = 0;
+	L.Parent = R;
+	(Instance.new("UICorner", L)).CornerRadius = UDim.new(1, 0);
+	R.MouseButton1Click:Connect(function()
+		y[K] = not y[K];
+		local g = y[K];
+		R.BackgroundColor3 = g and A or Color3.fromRGB(45, 45, 58);
+		L.Position = g and UDim2.new(1, -16, .5, -7) or UDim2.new(0, 2, .5, -7);
+		if K == "ESP" then
+			if not g then
+				Cd();
 			end;
 		end;
-		if l == "Hitbox" and not n then
-			az();
+		if K == "Chams" then
+			if not g then
+				Gd();
+			end;
 		end;
-		if l == "DeviceSpoof" and n then
-			Fz();
+		if K == "GadgetESP" then
+			if not g then
+				qd();
+			end;
 		end;
-		if l == "Potato" then
-			fz(n);
+		if K == "Hitbox" and not g then
+			Xd();
 		end;
-		if l == "CustomFOV" then
-			if n then
-				Hz();
+		if K == "DeviceSpoof" and g then
+			yd();
+		end;
+		if K == "Potato" then
+			gh(g);
+		end;
+		if K == "CustomFOV" then
+			if g then
+				Kd();
 			else
 				pcall(function()
-					T.FieldOfView = lz;
+					Z.FieldOfView = hd;
 				end);
 			end;
 		end;
-		if l == "MobileAim" and n then
-			F.Aimbot = true;
+		if K == "MobileAim" and g then
+			y.Aimbot = true;
 		end;
-		if l == "KillAura" and not n then
-			Qz = nil;
+		if K == "KillAura" and not g then
+			ud = nil;
 		end;
-		if l == "ScreenStretch" and (n and not j) then
-			j = true;
+		if K == "ScreenStretch" and (g and not e) then
+			e = true;
 		end;
-		S();
-		V();
+		D();
+		q();
 	end);
 end;
-local function mR(n, W, H, v, E, g)
-	local u = Instance.new("Frame");
-	u.LayoutOrder = gR(n);
-	u.Size = UDim2.new(1, 0, 0, 46);
-	u.BackgroundColor3 = f;
-	u.BorderSizePixel = 0;
-	u.Parent = n;
-	(Instance.new("UICorner", u)).CornerRadius = UDim.new(0, 8);
-	local y = Instance.new("TextLabel");
-	y.Size = UDim2.new(.65, 0, 0, 16);
-	y.Position = UDim2.new(0, 10, 0, 4);
-	y.BackgroundTransparency = 1;
-	y.Text = W;
-	y.TextColor3 = c;
-	y.TextSize = 11;
-	y.Font = i;
-	y.TextXAlignment = Enum.TextXAlignment.Left;
-	y.Parent = u;
-	local m = Instance.new("TextLabel");
-	m.Size = UDim2.new(.3, -8, 0, 16);
-	m.Position = UDim2.new(.7, 0, 0, 4);
-	m.BackgroundTransparency = 1;
-	m.Text = tostring(F[H]);
-	m.TextColor3 = d;
-	m.TextSize = 11;
-	m.Font = i;
-	m.TextXAlignment = Enum.TextXAlignment.Right;
-	m.Parent = u;
-	local T = Instance.new("TextButton");
-	T.Size = UDim2.new(1, -20, 0, 8);
-	T.Position = UDim2.new(0, 10, 0, 26);
-	T.BackgroundColor3 = Color3.fromRGB(40, 40, 55);
-	T.Text = "";
-	T.Parent = u;
-	(Instance.new("UICorner", T)).CornerRadius = UDim.new(1, 0);
-	local M = Instance.new("Frame");
-	M.Size = UDim2.new(math.clamp(((F[H] - v)) / math.max(E - v, .001), 0, 1), 0, 1, 0);
-	M.BackgroundColor3 = d;
-	M.BorderSizePixel = 0;
-	M.Parent = T;
-	(Instance.new("UICorner", M)).CornerRadius = UDim.new(1, 0);
-	local function Y(n)
-		local W = math.clamp(((n - T.AbsolutePosition.X)) / math.max(T.AbsoluteSize.X, 1), 0, 1);
-		local l = v + W * ((E - v));
-		l = math.floor(l / g + .5) * g;
-		l = math.clamp(l, v, E);
-		F[H] = l;
-		M.Size = UDim2.new(((l - v)) / math.max(E - v, .001), 0, 1, 0);
-		m.Text = tostring(l);
-		if H == "CursorSize" then
-			o.Size = UDim2.new(0, l, 0, l);
+local function ch(g, h, j, T, R, L)
+	local H = Instance.new("Frame");
+	H.LayoutOrder = rh(g);
+	H.Size = UDim2.new(1, 0, 0, 46);
+	H.BackgroundColor3 = O;
+	H.BorderSizePixel = 0;
+	H.Parent = g;
+	(Instance.new("UICorner", H)).CornerRadius = UDim.new(0, 8);
+	local o = Instance.new("TextLabel");
+	o.Size = UDim2.new(.65, 0, 0, 16);
+	o.Position = UDim2.new(0, 10, 0, 4);
+	o.BackgroundTransparency = 1;
+	o.Text = h;
+	o.TextColor3 = n;
+	o.TextSize = 11;
+	o.Font = d;
+	o.TextXAlignment = Enum.TextXAlignment.Left;
+	o.Parent = H;
+	local I = Instance.new("TextLabel");
+	I.Size = UDim2.new(.3, -8, 0, 16);
+	I.Position = UDim2.new(.7, 0, 0, 4);
+	I.BackgroundTransparency = 1;
+	I.Text = tostring(y[j]);
+	I.TextColor3 = A;
+	I.TextSize = 11;
+	I.Font = d;
+	I.TextXAlignment = Enum.TextXAlignment.Right;
+	I.Parent = H;
+	local Z = Instance.new("TextButton");
+	Z.Size = UDim2.new(1, -20, 0, 8);
+	Z.Position = UDim2.new(0, 10, 0, 26);
+	Z.BackgroundColor3 = Color3.fromRGB(40, 40, 55);
+	Z.Text = "";
+	Z.Parent = H;
+	(Instance.new("UICorner", Z)).CornerRadius = UDim.new(1, 0);
+	local s = Instance.new("Frame");
+	s.Size = UDim2.new(math.clamp(((y[j] - T)) / math.max(R - T, .001), 0, 1), 0, 1, 0);
+	s.BackgroundColor3 = A;
+	s.BorderSizePixel = 0;
+	s.Parent = Z;
+	(Instance.new("UICorner", s)).CornerRadius = UDim.new(1, 0);
+	local function w(g)
+		local h = math.clamp(((g - Z.AbsolutePosition.X)) / math.max(Z.AbsoluteSize.X, 1), 0, 1);
+		local K = T + h * ((R - T));
+		K = math.floor(K / L + .5) * L;
+		K = math.clamp(K, T, R);
+		y[j] = K;
+		s.Size = UDim2.new(((K - T)) / math.max(R - T, .001), 0, 1, 0);
+		I.Text = tostring(K);
+		if j == "CursorSize" then
+			U.Size = UDim2.new(0, K, 0, K);
 		end;
-		if H == "FOVValue" and F.CustomFOV then
-			Hz();
+		if j == "FOVValue" and y.CustomFOV then
+			Kd();
 		end;
-		S();
+		D();
 	end;
-	T.MouseButton1Down:Connect(function()
-		local n, W;
-		n = l.InputChanged:Connect(function(n)
-				if n.UserInputType == Enum.UserInputType.MouseMovement or n.UserInputType == Enum.UserInputType.Touch then
-					Y(n.Position.X);
+	Z.MouseButton1Down:Connect(function()
+		local g, h;
+		g = K.InputChanged:Connect(function(g)
+				if g.UserInputType == Enum.UserInputType.MouseMovement or g.UserInputType == Enum.UserInputType.Touch then
+					w(g.Position.X);
 				end;
 			end);
-		W = l.InputEnded:Connect(function(l)
-				if l.UserInputType == Enum.UserInputType.MouseButton1 or l.UserInputType == Enum.UserInputType.Touch then
-					if n then
-						n:Disconnect();
+		h = K.InputEnded:Connect(function(K)
+				if K.UserInputType == Enum.UserInputType.MouseButton1 or K.UserInputType == Enum.UserInputType.Touch then
+					if g then
+						g:Disconnect();
 					end;
-					if W then
-						W:Disconnect();
+					if h then
+						h:Disconnect();
 					end;
 				end;
 			end);
 		pcall(function()
-			Y((l:GetMouseLocation()).X);
+			w((K:GetMouseLocation()).X);
 		end);
 	end);
 end;
-local function TR(n, W, l, H)
-	local v = Instance.new("Frame");
-	v.LayoutOrder = gR(n);
-	v.Size = UDim2.new(1, 0, 0, 32);
-	v.BackgroundColor3 = f;
-	v.BorderSizePixel = 0;
-	v.Parent = n;
-	(Instance.new("UICorner", v)).CornerRadius = UDim.new(0, 8);
-	local E = Instance.new("TextLabel");
-	E.Size = UDim2.new(.4, 0, 1, 0);
-	E.Position = UDim2.new(0, 10, 0, 0);
-	E.BackgroundTransparency = 1;
-	E.Text = W;
-	E.TextColor3 = c;
-	E.TextSize = 12;
-	E.Font = i;
-	E.TextXAlignment = Enum.TextXAlignment.Left;
-	E.Parent = v;
-	local g = 1;
-	for n, W in ipairs(H) do
-		if W == F[l] then
-			g = n;
+local function ph(g, h, K, j)
+	local T = Instance.new("Frame");
+	T.LayoutOrder = rh(g);
+	T.Size = UDim2.new(1, 0, 0, 32);
+	T.BackgroundColor3 = O;
+	T.BorderSizePixel = 0;
+	T.Parent = g;
+	(Instance.new("UICorner", T)).CornerRadius = UDim.new(0, 8);
+	local R = Instance.new("TextLabel");
+	R.Size = UDim2.new(.4, 0, 1, 0);
+	R.Position = UDim2.new(0, 10, 0, 0);
+	R.BackgroundTransparency = 1;
+	R.Text = h;
+	R.TextColor3 = n;
+	R.TextSize = 12;
+	R.Font = d;
+	R.TextXAlignment = Enum.TextXAlignment.Left;
+	R.Parent = T;
+	local L = 1;
+	for g, h in ipairs(j) do
+		if h == y[K] then
+			L = g;
 		end;
 	end;
-	local u = Instance.new("TextButton");
-	u.Size = UDim2.new(.55, -12, 0, 22);
-	u.Position = UDim2.new(.45, 0, .5, -11);
-	u.BackgroundColor3 = Color3.fromRGB(35, 32, 48);
-	u.Text = tostring(F[l]);
-	u.TextColor3 = d;
-	u.TextSize = 11;
-	u.Font = i;
-	u.Parent = v;
-	(Instance.new("UICorner", u)).CornerRadius = UDim.new(0, 6);
-	u.MouseButton1Click:Connect(function()
-		g = g % #H + 1;
-		F[l] = H[g];
-		u.Text = H[g];
-		if l == "CursorName" then
-			Wz(F.CursorName);
-		end;
-		if l == "DeviceMode" and F.DeviceSpoof then
-			Fz();
-		end;
-		if l == "HitboxPart" then
-			az();
-		end;
-		S();
-		V();
-	end);
-end;
-local function MR(n, W, l, H)
-	local v = Instance.new("Frame");
-	v.LayoutOrder = gR(n);
-	v.Size = UDim2.new(1, 0, 0, 52);
-	v.BackgroundColor3 = f;
-	v.BorderSizePixel = 0;
-	v.Parent = n;
-	(Instance.new("UICorner", v)).CornerRadius = UDim.new(0, 8);
-	local E = Instance.new("TextLabel");
-	E.Size = UDim2.new(1, -16, 0, 14);
-	E.Position = UDim2.new(0, 10, 0, 4);
-	E.BackgroundTransparency = 1;
-	E.Text = W;
-	E.TextColor3 = w;
-	E.TextSize = 11;
-	E.Font = i;
-	E.TextXAlignment = Enum.TextXAlignment.Left;
-	E.Parent = v;
-	local g = Instance.new("TextBox");
-	g.Size = UDim2.new(1, -20, 0, 22);
-	g.Position = UDim2.new(0, 10, 0, 22);
-	g.BackgroundColor3 = Color3.fromRGB(14, 14, 20);
-	g.BorderSizePixel = 0;
-	g.Text = tostring(F[l] or H or "");
-	g.PlaceholderText = H or "";
-	g.TextColor3 = c;
-	g.TextSize = 12;
-	g.Font = i;
-	g.ClearTextOnFocus = false;
-	g.Parent = v;
-	(Instance.new("UICorner", g)).CornerRadius = UDim.new(0, 6);
-	g.FocusLost:Connect(function()
-		local n = g.Text;
-		if not n or n == "" then
-			n = H or "default";
-			g.Text = n;
-		end;
-		F[l] = n;
-		S();
-	end);
-end;
-local function YR(n, W, l)
 	local H = Instance.new("TextButton");
-	H.LayoutOrder = gR(n);
-	H.Size = UDim2.new(1, 0, 0, 30);
-	H.BackgroundColor3 = Color3.fromRGB(35, 30, 55);
-	H.Text = W;
-	H.TextColor3 = d;
-	H.TextSize = 12;
-	H.Font = i;
-	H.Parent = n;
-	(Instance.new("UICorner", H)).CornerRadius = UDim.new(0, 8);
+	H.Size = UDim2.new(.55, -12, 0, 22);
+	H.Position = UDim2.new(.45, 0, .5, -11);
+	H.BackgroundColor3 = Color3.fromRGB(35, 32, 48);
+	H.Text = tostring(y[K]);
+	H.TextColor3 = A;
+	H.TextSize = 11;
+	H.Font = d;
+	H.Parent = T;
+	(Instance.new("UICorner", H)).CornerRadius = UDim.new(0, 6);
 	H.MouseButton1Click:Connect(function()
-		l();
-		V();
+		L = L % #j + 1;
+		y[K] = j[L];
+		H.Text = j[L];
+		if K == "CursorName" then
+			gd(y.CursorName);
+		end;
+		if K == "DeviceMode" and y.DeviceSpoof then
+			yd();
+		end;
+		if K == "HitboxPart" then
+			Xd();
+		end;
+		D();
+		q();
 	end);
 end;
-local sR = ER("Combat");
-local GR = ER("Player");
-local RR = ER("Stream");
-local tR = ER("Staff");
-local OR = ER("Mobile");
-local XR = ER("Visuals");
-local aR = ER("Config");
-uR(sR, "Aimbot");
-yR(sR, "Aimbot", "Aimbot");
-TR(sR, "Key", "AimKey", {
+local function fh(g, h, K, j)
+	local T = Instance.new("Frame");
+	T.LayoutOrder = rh(g);
+	T.Size = UDim2.new(1, 0, 0, 52);
+	T.BackgroundColor3 = O;
+	T.BorderSizePixel = 0;
+	T.Parent = g;
+	(Instance.new("UICorner", T)).CornerRadius = UDim.new(0, 8);
+	local R = Instance.new("TextLabel");
+	R.Size = UDim2.new(1, -16, 0, 14);
+	R.Position = UDim2.new(0, 10, 0, 4);
+	R.BackgroundTransparency = 1;
+	R.Text = h;
+	R.TextColor3 = z;
+	R.TextSize = 11;
+	R.Font = d;
+	R.TextXAlignment = Enum.TextXAlignment.Left;
+	R.Parent = T;
+	local L = Instance.new("TextBox");
+	L.Size = UDim2.new(1, -20, 0, 22);
+	L.Position = UDim2.new(0, 10, 0, 22);
+	L.BackgroundColor3 = Color3.fromRGB(14, 14, 20);
+	L.BorderSizePixel = 0;
+	L.Text = tostring(y[K] or j or "");
+	L.PlaceholderText = j or "";
+	L.TextColor3 = n;
+	L.TextSize = 12;
+	L.Font = d;
+	L.ClearTextOnFocus = false;
+	L.Parent = T;
+	(Instance.new("UICorner", L)).CornerRadius = UDim.new(0, 6);
+	L.FocusLost:Connect(function()
+		local g = L.Text;
+		if not g or g == "" then
+			g = j or "default";
+			L.Text = g;
+		end;
+		y[K] = g;
+		D();
+	end);
+end;
+local function Ph(g, h, K)
+	local j = Instance.new("TextButton");
+	j.LayoutOrder = rh(g);
+	j.Size = UDim2.new(1, 0, 0, 30);
+	j.BackgroundColor3 = Color3.fromRGB(35, 30, 55);
+	j.Text = h;
+	j.TextColor3 = A;
+	j.TextSize = 12;
+	j.Font = d;
+	j.Parent = g;
+	(Instance.new("UICorner", j)).CornerRadius = UDim.new(0, 8);
+	j.MouseButton1Click:Connect(function()
+		K();
+		q();
+	end);
+end;
+local Yh = Bh("Combat");
+local xh = Bh("Player");
+local uh = Bh("Stream");
+local Fh = Bh("Staff");
+local Nh = Bh("Mobile");
+local Wh = Bh("Visuals");
+local lh = Bh("Config");
+Eh(Yh, "Aimbot");
+Xh(Yh, "Aimbot", "Aimbot");
+ph(Yh, "Key", "AimKey", {
 	"MB1",
 	"MB2",
 	"E",
 	"Q",
 	"F",
 });
-TR(sR, "Mode", "AimMode", { "Hold", "Toggle", "Always" });
-mR(sR, "FOV", "AimFOV", 40, 350, 1);
-mR(sR, "Smooth", "AimSmooth", .1, 1, .05);
-yR(sR, "Show FOV", "ShowFOV");
-yR(sR, "Wall Check", "WallCheck");
-yR(sR, "Team Check", "TeamCheck");
-yR(sR, "Prediction", "Prediction");
-mR(sR, "Predict", "PredictAmount", 0, .35, .01);
-uR(sR, "Triggerbot");
-yR(sR, "Triggerbot", "Triggerbot");
-mR(sR, "Trigger FOV", "TriggerFOV", 15, 150, 1);
-mR(sR, "Trigger Delay", "TriggerDelay", .03, .25, .01);
-uR(sR, "Kill Aura");
-yR(sR, "Kill Aura", "KillAura");
-mR(sR, "Range", "KillAuraRange", 20, 200, 5);
-mR(sR, "Behind Dist", "KillAuraBehind", 1.5, 8, .1);
-uR(sR, "Camera FOV");
-yR(sR, "Custom FOV", "CustomFOV");
-mR(sR, "FOV Value", "FOVValue", 40, 120, 1);
-uR(sR, "Hitbox Expand");
-yR(sR, "Hitbox Expand", "Hitbox");
-TR(sR, "Part", "HitboxPart", { "Head", "Torso" });
-mR(sR, "Size", "HitboxSize", 1.5, 10, .5);
-uR(GR, "Move");
-yR(GR, "Speed", "Speed");
-mR(GR, "Speed Value", "SpeedValue", 16, 80, 1);
-yR(GR, "Noclip", "Noclip");
-yR(GR, "Anti-Bow", "AntiBow");
-uR(GR, "Device Spoof");
-yR(GR, "Device Spoof", "DeviceSpoof");
-TR(GR, "Mode", "DeviceMode", { "Console", "Desktop", "Mobile" });
-mR(GR, "Delay (sec)", "DeviceSpoofDelay", .3, 5, .1);
-YR(GR, "Apply Device Now", Fz);
-uR(GR, "Screen Stretch");
-yR(GR, "Screen Stretch", "ScreenStretch");
-mR(GR, "Stretch Amount", "StretchAmount", .3, 1, .01);
-uR(RR, "Stream");
-yR(RR, "Stream Proof", "StreamProof");
-MR(RR, "Name", "SpoofName", "Player");
-yR(RR, "Verified", "ShowVerified");
-uR(tR, "Staff");
-yR(tR, "Detect", "StaffDetect");
-yR(tR, "Leave", "StaffLeave");
-uR(OR, "Mobile Aim");
-yR(OR, "Mobile Aim ON", "MobileAim");
-mR(OR, "Smooth", "MobileSmooth", .1, 1, .05);
-mR(OR, "FOV", "MobileFOV", 40, 350, 1);
-yR(OR, "Show FOV", "MobileShowFOV");
-uR(XR, "ESP");
-yR(XR, "ESP Enabled", "ESP");
-yR(XR, "Boxes", "ShowBoxes");
-TR(XR, "Box Style", "BoxStyle", { "Corner", "Full", "Both" });
-yR(XR, "Names", "ShowNames");
-yR(XR, "Distance", "ShowDistance");
-yR(XR, "Health", "ShowHealth");
-yR(XR, "Head Dot", "ShowHeadDot");
-YR(XR, "Force Refresh ESP", Bz);
-uR(XR, "ESP Color");
-yR(XR, "RGB ESP", "RGBESP");
-mR(XR, "Red", "ESPColorR", 0, 255, 1);
-mR(XR, "Green", "ESPColorG", 0, 255, 1);
-mR(XR, "Blue", "ESPColorB", 0, 255, 1);
-uR(XR, "Radar");
-yR(XR, "Radar", "Radar");
-mR(XR, "Radar Size", "RadarSize", 80, 220, 5);
-mR(XR, "Radar Range", "RadarRange", 50, 400, 10);
-uR(XR, "Cursor");
-TR(XR, "Cursor", "CursorName", h);
-mR(XR, "Cursor Size", "CursorSize", 8, 128, 1);
-for n, W in ipairs(C) do
-	YR(XR, W.Name, function()
-		Wz(W.Name);
-		S();
+ph(Yh, "Mode", "AimMode", { "Hold", "Toggle", "Always" });
+ch(Yh, "FOV", "AimFOV", 40, 350, 1);
+ch(Yh, "Smooth", "AimSmooth", .1, 1, .05);
+Xh(Yh, "Show FOV", "ShowFOV");
+Xh(Yh, "Wall Check", "WallCheck");
+Xh(Yh, "Team Check", "TeamCheck");
+Xh(Yh, "Prediction", "Prediction");
+ch(Yh, "Predict", "PredictAmount", 0, .35, .01);
+Eh(Yh, "Triggerbot");
+Xh(Yh, "Triggerbot", "Triggerbot");
+ch(Yh, "Trigger FOV", "TriggerFOV", 15, 150, 1);
+ch(Yh, "Trigger Delay", "TriggerDelay", .03, .25, .01);
+Eh(Yh, "Kill Aura");
+Xh(Yh, "Kill Aura", "KillAura");
+ch(Yh, "Range", "KillAuraRange", 20, 200, 5);
+ch(Yh, "Behind Dist", "KillAuraBehind", 1.5, 8, .1);
+Eh(Yh, "Camera FOV");
+Xh(Yh, "Custom FOV", "CustomFOV");
+ch(Yh, "FOV Value", "FOVValue", 40, 120, 1);
+Eh(Yh, "Hitbox Expand");
+Xh(Yh, "Hitbox Expand", "Hitbox");
+ph(Yh, "Part", "HitboxPart", { "Head", "Torso" });
+ch(Yh, "Size", "HitboxSize", 1.5, 10, .5);
+Eh(xh, "Move");
+Xh(xh, "Speed", "Speed");
+ch(xh, "Speed Value", "SpeedValue", 16, 80, 1);
+Xh(xh, "Noclip", "Noclip");
+Xh(xh, "Anti-Bow", "AntiBow");
+Eh(xh, "Device Spoof");
+Xh(xh, "Device Spoof", "DeviceSpoof");
+ph(xh, "Mode", "DeviceMode", { "Console", "Desktop", "Mobile" });
+ch(xh, "Delay (sec)", "DeviceSpoofDelay", .3, 5, .1);
+Ph(xh, "Apply Device Now", yd);
+Eh(xh, "Screen Stretch");
+Xh(xh, "Screen Stretch", "ScreenStretch");
+ch(xh, "Stretch Amount", "StretchAmount", .3, 1, .01);
+Eh(uh, "Stream");
+Xh(uh, "Stream Proof", "StreamProof");
+fh(uh, "Name", "SpoofName", "Player");
+Xh(uh, "Verified", "ShowVerified");
+Eh(Fh, "Staff");
+Xh(Fh, "Detect", "StaffDetect");
+Xh(Fh, "Leave", "StaffLeave");
+Eh(Nh, "Mobile Aim");
+Xh(Nh, "Mobile Aim ON", "MobileAim");
+ch(Nh, "Smooth", "MobileSmooth", .1, 1, .05);
+ch(Nh, "FOV", "MobileFOV", 40, 350, 1);
+Xh(Nh, "Show FOV", "MobileShowFOV");
+Eh(Wh, "ESP");
+Xh(Wh, "ESP Enabled", "ESP");
+Xh(Wh, "Boxes", "ShowBoxes");
+ph(Wh, "Box Style", "BoxStyle", { "Corner", "Full", "Both" });
+Xh(Wh, "Names", "ShowNames");
+Xh(Wh, "Distance", "ShowDistance");
+Xh(Wh, "Health", "ShowHealth");
+Xh(Wh, "Head Dot", "ShowHeadDot");
+Xh(Wh, "Chams ESP", "Chams");
+Xh(Wh, "Gadget ESP", "GadgetESP");
+Ph(Wh, "Force Refresh ESP", Cd);
+Eh(Wh, "ESP Color");
+Xh(Wh, "RGB ESP", "RGBESP");
+ch(Wh, "Red", "ESPColorR", 0, 255, 1);
+ch(Wh, "Green", "ESPColorG", 0, 255, 1);
+ch(Wh, "Blue", "ESPColorB", 0, 255, 1);
+Eh(Wh, "Radar");
+Xh(Wh, "Radar", "Radar");
+ch(Wh, "Radar Size", "RadarSize", 80, 220, 5);
+ch(Wh, "Radar Range", "RadarRange", 50, 400, 10);
+Eh(Wh, "Cursor");
+ph(Wh, "Cursor", "CursorName", k);
+ch(Wh, "Cursor Size", "CursorSize", 8, 128, 1);
+for g, h in ipairs(Q) do
+	Ph(Wh, h.Name, function()
+		gd(h.Name);
+		D();
 	end);
 end;
-uR(aR, "Config");
-MR(aR, "Name", "ConfigName", "default");
-YR(aR, "Save", S);
-YR(aR, "Load", function()
-	I();
+Eh(lh, "Config");
+fh(lh, "Name", "ConfigName", "default");
+Ph(lh, "Save", D);
+Ph(lh, "Load", function()
+	V();
 end);
-yR(aR, "FPS + MS", "ShowPerf");
-yR(aR, "Potato", "Potato");
-uR(aR, "Status");
-local PR = Instance.new("TextLabel");
-PR.LayoutOrder = gR(aR);
-PR.Size = UDim2.new(1, 0, 0, 40);
-PR.BackgroundColor3 = f;
-PR.BorderSizePixel = 0;
-PR.Text = "Executor: " .. X;
-PR.TextColor3 = c;
-PR.TextSize = 12;
-PR.Font = i;
-PR.Parent = aR;
-(Instance.new("UICorner", PR)).CornerRadius = UDim.new(0, 8);
-vR("Combat");
-local DR = Instance.new("TextButton");
-DR.Size = UDim2.new(0, 60, 0, 40);
-DR.Position = UDim2.new(1, -70, 0, 10);
-DR.BackgroundColor3 = Color3.fromRGB(30, 30, 40);
-DR.Text = "OPEN";
-DR.TextColor3 = d;
-DR.TextSize = 14;
-DR.Font = i;
-DR.Visible = true;
-DR.Parent = wz;
-(Instance.new("UICorner", DR)).CornerRadius = UDim.new(0, 8);
-DR.MouseButton1Click:Connect(function()
-	iz.Visible = true;
-	DR.Visible = false;
+Xh(lh, "FPS + MS", "ShowPerf");
+Xh(lh, "Potato", "Potato");
+Eh(lh, "Status");
+local yh = Instance.new("TextLabel");
+yh.LayoutOrder = rh(lh);
+yh.Size = UDim2.new(1, 0, 0, 40);
+yh.BackgroundColor3 = O;
+yh.BorderSizePixel = 0;
+yh.Text = "Executor: " .. E;
+yh.TextColor3 = n;
+yh.TextSize = 12;
+yh.Font = d;
+yh.Parent = lh;
+(Instance.new("UICorner", yh)).CornerRadius = UDim.new(0, 8);
+vh("Combat");
+local mh = Instance.new("TextButton");
+mh.Size = UDim2.new(0, 60, 0, 40);
+mh.Position = UDim2.new(1, -70, 0, 10);
+mh.BackgroundColor3 = Color3.fromRGB(30, 30, 40);
+mh.Text = "OPEN";
+mh.TextColor3 = A;
+mh.TextSize = 14;
+mh.Font = d;
+mh.Visible = true;
+mh.Parent = Kh;
+(Instance.new("UICorner", mh)).CornerRadius = UDim.new(0, 8);
+mh.MouseButton1Click:Connect(function()
+	jh.Visible = true;
+	mh.Visible = false;
 end);
-local function qR()
-	DR.Visible = not iz.Visible;
+local function eh()
+	mh.Visible = not jh.Visible;
 end;
-local UR, ZR, eR;
-Kz.InputBegan:Connect(function(n)
-	if n.UserInputType == Enum.UserInputType.MouseButton1 or n.UserInputType == Enum.UserInputType.Touch then
-		UR = true;
-		ZR = n.Position;
-		eR = iz.Position;
+local Dh, Vh, Ch;
+Th.InputBegan:Connect(function(g)
+	if g.UserInputType == Enum.UserInputType.MouseButton1 or g.UserInputType == Enum.UserInputType.Touch then
+		Dh = true;
+		Vh = g.Position;
+		Ch = jh.Position;
 	end;
 end);
-Kz.InputEnded:Connect(function(n)
-	if n.UserInputType == Enum.UserInputType.MouseButton1 or n.UserInputType == Enum.UserInputType.Touch then
-		UR = false;
+Th.InputEnded:Connect(function(g)
+	if g.UserInputType == Enum.UserInputType.MouseButton1 or g.UserInputType == Enum.UserInputType.Touch then
+		Dh = false;
 	end;
 end);
-l.InputChanged:Connect(function(n)
-	if UR and ((n.UserInputType == Enum.UserInputType.MouseMovement or n.UserInputType == Enum.UserInputType.Touch)) then
-		local W = n.Position - ZR;
-		iz.Position = UDim2.new(eR.X.Scale, eR.X.Offset + W.X, eR.Y.Scale, eR.Y.Offset + W.Y);
+K.InputChanged:Connect(function(g)
+	if Dh and ((g.UserInputType == Enum.UserInputType.MouseMovement or g.UserInputType == Enum.UserInputType.Touch)) then
+		local h = g.Position - Vh;
+		jh.Position = UDim2.new(Ch.X.Scale, Ch.X.Offset + h.X, Ch.Y.Scale, Ch.Y.Offset + h.Y);
 	end;
 end);
-Cz.MouseButton1Click:Connect(function()
-	iz.Visible = false;
-	qR();
+Lh.MouseButton1Click:Connect(function()
+	jh.Visible = false;
+	eh();
 end);
-l.InputBegan:Connect(function(n)
-	if n.KeyCode == Enum.KeyCode.RightControl or n.KeyCode == Enum.KeyCode.LeftControl then
-		iz.Visible = not iz.Visible;
-		qR();
-		V();
+K.InputBegan:Connect(function(g)
+	if g.KeyCode == Enum.KeyCode.RightControl or g.KeyCode == Enum.KeyCode.LeftControl then
+		jh.Visible = not jh.Visible;
+		eh();
+		q();
 	end;
 end);
-local QR = {
+local Sh = {
 		MB1 = Enum.UserInputType.MouseButton1,
 		MB2 = Enum.UserInputType.MouseButton2,
 		E = Enum.KeyCode.E,
 		Q = Enum.KeyCode.Q,
 		F = Enum.KeyCode.F,
 	};
-local zR = false;
-local JR;
-local function LR(n)
-	local W = QR[F.AimKey] or Enum.UserInputType.MouseButton2;
-	local l = tostring(W);
-	if string.find(l, "MouseButton", 1, true) then
-		return n.UserInputType == W;
+local Jh = false;
+local Ah;
+local function Mh(g)
+	local h = Sh[y.AimKey] or Enum.UserInputType.MouseButton2;
+	local K = tostring(h);
+	if string.find(K, "MouseButton", 1, true) then
+		return g.UserInputType == h;
 	end;
-	if string.find(l, "KeyCode", 1, true) then
-		return n.KeyCode == W;
+	if string.find(K, "KeyCode", 1, true) then
+		return g.KeyCode == h;
 	end;
 	return false;
 end;
-l.InputBegan:Connect(function(n, W)
-	if not F.Aimbot or F.MobileAim then
+K.InputBegan:Connect(function(g, h)
+	if not y.Aimbot or y.MobileAim then
 		return;
 	end;
-	if not LR(n) then
+	if not Mh(g) then
 		return;
 	end;
-	if F.AimMode == "Hold" then
-		zR = true;
-	elseif F.AimMode == "Toggle" then
-		zR = not zR;
+	if y.AimMode == "Hold" then
+		Jh = true;
+	elseif y.AimMode == "Toggle" then
+		Jh = not Jh;
 	end;
 end);
-l.InputEnded:Connect(function(n)
-	if F.AimMode == "Hold" and LR(n) then
-		zR = false;
+K.InputEnded:Connect(function(g)
+	if y.AimMode == "Hold" and Mh(g) then
+		Jh = false;
 	end;
 end);
-local function rR(n)
-	if JR then
-		JR:Disconnect();
-		JR = nil;
+local function Gh(g)
+	if Ah then
+		Ah:Disconnect();
+		Ah = nil;
 	end;
-	if not n then
-		local n = uz(Y);
-		if n then
-			for n, W in ipairs(n:GetDescendants()) do
-				if W:IsA("BasePart") then
-					W.CanCollide = true;
+	if not g then
+		local g = Ld(s);
+		if g then
+			for g, h in ipairs(g:GetDescendants()) do
+				if h:IsA("BasePart") then
+					h.CanCollide = true;
 				end;
 			end;
 		end;
 		return;
 	end;
-	JR = H.Stepped:Connect(function()
-			local n = uz(Y);
-			if not n then
+	Ah = j.Stepped:Connect(function()
+			local g = Ld(s);
+			if not g then
 				return;
 			end;
-			for n, W in ipairs(n:GetDescendants()) do
-				if W:IsA("BasePart") then
-					W.CanCollide = false;
+			for g, h in ipairs(g:GetDescendants()) do
+				if h:IsA("BasePart") then
+					h.CanCollide = false;
 				end;
 			end;
 		end);
@@ -1985,26 +2156,26 @@ end;
 task.spawn(function()
 	while true do
 		task.wait(.2);
-		if F.AntiBow then
+		if y.AntiBow then
 			pcall(function()
-				local n = uz(Y);
-				if not n then
+				local g = Ld(s);
+				if not g then
 					return;
 				end;
-				local W = n:FindFirstChild("HumanoidRootPart");
-				local l = n:FindFirstChildOfClass("Humanoid");
-				if not W or not l or l.Health <= 0 then
+				local h = g:FindFirstChild("HumanoidRootPart");
+				local K = g:FindFirstChildOfClass("Humanoid");
+				if not h or not K or K.Health <= 0 then
 					return;
 				end;
-				local H = l:GetState();
-				if H == Enum.HumanoidStateType.Jumping or H == Enum.HumanoidStateType.Freefall then
+				local j = K:GetState();
+				if j == Enum.HumanoidStateType.Jumping or j == Enum.HumanoidStateType.Freefall then
 					return;
 				end;
-				if W.CFrame.UpVector:Dot(Vector3.yAxis) >= .92 then
+				if h.CFrame.UpVector:Dot(Vector3.yAxis) >= .92 then
 					return;
 				end;
-				local v, E = W.CFrame:ToOrientation();
-				W.CFrame = CFrame.new(W.Position) * CFrame.Angles(0, E, 0);
+				local T, R = h.CFrame:ToOrientation();
+				h.CFrame = CFrame.new(h.Position) * CFrame.Angles(0, R, 0);
 			end);
 		end;
 	end;
@@ -2012,34 +2183,34 @@ end);
 task.spawn(function()
 	while true do
 		task.wait(.5);
-		if F.StreamProof then
-			local n = tostring(F.SpoofName);
-			if F.ShowVerified then
-				n = n .. (" " .. cz);
+		if y.StreamProof then
+			local g = tostring(y.SpoofName);
+			if y.ShowVerified then
+				g = g .. (" " .. hh);
 			end;
 			pcall(function()
-				Y.DisplayName = n;
+				s.DisplayName = g;
 			end);
 		end;
 	end;
 end);
-local FR = 33054943;
-local NR = {};
+local Oh = 33054943;
+local nh = {};
 task.spawn(function()
 	while true do
 		task.wait(2);
-		if F.StaffDetect then
-			for n, W in ipairs(W:GetPlayers()) do
-				if W ~= Y then
-					local n, l = pcall(function()
-							return W:GetRankInGroup(FR);
+		if y.StaffDetect then
+			for g, h in ipairs(h:GetPlayers()) do
+				if h ~= s then
+					local g, K = pcall(function()
+							return h:GetRankInGroup(Oh);
 						end);
-					if n and (type(l) == "number" and l >= 51) then
-						if not NR[W.UserId] then
-							NR[W.UserId] = true;
-							if F.StaffLeave then
+					if g and (type(K) == "number" and K >= 51) then
+						if not nh[h.UserId] then
+							nh[h.UserId] = true;
+							if y.StaffLeave then
 								pcall(function()
-									Y:Kick("Staff");
+									s:Kick("Staff");
 								end);
 							end;
 						end;
@@ -2049,115 +2220,117 @@ task.spawn(function()
 		end;
 	end;
 end);
-local jR = Instance.new("ScreenGui");
-jR.Name = "MoonFOVGui";
-jR.ResetOnSpawn = false;
-jR.IgnoreGuiInset = true;
-jR.DisplayOrder = 99999;
-jR.Parent = R;
-local SR = Instance.new("Frame");
-SR.AnchorPoint = Vector2.new(.5, .5);
-SR.Size = UDim2.new(0, 300, 0, 300);
-SR.Position = UDim2.new(.5, 0, .5, 0);
-SR.BackgroundTransparency = 1;
-SR.BorderSizePixel = 0;
-SR.Visible = false;
-SR.ZIndex = 999;
-SR.Parent = jR;
+local zh = Instance.new("ScreenGui");
+zh.Name = "MoonFOVGui";
+zh.ResetOnSpawn = false;
+zh.IgnoreGuiInset = true;
+zh.DisplayOrder = 99999;
+zh.Parent = v;
+local dh = Instance.new("Frame");
+dh.AnchorPoint = Vector2.new(.5, .5);
+dh.Size = UDim2.new(0, 300, 0, 300);
+dh.Position = UDim2.new(.5, 0, .5, 0);
+dh.BackgroundTransparency = 1;
+dh.BorderSizePixel = 0;
+dh.Visible = false;
+dh.ZIndex = 999;
+dh.Parent = zh;
 pcall(function()
-	(Instance.new("UICorner", SR)).CornerRadius = UDim.new(1, 0);
+	(Instance.new("UICorner", dh)).CornerRadius = UDim.new(1, 0);
 end);
-local IR;
+local th;
 pcall(function()
-	IR = Instance.new("UIStroke");
-	IR.Color = Color3.new(1, 1, 1);
-	IR.Thickness = 1.5;
-	IR.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
-	IR.Parent = SR;
+	th = Instance.new("UIStroke");
+	th.Color = Color3.new(1, 1, 1);
+	th.Thickness = 1.5;
+	th.ApplyStrokeMode = Enum.ApplyStrokeMode.Border;
+	th.Parent = dh;
 end);
-local BR, AR, xR, dR = 0, tick(), 0, 0;
-H.Heartbeat:Connect(function()
-	local n = uz(Y);
-	if n then
-		local W = n:FindFirstChildOfClass("Humanoid");
-		if F.Speed and (W and W.Health > 0) then
-			W.WalkSpeed = F.SpeedValue or 24;
+local qh, Qh, kh, ih = 0, tick(), 0, 0;
+j.Heartbeat:Connect(function()
+	local g = Ld(s);
+	if g then
+		local h = g:FindFirstChildOfClass("Humanoid");
+		if y.Speed and (h and h.Health > 0) then
+			h.WalkSpeed = y.SpeedValue or 24;
 		end;
-		if F.Noclip then
-			if not JR then
-				rR(true);
+		if y.Noclip then
+			if not Ah then
+				Gh(true);
 			end;
-		elseif JR then
-			rR(false);
+		elseif Ah then
+			Gh(false);
 		end;
 	end;
-	fz(F.Potato == true);
-	pcall(ez);
-	pcall(Lz);
+	gh(y.Potato == true);
+	pcall(xd);
+	pcall(Wd);
 end);
-H.RenderStepped:Connect(function()
+j.RenderStepped:Connect(function()
 	pcall(function()
-		BR = BR + 1;
-		if tick() - AR >= 1 then
-			xR = BR;
-			BR = 0;
-			AR = tick();
+		qh = qh + 1;
+		if tick() - Qh >= 1 then
+			kh = qh;
+			qh = 0;
+			Qh = tick();
 		end;
-		if o.Visible then
-			local n = l:GetMouseLocation();
-			o.Position = UDim2.new(0, n.X, 0, n.Y);
+		if U.Visible then
+			local g = K:GetMouseLocation();
+			U.Position = UDim2.new(0, g.X, 0, g.Y);
 		end;
-		if F.CustomFOV then
-			Hz();
+		if y.CustomFOV then
+			Kd();
 		end;
-		vz = false;
-		local n, W, H = false, F.AimSmooth or .95, F.AimFOV or 150;
-		if F.KillAura and (Qz and yz(Qz)) then
-			vz = true;
-		elseif not F.KillAura then
-			if F.MobileAim then
-				n = true;
-				W = F.MobileSmooth or .9;
-				H = F.MobileFOV or 160;
-			elseif F.Aimbot then
-				n = zR or F.AimMode == "Always";
-				W = F.AimSmooth or .95;
-				H = F.AimFOV or 150;
+		jd = false;
+		local g, h, j = false, y.AimSmooth or .95, y.AimFOV or 150;
+		if y.KillAura and (ud and Hd(ud)) then
+			jd = true;
+		elseif not y.KillAura then
+			if y.MobileAim then
+				g = true;
+				h = y.MobileSmooth or .9;
+				j = y.MobileFOV or 160;
+			elseif y.Aimbot then
+				g = Jh or y.AimMode == "Always";
+				h = y.AimSmooth or .95;
+				j = y.AimFOV or 150;
 			end;
 		end;
-		if n then
-			local n, l = Rz(H, true);
-			if l then
-				vz = true;
-				if W >= .98 then
-					T.CFrame = CFrame.new(T.CFrame.Position, l);
+		if g then
+			local g, K = vd(j, true);
+			if K then
+				jd = true;
+				if h >= .98 then
+					Z.CFrame = CFrame.new(Z.CFrame.Position, K);
 				else
-					T.CFrame = T.CFrame:Lerp(CFrame.new(T.CFrame.Position, l), math.clamp(W, .1, 1));
+					Z.CFrame = Z.CFrame:Lerp(CFrame.new(Z.CFrame.Position, K), math.clamp(h, .1, 1));
 				end;
-				gz(l);
+				Rd(K);
 			end;
 		end;
-		Ez();
-		pcall(dz);
-		dR = dR + 1;
-		if dR >= 2 then
-			dR = 0;
-			pcall(Dz);
+		Td();
+		pcall(Ad);
+		pcall(Od);
+		pcall(id);
+		ih = ih + 1;
+		if ih >= 2 then
+			ih = 0;
+			pcall(pd);
 		end;
-		local v, E = false, F.AimFOV or 150;
-		if F.MobileAim then
-			v = F.MobileShowFOV;
-			E = F.MobileFOV or 160;
+		local T, R = false, y.AimFOV or 150;
+		if y.MobileAim then
+			T = y.MobileShowFOV;
+			R = y.MobileFOV or 160;
 		else
-			v = F.ShowFOV;
-			E = F.AimFOV or 150;
+			T = y.ShowFOV;
+			R = y.AimFOV or 150;
 		end;
-		SR.Size = UDim2.new(0, E * 2, 0, E * 2);
-		SR.Position = UDim2.new(.5, 0, .5, 0);
-		SR.Visible = v;
-		if IR then
-			if F.RGBESP then
-				IR.Color = K();
+		dh.Size = UDim2.new(0, R * 2, 0, R * 2);
+		dh.Position = UDim2.new(.5, 0, .5, 0);
+		dh.Visible = T;
+		if th then
+			if y.RGBESP then
+				th.Color = t();
 			end;
 		end;
 	end);
@@ -2165,20 +2338,20 @@ end);
 task.spawn(function()
 	while true do
 		task.wait(15);
-		S();
+		D();
 	end;
 end);
-if F.CursorName and F.CursorName ~= "Off" then
-	Wz(F.CursorName);
+if y.CursorName and y.CursorName ~= "Off" then
+	gd(y.CursorName);
 end;
-if F.CustomFOV then
-	Hz();
+if y.CustomFOV then
+	Kd();
 end;
-J(1, "Done");
+N(1, "Done");
 task.wait(.35);
 pcall(function()
-	a:Destroy();
+	X:Destroy();
 end);
-iz.Visible = true;
-DR.Visible = false;
-print("[Moon Hub] PUBLIC | " .. X);
+jh.Visible = true;
+mh.Visible = false;
+print("[Moon Hub] PUBLIC | " .. E);

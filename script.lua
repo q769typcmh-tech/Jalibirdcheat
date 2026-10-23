@@ -1,4 +1,5 @@
--- i put some shi so you know where everything are
+-- vasper for jailbird
+
 
 if getgenv().VasperFull then return end
 getgenv().VasperFull = true
@@ -9,18 +10,15 @@ end)
 
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
-local VIM = nil
-pcall(function()
-	VIM = game:GetService("VirtualInputService")
-end)
-if not VIM then
-	pcall(function()
-		VIM = game:FindService("VirtualInputService")
-	end)
-end
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 local CoreGui = game:GetService("CoreGui")
+
+-- some executors dont have this
+local VIM = nil
+pcall(function() VIM = game:GetService("VirtualInputService") end)
+if not VIM then pcall(function() VIM = game:FindService("VirtualInputService") end) end
+
 local LP = Players.LocalPlayer
 while not LP do task.wait() LP = Players.LocalPlayer end
 
@@ -29,7 +27,7 @@ workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
 	Camera = workspace.CurrentCamera
 end)
 
--- ===================== SETTINGS (all ESP on by default) =====================
+-- defaults (esp on)
 local S = {
 	-- ESP
 	ESP = true,
@@ -67,9 +65,7 @@ local S = {
 	KillAura = false,
 	KillAuraRange = 90,
 	KillAuraBehind = 1.5,
-	PosFreeze = false,
-	PosFreezeKey = "X",
-	-- Player
+	-- movement
 	Speed = false,
 	SpeedValue = 28,
 	Noclip = false,
@@ -93,7 +89,7 @@ local S = {
 	FPSBoost = false,
 	FPSBoostPlastic = true,
 }
-getgenv().VasperFlags = S
+getgenv().VasperFlags = S -- for debugging
 
 local Theme = {
 	Background = Color3.fromRGB(12, 12, 15),
@@ -168,7 +164,7 @@ pcall(function()
 	end
 end)
 
--- ===================== CORE =====================
+-- helpers
 local function getChar(p)
 	return p and p.Character
 end
@@ -187,7 +183,7 @@ local function isEnemy(p)
 	return true
 end
 
--- Old MoonHub Jailbird wallcheck (soft glass/doors + multi-step ray)
+-- wallcheck (soft glass etc)
 local SOLID_NAMES = {
 	"box", "crate", "barrel", "dumpster", "trash", "container", "shipping",
 	"wall", "pillar", "fence", "gate", "car", "truck", "van", "generator",
@@ -218,7 +214,7 @@ local function isSoft(part)
 end
 
 local function isVisible(plr)
-	-- Port of MoonHub Jailbird isVisible — camera ray, skip soft, block on solid
+	-- ray from cam to head
 	local char = getChar(plr)
 	local head = char and char:FindFirstChild("Head")
 	if not head or not Camera then return false end
@@ -268,7 +264,7 @@ local function espColor(plr)
 end
 
 
--- ===================== COMBAT / PLAYER =====================
+-- combat
 local SA_Hooked = false
 local aimHeld = false
 local flying = false -- always start grounded; press Fly Key only when Fly enabled
@@ -319,8 +315,8 @@ local function getClosestTarget(fov, doVis)
 end
 
 local function trySilentHook(force)
-	-- ONLY hook named bullet functions via getgc/hookfunction.
-	-- NEVER hook workspace:Raycast namecall — that breaks camera / freecam.
+	-- only hook bullet funcs, not workspace raycast
+	
 	if SA_Hooked and not force then return true end
 	if typeof(getgc) ~= "function" or typeof(hookfunction) ~= "function" then
 		return false
@@ -479,7 +475,7 @@ end
 local function doShoot()
 	local tool = getEquippedTool()
 	if not tool then
-		-- try equip from backpack once
+		
 		local my = getChar(LP)
 		local hum = my and my:FindFirstChildOfClass("Humanoid")
 		local bp = LP:FindFirstChild("Backpack")
@@ -494,7 +490,7 @@ local function doShoot()
 		end
 	end
 	if not tool then return end
-	-- rate limit so server accepts more hits
+	-- dont spam
 	if tick() - lastKAShoot < 0.14 then return end
 	lastKAShoot = tick()
 	local fired = false
@@ -544,9 +540,9 @@ local function getBestEnemy(exclude)
 	return best
 end
 
--- Soft stick: TP only if too far from behind-spot (lets server catch up)
+
 local function fattenTarget(plr)
-	-- Big hitbox on current aura target so shots connect
+	-- fat hb on target
 	local char = getChar(plr)
 	if not char then return end
 	local size = 12
@@ -566,7 +562,7 @@ local function fattenTarget(plr)
 end
 
 local function stickAbove(plr, force)
-	-- Follow from TOP of target and look at head
+	-- sit on top of them
 	local my = getChar(LP)
 	local myRoot = my and my:FindFirstChild("HumanoidRootPart")
 	local char = getChar(plr)
@@ -624,13 +620,13 @@ local function setPosFreeze(on)
 	local root = my and (my:FindFirstChild("HumanoidRootPart") or my.PrimaryPart)
 	if on then
 		if not root then return end
-		-- Mark mode on. You walk freely. Unfreeze = KEEP where you are (teleport-style).
-		freezeCF = root.CFrame -- optional marker only
+		
+		freezeCF = root.CFrame 
 		freezeActive = true
 		S.PosFreeze = true
-		print("[Vasper] Freeze ON — walk anywhere. Unfreeze keeps NEW position (no return).")
+		print("[vasper] freeze on, walk around. unfreeze stays here")
 	else
-		-- Stay at current (new) position — do NOT go back to old
+		
 		if root then
 			pcall(function()
 				root.AssemblyLinearVelocity = Vector3.zero
@@ -639,7 +635,7 @@ local function setPosFreeze(on)
 		freezeActive = false
 		freezeCF = nil
 		S.PosFreeze = false
-		print("[Vasper] Freeze OFF — stayed at new position")
+		print("[vasper] freeze off")
 	end
 end
 
@@ -648,7 +644,7 @@ local function togglePosFreeze()
 end
 
 
--- Freeze keybind
+-- freeze key
 UserInputService.InputBegan:Connect(function(input, gp)
 	if gp then return end
 	if input.UserInputType ~= Enum.UserInputType.Keyboard then return end
@@ -666,7 +662,7 @@ local function checkStaff()
 			if ok and rank and rank >= 11 then
 				if not staffFlagged[plr.UserId] then
 					staffFlagged[plr.UserId] = true
-					print("[Vasper] Staff:", plr.Name, rank)
+					print("[vasper] staff:", plr.Name, rank)
 					if S.StaffLeave then
 						pcall(function() LP:Kick("Staff detected") end)
 					end
@@ -676,7 +672,7 @@ local function checkStaff()
 	end
 end
 
--- Device spoof (Jailbird): ReplicatedStorage.GameEvents.DeviceUpdate
+-- device spoof remote
 local DeviceRemote = nil
 pcall(function()
 	local rs = game:GetService("ReplicatedStorage")
@@ -890,7 +886,7 @@ task.spawn(function()
 end)
 
 
--- ===================== CONFIG AUTO-SAVE =====================
+-- config (json)
 local HttpService = game:GetService("HttpService")
 local function sw(path, data)
 	pcall(function()
@@ -919,7 +915,7 @@ local function saveCfg()
 end
 local function loadCfg()
 
--- Ensure every UI flag exists (autosave / old configs can miss keys)
+-- fill missing flags from old configs
 local _defaults = {
 	SilentFOV = 140, AimFOV = 150, AimSmooth = 40, HitboxSize = 8, HitboxTransparency = 85,
 	KillAuraRange = 90, KillAuraBehind = 2.0, SpeedValue = 28, FlySpeed = 50, FOVValue = 90, MaxDistance = 1200,
@@ -948,7 +944,7 @@ flying = false
 end
 loadCfg()
 
--- Ensure every UI flag exists (autosave / old configs can miss keys)
+-- fill missing flags from old configs
 local _defaults = {
 	SilentFOV = 140, AimFOV = 150, AimSmooth = 40, HitboxSize = 8, HitboxTransparency = 85,
 	KillAuraRange = 60, SpeedValue = 28, FlySpeed = 50, FOVValue = 90, MaxDistance = 1200,
@@ -972,7 +968,7 @@ task.spawn(function()
 end)
 
 
--- ===================== FPS BOOST / PLASTIC =====================
+-- fps boost
 local Lighting = game:GetService("Lighting")
 local Terrain = workspace:FindFirstChildOfClass("Terrain")
 local fpsBoostApplied = false
@@ -1114,7 +1110,7 @@ pcall(function()
 	end)
 end)
 
--- ===================== ESP SYSTEMS =====================
+-- esp
 local ESPGui = create("ScreenGui", {
 	Name = "VasperESP",
 	ResetOnSpawn = false,
@@ -1620,7 +1616,7 @@ RunService.RenderStepped:Connect(function()
 	pcall(updateESP)
 end)
 
--- ===================== UI (v7 shell) =====================
+-- ui
 local parent = LP:WaitForChild("PlayerGui")
 local gui = create("ScreenGui", {
 	Name = "VasperFull",
@@ -1631,7 +1627,7 @@ local gui = create("ScreenGui", {
 }, guiParent()) -- gethui/CoreGui so ESC menu does not cover hub
 
 
--- Keep hub above Roblox ESC / other menus
+-- stay on top
 task.spawn(function()
 	while gui and gui.Parent do
 		pcall(function()
@@ -1705,7 +1701,7 @@ create("TextLabel", {
 	Position = UDim2.fromOffset(60, 33),
 	Size = UDim2.fromOffset(230, 15),
 	BackgroundTransparency = 1,
-	Text = "FULL BUILD  /  LIVE",
+	Text = "full build",
 	TextColor3 = Theme.Muted,
 	Font = Enum.Font.Code,
 	TextSize = 9,
@@ -2035,8 +2031,8 @@ local function cycleButton(page, title, y, flag, options)
 	end)
 end
 
-pcall(function() -- pages safe
--- Pages
+pcall(function() -- ui pages
+-- tabs
 local overview = makePage("Overview", "Everything loaded — ESP on by default.")
 local combat = makePage("Combat", "Silent, aimbot, hitbox, kill aura.")
 local visuals = makePage("Visuals", "Every ESP option — toggles are live.")
@@ -2301,7 +2297,7 @@ create("TextLabel", {
 	Position = UDim2.fromOffset(13, 0),
 	Size = UDim2.new(1, -26, 1, 0),
 	BackgroundTransparency = 1,
-	Text = "VASPER  /  FULL",
+	Text = "vasper",
 	TextColor3 = Color3.fromRGB(215, 215, 215),
 	Font = Enum.Font.Code,
 	TextSize = 12,
@@ -2336,7 +2332,7 @@ local terminalLog = create("TextLabel", {
 	Position = UDim2.fromOffset(27, 148),
 	Size = UDim2.new(1, -54, 0, 120),
 	BackgroundTransparency = 1,
-	Text = "> boot\n> loading esp modules...\n> boxes names distance health\n> chams tracers skeleton\n> visible check green/red",
+	Text = "> loading\n> esp / combat / misc\n> wait a sec...",
 	TextColor3 = Color3.fromRGB(205, 205, 205),
 	Font = Enum.Font.Code,
 	TextSize = 12,
@@ -2394,7 +2390,7 @@ end
 
 injectButton.MouseButton1Click:Connect(function()
 	injectButton.Text = "LOADING..."
-	terminalLog.Text = "> esp online\n> all modules active\n> opening hub..."
+	terminalLog.Text = "> ok\n> opening..."
 	task.wait(0.2)
 	openHub()
 end)
@@ -2405,7 +2401,7 @@ closeTerminalButton.MouseButton1Click:Connect(function()
 	getgenv().VasperFull = nil
 end)
 
--- Auto-open so UI always shows (no stuck terminal)
+-- auto open hub
 task.defer(function()
 	task.wait(0.6)
 	if window and window.Parent and not window.Visible then
@@ -2413,7 +2409,7 @@ task.defer(function()
 	end
 end)
 
--- FPS watermark
+-- fps label
 local wm = Instance.new("TextLabel")
 wm.BackgroundTransparency = 1
 wm.Position = UDim2.fromOffset(10, 8)
@@ -2440,7 +2436,7 @@ task.spawn(function()
 	end
 end)
 
--- Rehook silent when enabled via UI
+-- rehook silent if they turn it on later
 task.spawn(function()
 	local last = false
 	while true do
@@ -2453,7 +2449,7 @@ task.spawn(function()
 end)
 
 
--- PosFreeze UI sync
+-- sync freeze toggle
 task.spawn(function()
 	local last = false
 	while true do
@@ -2469,4 +2465,4 @@ task.spawn(function()
 	end
 end)
 
-print("[Vasper] FULL — KA + freeze. RightShift = UI.")
+print("[vasper] loaded | rightshift = menu")
